@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 946c798e-d882-47cb-8c2f-c8819bf6c697</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RequirementsAnalysis</_name>
+			<Annotations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Annotations>
+			<_modifiedTimeWeak type="a">6.7.2023::21:44:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.7.2023::21:44:37</_modifiedTime>
+			<_lastID type="a">8</_lastID>
+			<weakCGTime type="a">6.7.2023::21:44:37</weakCGTime>
+			<strongCGTime type="a">6.7.2023::21:42:16</strongCGTime>
+			<_defaultComposite type="s">GUID 30abdd7b-5325-4337-b6da-1e5a350c2a85</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">6.7.2023::21:43:49</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID f033551c-adbc-42c1-b733-7b51fb0c31cd</value>
+				<value>GUID ce96a48b-650e-4ba7-996c-426807a5b56e</value>
+				<value>GUID c6f6dea2-d177-41e6-bfbb-dce7724ac154</value>
+				<value>GUID 187fc657-8a54-4000-b22e-e0ce4b3466d4</value>
+				<value>GUID be9fc7b1-cdfb-4f7c-a134-019e64fda3ad</value>
+				<value>GUID 623e2e96-db88-45bb-9c0f-b4bb27f9a7ac</value>
+				<value>GUID 30abdd7b-5325-4337-b6da-1e5a350c2a85</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">adminREQ</fileName>
+			<_id type="a">GUID f033551c-adbc-42c1-b733-7b51fb0c31cd</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">appREQ</fileName>
+			<_id type="a">GUID ce96a48b-650e-4ba7-996c-426807a5b56e</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">binREQ</fileName>
+			<_id type="a">GUID c6f6dea2-d177-41e6-bfbb-dce7724ac154</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CMSREQ</fileName>
+			<_id type="a">GUID 187fc657-8a54-4000-b22e-e0ce4b3466d4</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">truckREQ</fileName>
+			<_id type="a">GUID be9fc7b1-cdfb-4f7c-a134-019e64fda3ad</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">wastecenterREQ</fileName>
+			<_id type="a">GUID 623e2e96-db88-45bb-9c0f-b4bb27f9a7ac</_id>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 30abdd7b-5325-4337-b6da-1e5a350c2a85</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">6.7.2023::21:42:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">6.7.2023::21:42:16</weakCGTime>
+			<strongCGTime type="a">6.7.2023::21:42:16</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
