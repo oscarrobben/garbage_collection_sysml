@@ -12,23 +12,183 @@
 			<_id type="a">GUID 187fc657-8a54-4000-b22e-e0ce4b3466d4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CMSREQ</_name>
-			<_modifiedTimeWeak type="a">6.7.2023::21:44:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2023::21:44:20</_modifiedTime>
-			<weakCGTime type="a">6.7.2023::21:44:20</weakCGTime>
+			<_modifiedTimeWeak type="a">6.8.2023::13:53:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:53:3</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">6.8.2023::13:53:3</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:44:20</strongCGTime>
 			<_defaultComposite type="s">GUID 97d5cd65-fad0-4bb0-b649-50ddf6526294</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID fe0bfa17-176b-4f36-8c2f-6a45c23d041e</value>
 				<value>GUID 97d5cd65-fad0-4bb0-b649-50ddf6526294</value>
 			</AggregatesList>
 		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID fe0bfa17-176b-4f36-8c2f-6a45c23d041e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CMS Requirement</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:53:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:53:3</_modifiedTime>
+			<_lastID type="a">11</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 All SMART decisions shall happen in a Central Management System (CMS), where the data is collected, stored, proceeded and turned back to the system with real-time monitoring, guidance (users) and optimized collection routes.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 5a1d5ad2-725b-418d-b7e3-555ea454cf76</value>
+				<value>GUID 293e1601-d7fe-4e21-8a55-24f373e5b639</value>
+				<value>GUID 2d3286ae-4119-4fd6-9334-f563c0bfa7ca</value>
+				<value>GUID cca6e798-ffe6-42c5-9dc3-f379b4380713</value>
+				<value>GUID d7afa801-872f-4662-b526-14595eee4d6f</value>
+				<value>GUID 0de641a1-7bd1-4d8c-a8bd-efa340c965a4</value>
+				<value>GUID fe49b753-66e3-4b6b-b675-2f0f408d5dca</value>
+				<value>GUID e4f8bb6f-a108-4998-bf70-132052f4d40f</value>
+				<value>GUID c730e5a7-1509-4343-b117-3eea22c3b92c</value>
+				<value>GUID 5844a64e-6d96-4a67-8414-fd6744738687</value>
+				<value>GUID a7d42f98-3e8a-40a8-959d-702882989f41</value>
+			</AggregatesList>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 5a1d5ad2-725b-418d-b7e3-555ea454cf76</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Data Collection</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:48:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:48:12</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The central management system (CMS) shall be able to receive data from the smart bins and trucks and other important actors of the smart garbage collection system.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.01</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 293e1601-d7fe-4e21-8a55-24f373e5b639</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Real-Time Data Monitoring</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:48:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:48:31</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall monitor real-time fill levels, status, location of bins, trucks and other actuators.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.02</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 2d3286ae-4119-4fd6-9334-f563c0bfa7ca</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Reliable Connectivity</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:48:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:48:52</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall have a reliable connectivity with the entire system as a two-way communication.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.03</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID cca6e798-ffe6-42c5-9dc3-f379b4380713</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Data showing</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:49:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:49:10</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall show in a ergonomic design real-time data for better supervision by the waste management team\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.04</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID d7afa801-872f-4662-b526-14595eee4d6f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Automated Alerts Notifications</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:49:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:49:27</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall send automated alerts and notifications to truck drivers, app-users and other actuators.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.05</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 0de641a1-7bd1-4d8c-a8bd-efa340c965a4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">AI-Algorithm Integration</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:50:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:50:4</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall have an integrated AI-algorithm that computes a collection route optimization using the received data\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.06</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID fe49b753-66e3-4b6b-b675-2f0f408d5dca</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Maintenance Tracking</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:49:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:49:58</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall track the maintenance needs of the system and its parts.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.07</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID e4f8bb6f-a108-4998-bf70-132052f4d40f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Security and Data Privacy</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:50:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:50:20</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall comply with all security and data privacy norms.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.08</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID c730e5a7-1509-4343-b117-3eea22c3b92c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Scalable and Flexible</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:50:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:50:33</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall be scalable and flexible.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.09</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 5844a64e-6d96-4a67-8414-fd6744738687</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Seamless Integration</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:50:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:50:50</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall be seamlessly integrated within the entire system.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.10</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID a7d42f98-3e8a-40a8-959d-702882989f41</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Inaccessibility or Incident Considerations</_name>
+			<_modifiedTimeWeak type="a">6.8.2023::13:51:6</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:51:6</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The CMS shall take into account inaccessibility or other incidents.\par%0D
+}%0D
+</_body>
+			<reqID type="a">3.11</reqID>
+		</IRequirement>
 		<IClass type="e">
 			<_id type="a">GUID 97d5cd65-fad0-4bb0-b649-50ddf6526294</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

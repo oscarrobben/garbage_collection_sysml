@@ -12,14 +12,10 @@
 			<_id type="a">GUID 946c798e-d882-47cb-8c2f-c8819bf6c697</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">RequirementsAnalysis</_name>
-			<Annotations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Annotations>
-			<_modifiedTimeWeak type="a">6.7.2023::21:44:37</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2023::21:44:37</_modifiedTime>
-			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">6.7.2023::21:44:37</weakCGTime>
+			<_modifiedTimeWeak type="a">6.8.2023::13:13:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:13:48</_modifiedTime>
+			<_lastID type="a">9</_lastID>
+			<weakCGTime type="a">6.8.2023::13:13:48</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:42:16</strongCGTime>
 			<_defaultComposite type="s">GUID 30abdd7b-5325-4337-b6da-1e5a350c2a85</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -32,6 +28,7 @@
 				<value>GUID be9fc7b1-cdfb-4f7c-a134-019e64fda3ad</value>
 				<value>GUID 623e2e96-db88-45bb-9c0f-b4bb27f9a7ac</value>
 				<value>GUID 30abdd7b-5325-4337-b6da-1e5a350c2a85</value>
+				<value>GUID 1c47f883-e591-4831-8d1a-6a5000a39b5c</value>
 			</AggregatesList>
 		</ISubsystem>
 		<ISubsystem type="e">
@@ -63,7 +60,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">6.7.2023::21:42:16</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">6.7.2023::21:42:16</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:42:16</strongCGTime>
 			<_itsStateChart type="r">
@@ -72,6 +69,46 @@
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 		</IClass>
+		<ITableInstance type="e">
+			<_id type="a">GUID 1c47f883-e591-4831-8d1a-6a5000a39b5c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">SGCSRequirementsTable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">RequirementsTable</_hname>
+							<_hid type="a">GUID ac8ca999-c415-4942-b5eb-99bb8da2415c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.8.2023::13:13:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.8.2023::13:13:48</_modifiedTime>
+			<LayoutHandle type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITableLayout</_hm2Class>
+					<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+					<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+					<_hname type="a">ReqTableLayout</_hname>
+					<_hid type="a">GUID 8f1f7467-b093-4abe-9871-3462587c6bc8</_hid>
+				</IHandle>
+			</LayoutHandle>
+			<ScopeHandles type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProject</_hm2Class>
+							<_hname type="a">garbage_collection</_hname>
+							<_hid type="a">GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</ScopeHandles>
+		</ITableInstance>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">
