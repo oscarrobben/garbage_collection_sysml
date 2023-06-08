@@ -40,15 +40,15 @@
 								<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 428 </_UpLeft>
-						<_DownRight type="a">1050 938 </_DownRight>
+						<_UpLeft type="a">0 222 </_UpLeft>
+						<_DownRight type="a">794 1016 </_DownRight>
 						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\work\final\garbage_collection\garbage_collection</_fullName>
+			<_fullName type="a">C:\Users\20183230\garbage_collection_sysml\garbage_collection</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
