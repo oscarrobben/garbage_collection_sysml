@@ -12,14 +12,14 @@
 			<_id type="a">GUID 587171fc-41a0-45df-8668-499a1b37170d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">6.9.2023::11:49:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.9.2023::11:49:55</_modifiedTime>
-			<_lastID type="a">49</_lastID>
-			<weakCGTime type="a">6.9.2023::11:49:55</weakCGTime>
-			<strongCGTime type="a">6.7.2023::23:6:33</strongCGTime>
+			<_modifiedTimeWeak type="a">6.9.2023::11:59:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::11:59:58</_modifiedTime>
+			<_lastID type="a">51</_lastID>
+			<weakCGTime type="a">6.9.2023::12:0:2</weakCGTime>
+			<strongCGTime type="a">6.9.2023::12:0:2</strongCGTime>
 			<_defaultComposite type="s">GUID 14426929-d967-438c-bd11-c7a14c809a51</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">6.9.2023::11:21:5</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">6.9.2023::11:59:58</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 88a5955d-41ac-47d8-8942-3279d25db0e5</value>
 				<value>GUID d3f488d5-cb2e-4ed9-bdbf-c5ec95cf9262</value>
@@ -48,6 +48,7 @@
 				<value>GUID 91deb1db-978a-4e40-8bcf-cbfa60faf40c</value>
 				<value>GUID 8b0a6366-4f2c-4c02-8167-98f64a5e1343</value>
 				<value>GUID 6b24d739-9ea5-4174-bec2-0177888737df</value>
+				<value>GUID 8b4b99a7-79cf-437a-bdad-4fb8e4dc3731</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IConstraint type="e">
@@ -87,20 +88,84 @@
 			<_id type="a">GUID 14426929-d967-438c-bd11-c7a14c809a51</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">6.9.2023::11:21:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.9.2023::11:21:5</_modifiedTime>
-			<weakCGTime type="a">6.9.2023::11:21:5</weakCGTime>
+			<_modifiedTimeWeak type="a">6.9.2023::12:0:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::12:0:2</_modifiedTime>
+			<weakCGTime type="a">6.9.2023::12:0:2</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
-			<Associations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 60d9f8b1-e9c2-4dcf-8220-1ad3a406fd65</value>
+			</AggregatesList>
 		</IClass>
+		<IPart type="e">
+			<_id type="a">GUID 60d9f8b1-e9c2-4dcf-8220-1ad3a406fd65</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">server</_name>
+			<_modifiedTimeWeak type="a">6.9.2023::12:0:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::12:0:2</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID bf797ec3-00a6-44db-83fe-56fca1f1339a</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_implicitClass type="p"><IClass type="e">
+				<_id type="a">GUID bf797ec3-00a6-44db-83fe-56fca1f1339a</_id>
+				<_myState type="a">10240</_myState>
+				<_name type="a">server</_name>
+				<_modifiedTimeWeak type="a">6.9.2023::12:0:10</_modifiedTimeWeak>
+				<_theMainDiagram type="r">
+					<IHandle type="e">
+						<_hm2Class type="a">IDiagram</_hm2Class>
+						<_hname type="a">systemcontext</_hname>
+						<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
+					</IHandle>
+				</_theMainDiagram>
+				<_modifiedTime type="a">6.9.2023::12:0:10</_modifiedTime>
+				<weakCGTime type="a">6.9.2023::12:0:10</weakCGTime>
+				<strongCGTime type="a">6.9.2023::12:0:2</strongCGTime>
+				<_itsStateChart type="r">
+					<IHandle type="e">
+					</IHandle>
+				</_itsStateChart>
+				<_classModifier type="a">Unspecified</_classModifier>
+				<AggregatesList type="e">
+					<value>GUID b895d1ca-a124-4e54-9d6c-51f7e39c6d9a</value>
+				</AggregatesList>
+			</IClass>
+			<IAssociationEnd type="e">
+				<_id type="a">GUID b895d1ca-a124-4e54-9d6c-51f7e39c6d9a</_id>
+				<_myState type="a">10240</_myState>
+				<_name type="a">itsCms</_name>
+				<_modifiedTimeWeak type="a">6.9.2023::12:0:10</_modifiedTimeWeak>
+				<_modifiedTime type="a">6.9.2023::12:0:10</_modifiedTime>
+				<_multiplicity type="a">1</_multiplicity>
+				<_otherClass type="r">
+					<IClassifierHandle type="e">
+						<_hm2Class type="a">IClass</_hm2Class>
+						<_hid type="a">GUID 9f2ff663-3006-45e0-a73f-2edfda5d11bf</_hid>
+					</IClassifierHandle>
+				</_otherClass>
+				<_inverse type="r">
+					<IHandle type="e">
+						<_hm2Class type="a">IAssociationEnd</_hm2Class>
+						<_hid type="a">GUID 1c9fcc12-fa62-40a8-8407-ab86ec452fdc</_hid>
+					</IHandle>
+				</_inverse>
+				<_linkType type="a">Assoc</_linkType>
+				<_navigability type="a">Navigable</_navigability>
+			</IAssociationEnd>
+			</_implicitClass>
+		</IPart>
 		<IClass type="e">
 			<_id type="a">GUID 08a252a0-c4df-4165-b0bf-32398106851f</_id>
 			<_myState type="a">8192</_myState>
@@ -576,7 +641,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.9.2023::11:44:7</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.9.2023::12:0:10</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -584,9 +649,9 @@
 					<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.9.2023::11:44:7</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::12:0:10</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">6.9.2023::11:44:7</weakCGTime>
+			<weakCGTime type="a">6.9.2023::12:0:10</weakCGTime>
 			<strongCGTime type="a">6.7.2023::22:55:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -599,6 +664,7 @@
 				<value>GUID 945f65b1-bbf6-4cd3-a61c-3f67b2ebb4ef</value>
 				<value>GUID 5f613629-a629-4c8f-af38-8af729eb170e</value>
 				<value>GUID bfd0a9c1-c7d8-4957-a0ae-09ba584b90a7</value>
+				<value>GUID 1c9fcc12-fa62-40a8-8407-ab86ec452fdc</value>
 			</AggregatesList>
 		</IClass>
 		<ISysMLPort type="e">
@@ -727,6 +793,28 @@
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 1c9fcc12-fa62-40a8-8407-ab86ec452fdc</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsServer</_name>
+			<_modifiedTimeWeak type="a">6.9.2023::12:0:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::12:0:10</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID bf797ec3-00a6-44db-83fe-56fca1f1339a</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID b895d1ca-a124-4e54-9d6c-51f7e39c6d9a</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
 		<IClass type="e">
@@ -2273,6 +2361,40 @@
 			<_modifiedTime type="a">6.9.2023::11:49:55</_modifiedTime>
 			<weakCGTime type="a">6.9.2023::11:49:55</weakCGTime>
 			<strongCGTime type="a">6.9.2023::11:49:55</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 8b4b99a7-79cf-437a-bdad-4fb8e4dc3731</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">AppData</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::PortsAndFlows</_hsubsystem>
+							<_hname type="a">flowSpecification</_hname>
+							<_hid type="a">GUID cdc1fd16-34a1-4daf-825b-770aa157c4df</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.9.2023::11:54:9</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hname type="a">systemcontext</_hname>
+					<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.9.2023::11:54:9</_modifiedTime>
+			<weakCGTime type="a">6.9.2023::11:54:9</weakCGTime>
+			<strongCGTime type="a">6.9.2023::11:54:9</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
