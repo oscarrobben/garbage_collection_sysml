@@ -12,18 +12,20 @@
 			<_id type="a">GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::21:11:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:8:18</_modifiedTime>
-			<weakCGTime type="a">6.8.2023::21:11:25</weakCGTime>
+			<_modifiedTimeWeak type="a">6.9.2023::7:9:25</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::7:9:25</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">6.9.2023::7:9:25</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:6:20</strongCGTime>
 			<_defaultComposite type="s">GUID 99fe68ee-02e7-4ea5-b333-a6b67f3de4e4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 99fe68ee-02e7-4ea5-b333-a6b67f3de4e4</value>
 				<value>GUID 03ed12da-f894-4448-8ed6-603a1f398cb8</value>
 				<value>GUID 5f0df579-5e61-4123-9d7a-a8d781519975</value>
 				<value>GUID d344e527-8139-4016-8363-5a98cb168672</value>
+				<value>GUID 1dab6170-ce29-416a-a406-f088f7e4e79d</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IClass type="e">
@@ -31,7 +33,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -119,11 +121,11 @@
 		<IActor type="e">
 			<_id type="a">GUID 5f0df579-5e61-4123-9d7a-a8d781519975</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">ResidentUser</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::21:13:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:13:9</_modifiedTime>
-			<weakCGTime type="a">6.8.2023::21:13:9</weakCGTime>
-			<strongCGTime type="a">6.8.2023::21:8:18</strongCGTime>
+			<_name type="a">Resident_Citizen_User</_name>
+			<_modifiedTimeWeak type="a">6.9.2023::7:9:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::7:9:21</_modifiedTime>
+			<weakCGTime type="a">6.9.2023::7:9:21</weakCGTime>
+			<strongCGTime type="a">6.9.2023::7:9:21</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -139,7 +141,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsReceive Collection Schedule</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:12:58</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:21</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -156,7 +158,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Receive Collection Schedule</_hclass>
-					<_hname type="a">itsResidentUser</_hname>
+					<_hname type="a">itsResident_Citizen_User</_hname>
 					<_hid type="a">GUID 176f890c-3ef9-4680-9adc-b155f25a819b</_hid>
 				</IHandle>
 			</_inverse>
@@ -168,7 +170,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsReport Issues</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:13:9</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:21</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -185,7 +187,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Report Issues</_hclass>
-					<_hname type="a">itsResidentUser</_hname>
+					<_hname type="a">itsResident_Citizen_User</_hname>
 					<_hid type="a">GUID d0da7c61-6612-4359-9700-e9c953e13b8e</_hid>
 				</IHandle>
 			</_inverse>
@@ -195,11 +197,11 @@
 		<IActor type="e">
 			<_id type="a">GUID d344e527-8139-4016-8363-5a98cb168672</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">WasteManagementAuthority</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::21:13:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:13:51</_modifiedTime>
-			<weakCGTime type="a">6.8.2023::21:13:51</weakCGTime>
-			<strongCGTime type="a">6.8.2023::21:8:18</strongCGTime>
+			<_name type="a">Waste_Processing_Company</_name>
+			<_modifiedTimeWeak type="a">6.9.2023::7:9:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.9.2023::7:9:8</_modifiedTime>
+			<weakCGTime type="a">6.9.2023::7:9:8</weakCGTime>
+			<strongCGTime type="a">6.9.2023::7:9:8</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -218,7 +220,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsMonitor Bin Status</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:11:28</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:8</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -235,7 +237,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Monitor Bin Status</_hclass>
-					<_hname type="a">itsWasteManagementAuthority</_hname>
+					<_hname type="a">itsWaste_Processing_Company</_hname>
 					<_hid type="a">GUID 9f64f55b-72b2-452f-8d21-4c9adea139dd</_hid>
 				</IHandle>
 			</_inverse>
@@ -247,7 +249,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsRoute Optimization</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:12:43</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:8</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -264,7 +266,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Route Optimization</_hclass>
-					<_hname type="a">itsWasteManagementAuthority</_hname>
+					<_hname type="a">itsWaste_Processing_Company</_hname>
 					<_hid type="a">GUID ea0af9a0-7ddb-4880-b8a6-91e7e9a1e47b</_hid>
 				</IHandle>
 			</_inverse>
@@ -276,7 +278,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsReport Issues</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:13:13</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:8</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -293,7 +295,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Report Issues</_hclass>
-					<_hname type="a">itsWasteManagementAuthority</_hname>
+					<_hname type="a">itsWaste_Processing_Company</_hname>
 					<_hid type="a">GUID e4379745-311f-4ffa-85af-79d341c408dc</_hid>
 				</IHandle>
 			</_inverse>
@@ -305,7 +307,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsTrack Collection Progress</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:13:22</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:8</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -322,7 +324,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Track Collection Progress</_hclass>
-					<_hname type="a">itsWasteManagementAuthority</_hname>
+					<_hname type="a">itsWaste_Processing_Company</_hname>
 					<_hid type="a">GUID 3d05ff0e-b1c4-4260-ae2d-24f69a3c6ffc</_hid>
 				</IHandle>
 			</_inverse>
@@ -334,7 +336,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsGenerate Reports</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::21:13:51</_modifiedTime>
+			<_modifiedTime type="a">6.9.2023::7:9:8</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -351,13 +353,36 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Generate Reports</_hclass>
-					<_hname type="a">itsWasteManagementAuthority</_hname>
+					<_hname type="a">itsWaste_Processing_Company</_hname>
 					<_hid type="a">GUID 11004203-8e17-4196-a640-6f7ad14cebc6</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IActor type="e">
+			<_id type="a">GUID 1dab6170-ce29-416a-a406-f088f7e4e79d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Municipality</_name>
+			<_modifiedTimeWeak type="a">6.9.2023::7:9:42</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Primary Uses</_hname>
+					<_hid type="a">GUID d5af29b2-0bde-4f1a-a789-747899d7e445</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.9.2023::7:9:42</_modifiedTime>
+			<weakCGTime type="a">6.9.2023::7:9:42</weakCGTime>
+			<strongCGTime type="a">6.9.2023::7:9:32</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IActor>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">
