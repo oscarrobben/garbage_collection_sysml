@@ -12,10 +12,10 @@
 			<_id type="a">GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:59:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2023::12:59:9</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.16.2023::15:21:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:16:27</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">6.15.2023::12:59:9</weakCGTime>
+			<weakCGTime type="a">6.16.2023::15:21:1</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:6:20</strongCGTime>
 			<_defaultComposite type="s">GUID 99fe68ee-02e7-4ea5-b333-a6b67f3de4e4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -46,7 +46,7 @@
 			<_id type="a">GUID 03ed12da-f894-4448-8ed6-603a1f398cb8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Garbage_Truck_Driver</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:58:45</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.16.2023::15:16:36</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -54,8 +54,8 @@
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.15.2023::12:58:45</_modifiedTime>
-			<weakCGTime type="a">6.15.2023::12:58:45</weakCGTime>
+			<_modifiedTime type="a">6.16.2023::15:16:36</_modifiedTime>
+			<weakCGTime type="a">6.16.2023::15:16:36</weakCGTime>
 			<strongCGTime type="a">6.9.2023::7:12:4</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -130,16 +130,16 @@
 			<_id type="a">GUID 5266523e-f509-497b-a498-7c29077e0d8b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">services</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:58:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2023::12:58:45</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.16.2023::15:16:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:16:36</_modifiedTime>
 			<_multiplicity type="a">0..*</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">smart_garbage_collection_system</_hname>
-					<_hid type="a">GUID 3faf8ba3-4dcf-4dcf-8bc8-f304c95dcdb2</_hid>
+					<_hname type="a">truck</_hname>
+					<_hid type="a">GUID c53c4d5e-665c-4124-942d-a90b7150a1c2</_hid>
 				</IClassifierHandle>
 			</_otherClass>
 			<_inverse type="r">
@@ -147,7 +147,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">smart_garbage_collection_system</_hclass>
+					<_hclass type="a">truck</_hclass>
 					<_hname type="a">is_serviced_by</_hname>
 					<_hid type="a">GUID 6cb8731a-4514-4d7a-905d-6db733b986ec</_hid>
 				</IHandle>
@@ -159,7 +159,7 @@
 			<_id type="a">GUID 5f0df579-5e61-4123-9d7a-a8d781519975</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Resident_Citizen_User</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:54:46</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.16.2023::15:18:39</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -167,8 +167,8 @@
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.15.2023::12:54:46</_modifiedTime>
-			<weakCGTime type="a">6.15.2023::12:54:46</weakCGTime>
+			<_modifiedTime type="a">6.16.2023::15:18:39</_modifiedTime>
+			<weakCGTime type="a">6.16.2023::15:18:39</weakCGTime>
 			<strongCGTime type="a">6.9.2023::7:9:21</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -179,6 +179,7 @@
 				<value>GUID bf5f83b0-7c9e-4ea1-890e-1d87e4d4d0cd</value>
 				<value>GUID 535f0d5f-9412-4f7a-9996-7a0a4cca5b52</value>
 				<value>GUID feb00524-1f26-41e4-ac0a-513539b1af2b</value>
+				<value>GUID 98d82c48-5917-49af-bd43-9bace3e10432</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -243,16 +244,16 @@
 			<_id type="a">GUID feb00524-1f26-41e4-ac0a-513539b1af2b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">uses</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:54:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2023::12:54:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.16.2023::15:18:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:16:48</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">smart_garbage_collection_system</_hname>
-					<_hid type="a">GUID 3faf8ba3-4dcf-4dcf-8bc8-f304c95dcdb2</_hid>
+					<_hname type="a">App</_hname>
+					<_hid type="a">GUID 62cf02d0-eb42-4513-a281-59df755011f5</_hid>
 				</IClassifierHandle>
 			</_otherClass>
 			<_inverse type="r">
@@ -260,9 +261,38 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">smart_garbage_collection_system</_hclass>
+					<_hclass type="a">App</_hclass>
 					<_hname type="a">provides</_hname>
 					<_hid type="a">GUID d3eaeceb-0fbf-4034-b000-7ca0aa6529c4</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 98d82c48-5917-49af-bd43-9bace3e10432</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsSmartbin</_name>
+			<_modifiedTimeWeak type="a">6.16.2023::15:18:39</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:18:39</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">smartbin</_hname>
+					<_hid type="a">GUID 1cedd5c8-0a62-4630-acf6-48471124ee6e</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">itsResident_Citizen_User</_hname>
+					<_hid type="a">GUID c0fe1eff-6980-4c54-beee-edafce89878e</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -272,7 +302,7 @@
 			<_id type="a">GUID d344e527-8139-4016-8363-5a98cb168672</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Waste_Processing_Company</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:59:9</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.16.2023::15:21:1</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -280,8 +310,8 @@
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.15.2023::12:59:9</_modifiedTime>
-			<weakCGTime type="a">6.15.2023::12:59:9</weakCGTime>
+			<_modifiedTime type="a">6.16.2023::15:21:1</_modifiedTime>
+			<weakCGTime type="a">6.16.2023::15:21:1</weakCGTime>
 			<strongCGTime type="a">6.9.2023::7:9:8</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -296,6 +326,7 @@
 				<value>GUID 9dafb9e9-8db9-42ad-974b-7395f1136fa2</value>
 				<value>GUID d21371ae-d2e0-49e7-b24b-887c0720d9bf</value>
 				<value>GUID f6775818-38d1-4640-95d8-78165cc4f1af</value>
+				<value>GUID b36bccf2-6bd8-45b5-878c-4b5305e27ac9</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -482,11 +513,40 @@
 				</IHandle>
 			</_inverse>
 		</IPart>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID b36bccf2-6bd8-45b5-878c-4b5305e27ac9</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsWastecenter</_name>
+			<_modifiedTimeWeak type="a">6.16.2023::15:21:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:21:1</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">wastecenter</_hname>
+					<_hid type="a">GUID 2b0cd79c-5563-43b3-b98c-05486a8eae32</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">wastecenter</_hclass>
+					<_hname type="a">itsWaste_Processing_Company</_hname>
+					<_hid type="a">GUID 9957bd3c-6b8c-46f7-b655-b3366f5b9fb9</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 1dab6170-ce29-416a-a406-f088f7e4e79d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Municipality</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:56:2</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.16.2023::15:20:10</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -496,8 +556,8 @@
 					<_hid type="a">GUID d5af29b2-0bde-4f1a-a789-747899d7e445</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.15.2023::12:56:2</_modifiedTime>
-			<weakCGTime type="a">6.15.2023::12:56:2</weakCGTime>
+			<_modifiedTime type="a">6.16.2023::15:20:10</_modifiedTime>
+			<weakCGTime type="a">6.16.2023::15:20:10</weakCGTime>
 			<strongCGTime type="a">6.9.2023::7:9:32</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -507,14 +567,15 @@
 			<AggregatesList type="e">
 				<value>GUID 883dc680-1a01-40cf-8833-f9d4b66fd54b</value>
 				<value>GUID 22384868-f779-461c-9b39-2cb03078ad68</value>
+				<value>GUID 2f75d065-88c0-468f-8ed5-f021d4b46bb6</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 883dc680-1a01-40cf-8833-f9d4b66fd54b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">uses</_name>
-			<_modifiedTimeWeak type="a">6.15.2023::12:53:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2023::12:53:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.16.2023::15:17:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:17:12</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -562,6 +623,35 @@
 					<_hclass type="a">road_network</_hclass>
 					<_hname type="a">is_owned_by</_hname>
 					<_hid type="a">GUID bbe91626-a422-4d95-b9ec-6a353064ca5a</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 2f75d065-88c0-468f-8ed5-f021d4b46bb6</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsWastecenter</_name>
+			<_modifiedTimeWeak type="a">6.16.2023::15:20:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:20:10</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">wastecenter</_hname>
+					<_hid type="a">GUID 2b0cd79c-5563-43b3-b98c-05486a8eae32</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">wastecenter</_hclass>
+					<_hname type="a">itsMunicipality</_hname>
+					<_hid type="a">GUID 10665225-19f1-42df-a760-97016c5341c8</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
