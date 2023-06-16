@@ -20,6 +20,38 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">78</m_nLeft>
+								<m_nTop type="a">78</m_nTop>
+								<m_nRight type="a">1258</m_nRight>
+								<m_nBottom type="a">611</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IDiagram</_hm2Class>
+								<_hfilename type="a">.\garbage_collection_rpy\truckREQ.sbsx</_hfilename>
+								<_hsubsystem type="a">RequirementsAnalysis::truckREQ</_hsubsystem>
+								<_hname type="a">truckREQDiagram</_hname>
+								<_hid type="a">GUID db1d5fed-e6d1-42f4-a3f4-f6c09b211890</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1143 473 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
 								<m_nFlags type="a">2</m_nFlags>
 								<m_showCmd type="a">3</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
@@ -36,13 +68,43 @@
 						<_theDiagram type="r">
 							<IHandle type="e">
 								<_hm2Class type="a">IDiagram</_hm2Class>
-								<_hname type="a">systemcontext</_hname>
+								<_hname type="a">systemarchitecture</_hname>
 								<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">-76 0 </_UpLeft>
-						<_DownRight type="a">1816 918 </_DownRight>
+						<_DownRight type="a">1631 943 </_DownRight>
 						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">2</m_nFlags>
+								<m_showCmd type="a">3</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">52</m_nLeft>
+								<m_nTop type="a">52</m_nTop>
+								<m_nRight type="a">1258</m_nRight>
+								<m_nBottom type="a">528</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IDiagram</_hm2Class>
+								<_hname type="a">systemarchitecture</_hname>
+								<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">12 180 </_UpLeft>
+						<_DownRight type="a">1062 760 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -69,16 +131,6 @@
 				<idOrFolder type="a">folder</idOrFolder>
 			</favoritesItem>
 			
-
-	- tableMatrixRowAdditionHight = {
-		count=1;
-		{ - TableMatrixView
-			id=1c47f883-e591-4831-8d1a-6a5000a39b5c;
-			rowAdditionalHight=;;
-			rowAdditionalHightExt=;
-		}
-	}
-
 		</CGEMdiWorkspace>
 		
 	</RHAPSODY-MODEL>

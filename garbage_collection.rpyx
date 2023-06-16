@@ -24,8 +24,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.15.2023::21:35:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2023::21:35:43</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.16.2023::15:11:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.16.2023::15:11:23</_modifiedTime>
 			<_lastID type="a">11</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
@@ -924,7 +924,7 @@
 				</Subjects>
 			</IPropertyContainer>
 			</_properties>
-			<_name type="a">systemcontext</_name>
+			<_name type="a">systemarchitecture</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -938,8 +938,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.15.2023::21:36:13</_modifiedTime>
-			<_lastModifiedTime type="a">6.15.2023::21:36:13</_lastModifiedTime>
+			<_modifiedTime type="a">6.16.2023::15:11:23</_modifiedTime>
+			<_lastModifiedTime type="a">6.16.2023::15:11:23</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -961,7 +961,7 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">systemcontext</_hname>
+					<_hname type="a">systemarchitecture</_hname>
 					<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -8215,6 +8215,7 @@
 			<m_pParent type="s">GUID d7628ed3-909f-41be-b478-54fbd254daaf</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
+					<m_str type="a">comment_57</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
