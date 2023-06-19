@@ -12,21 +12,18 @@
 			<_id type="a">GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">6.18.2023::17:22:37</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:5:50</_modifiedTime>
-			<_lastID type="a">19</_lastID>
-			<weakCGTime type="a">6.18.2023::17:22:37</weakCGTime>
+			<_modifiedTimeWeak type="a">6.19.2023::15:13:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.19.2023::15:14:19</_modifiedTime>
+			<_lastID type="a">20</_lastID>
+			<weakCGTime type="a">6.19.2023::15:13:52</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:4:49</strongCGTime>
 			<_defaultComposite type="s">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<Actors type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Actors>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID d5af29b2-0bde-4f1a-a789-747899d7e445</value>
 				<value>GUID 51b6fb8f-eb6e-444e-91df-d1cf3f92e6f1</value>
+				<value>GUID b1e5ae2b-9744-4645-ba65-0f99fde9954c</value>
 				<value>GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</value>
 				<value>GUID 640323dd-bd23-495f-85f0-4bc4ba52227b</value>
 				<value>GUID 4cc51ae0-b85a-4105-86d6-b186a957a417</value>
@@ -4986,6 +4983,10 @@
 			</m_targetQualifier>
 			<m_specificType type="a">symmetric_type</m_specificType>
 		</CGIAssociationEnd>
+		<ISubsystem type="e">
+			<fileName type="a">monitorbinstatuspkg</fileName>
+			<_id type="a">GUID b1e5ae2b-9744-4645-ba65-0f99fde9954c</_id>
+		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_id>
 			<_myState type="a">40960</_myState>
@@ -5802,10 +5803,6 @@ When the smart bin is full, it must be emptied.\par%0D
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
