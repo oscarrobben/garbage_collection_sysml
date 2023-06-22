@@ -12,14 +12,14 @@
 			<_id type="a">GUID c6f6dea2-d177-41e6-bfbb-dce7724ac154</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">binREQ</_name>
-			<_modifiedTimeWeak type="a">6.7.2023::21:52:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2023::21:52:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.22.2023::21:35:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.22.2023::21:35:23</_modifiedTime>
 			<_lastID type="a">22</_lastID>
-			<weakCGTime type="a">6.7.2023::21:52:35</weakCGTime>
+			<weakCGTime type="a">6.22.2023::21:35:23</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:44:15</strongCGTime>
 			<_defaultComposite type="s">GUID 40914bb4-7449-4ddb-8acf-d53bb329ce5f</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 6021b12a-cfc3-4fde-93b4-a9ed70aae2bb</value>
 				<value>GUID ee77a6d9-3138-477f-8a23-ff8b79f2f60b</value>
@@ -110,14 +110,53 @@
 			<_id type="a">GUID 290bb111-7445-44de-8ed1-17de722e573d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">1.2.1</_name>
-			<_modifiedTimeWeak type="a">6.7.2023::21:47:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2023::21:47:38</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.22.2023::21:35:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.22.2023::21:35:23</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The trashcan shall connect to a central server\par%0D
 }%0D
 </_body>
 			<reqID type="a">1.2.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID dfa349a0-8d89-4b3b-8db4-1d5892940185</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID dfa349a0-8d89-4b3b-8db4-1d5892940185</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">server</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.22.2023::21:35:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.22.2023::21:35:23</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IPart</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">TopLevel</_hclass>
+					<_hname type="a">server</_hname>
+					<_hid type="a">GUID 60d9f8b1-e9c2-4dcf-8220-1ad3a406fd65</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 290bb111-7445-44de-8ed1-17de722e573d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 6dd25b4a-7567-48ed-8d14-9f6945c937b1</_id>
 			<_myState type="a">8192</_myState>
@@ -315,7 +354,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
