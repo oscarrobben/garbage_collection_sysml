@@ -12,10 +12,10 @@
 			<_id type="a">GUID 587171fc-41a0-45df-8668-499a1b37170d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">6.22.2023::21:44:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.22.2023::21:44:57</_modifiedTime>
-			<_lastID type="a">67</_lastID>
-			<weakCGTime type="a">6.22.2023::21:44:57</weakCGTime>
+			<_modifiedTimeWeak type="a">6.22.2023::21:58:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.22.2023::21:58:9</_modifiedTime>
+			<_lastID type="a">68</_lastID>
+			<weakCGTime type="a">6.22.2023::21:58:9</weakCGTime>
 			<strongCGTime type="a">6.16.2023::15:32:45</strongCGTime>
 			<_defaultComposite type="s">GUID 14426929-d967-438c-bd11-c7a14c809a51</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -28,6 +28,7 @@
 				<value>GUID a55e864f-afdc-47f2-b18c-c0e165ac9885</value>
 				<value>GUID 15e907d8-58b1-43b6-9038-9a98963059b5</value>
 				<value>GUID 0a2c3c2a-0104-4eea-b73e-f34ddf1b4a39</value>
+				<value>GUID bd9556ab-a8fa-4a59-8c45-0e941cf76a1b</value>
 				<value>GUID 14426929-d967-438c-bd11-c7a14c809a51</value>
 				<value>GUID 08a252a0-c4df-4165-b0bf-32398106851f</value>
 				<value>GUID c53c4d5e-665c-4124-942d-a90b7150a1c2</value>
@@ -137,6 +138,17 @@
 			</IDescription>
 			</_description>
 			<_modifiedTime type="a">6.22.2023::21:44:57</_modifiedTime>
+		</IComment>
+		<IComment type="e">
+			<_id type="a">GUID bd9556ab-a8fa-4a59-8c45-0e941cf76a1b</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">comment_67</_name>
+			<_modifiedTimeWeak type="a">6.22.2023::21:58:9</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_text type="a">change to 'regular associations'? not part relations</_text>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">6.22.2023::21:58:9</_modifiedTime>
 		</IComment>
 		<IClass type="e">
 			<_id type="a">GUID 14426929-d967-438c-bd11-c7a14c809a51</_id>
