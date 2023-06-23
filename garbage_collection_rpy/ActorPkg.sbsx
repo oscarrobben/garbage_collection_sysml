@@ -12,10 +12,10 @@
 			<_id type="a">GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">6.18.2023::17:3:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:3:41</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.23.2023::7:16:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.23.2023::7:26:1</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">6.18.2023::17:3:41</weakCGTime>
+			<weakCGTime type="a">6.23.2023::7:16:54</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:6:20</strongCGTime>
 			<_defaultComposite type="s">GUID 99fe68ee-02e7-4ea5-b333-a6b67f3de4e4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -47,7 +47,7 @@
 			<_id type="a">GUID 03ed12da-f894-4448-8ed6-603a1f398cb8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Garbage_Truck_Driver</_name>
-			<_modifiedTimeWeak type="a">6.18.2023::17:8:2</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.23.2023::7:16:54</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -55,8 +55,8 @@
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.18.2023::17:8:2</_modifiedTime>
-			<weakCGTime type="a">6.18.2023::17:8:2</weakCGTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
+			<weakCGTime type="a">6.23.2023::7:16:54</weakCGTime>
 			<strongCGTime type="a">6.9.2023::7:12:4</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -160,16 +160,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID c28ac0c0-dffa-4d06-8f0e-62c0fe6f42f0</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsEmpty Bin</_name>
+			<_name type="a">itsEmpty Bins</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:8:2</_modifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Empty Bin</_hname>
+					<_hname type="a">Empty Bins</_hname>
 					<_hid type="a">GUID 9e62834f-abd8-4b68-9e05-fb257096191e</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -178,7 +178,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Empty Bin</_hclass>
+					<_hclass type="a">Empty Bins</_hclass>
 					<_hname type="a">itsGarbage_Truck_Driver</_hname>
 					<_hid type="a">GUID 5df7be40-cdec-4868-8f04-c7448aa4dcb1</_hid>
 				</IHandle>
@@ -782,7 +782,7 @@
 			<_id type="a">GUID 75001f2d-12f6-46d7-9e06-8bc76bc45e7c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Smart_Bins</_name>
-			<_modifiedTimeWeak type="a">6.18.2023::17:6:19</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.23.2023::7:16:54</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -792,8 +792,8 @@
 					<_hid type="a">GUID d5af29b2-0bde-4f1a-a789-747899d7e445</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.18.2023::17:6:19</_modifiedTime>
-			<weakCGTime type="a">6.18.2023::17:6:19</weakCGTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
+			<weakCGTime type="a">6.23.2023::7:16:54</weakCGTime>
 			<strongCGTime type="a">6.18.2023::17:3:41</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -867,16 +867,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 13122720-a4a3-4569-a716-f6ef91ca884c</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsEmpty Bin</_name>
+			<_name type="a">itsEmpty Bins</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:6:28</_modifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Empty Bin</_hname>
+					<_hname type="a">Empty Bins</_hname>
 					<_hid type="a">GUID 9e62834f-abd8-4b68-9e05-fb257096191e</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -885,7 +885,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Empty Bin</_hclass>
+					<_hclass type="a">Empty Bins</_hclass>
 					<_hname type="a">itsSmart_Bins</_hname>
 					<_hid type="a">GUID 2d9eb349-b243-4da0-935f-ca90c5791829</_hid>
 				</IHandle>

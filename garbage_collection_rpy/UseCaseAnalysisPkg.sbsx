@@ -12,10 +12,10 @@
 			<_id type="a">GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">6.19.2023::15:13:52</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.19.2023::15:14:19</_modifiedTime>
-			<_lastID type="a">20</_lastID>
-			<weakCGTime type="a">6.19.2023::15:13:52</weakCGTime>
+			<_modifiedTimeWeak type="a">6.23.2023::7:16:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.23.2023::7:26:1</_modifiedTime>
+			<_lastID type="a">21</_lastID>
+			<weakCGTime type="a">6.23.2023::7:16:54</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:4:49</strongCGTime>
 			<_defaultComposite type="s">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -24,6 +24,7 @@
 				<value>GUID d5af29b2-0bde-4f1a-a789-747899d7e445</value>
 				<value>GUID 51b6fb8f-eb6e-444e-91df-d1cf3f92e6f1</value>
 				<value>GUID b1e5ae2b-9744-4645-ba65-0f99fde9954c</value>
+				<value>GUID 1c61b4a0-28d2-4d04-a9eb-abb7b0101800</value>
 				<value>GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</value>
 				<value>GUID 640323dd-bd23-495f-85f0-4bc4ba52227b</value>
 				<value>GUID 4cc51ae0-b85a-4105-86d6-b186a957a417</value>
@@ -292,8 +293,8 @@
 			</_properties>
 			<_name type="a">Primary Uses</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:8:2</_modifiedTime>
-			<_lastModifiedTime type="a">6.18.2023::17:8:2</_lastModifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
+			<_lastModifiedTime type="a">6.23.2023::7:16:54</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3373,7 +3374,7 @@
 			<m_pParent type="s">GUID 42dd276c-71a3-41d5-94a6-8cd8d16d23de</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Empty Bin</m_str>
+					<m_str type="a">Empty Bins</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3420,7 +3421,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
 					<_hclass type="a">Smart_Bins</_hclass>
-					<_hname type="a">itsEmpty Bin</_hname>
+					<_hname type="a">itsEmpty Bins</_hname>
 					<_hid type="a">GUID 13122720-a4a3-4569-a716-f6ef91ca884c</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -3597,7 +3598,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
 					<_hclass type="a">Garbage_Truck_Driver</_hclass>
-					<_hname type="a">itsEmpty Bin</_hname>
+					<_hname type="a">itsEmpty Bins</_hname>
 					<_hid type="a">GUID c28ac0c0-dffa-4d06-8f0e-62c0fe6f42f0</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -4021,8 +4022,8 @@
 			</_properties>
 			<_name type="a">Smart Bin Case</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:6:28</_modifiedTime>
-			<_lastModifiedTime type="a">6.18.2023::17:6:28</_lastModifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
+			<_lastModifiedTime type="a">6.23.2023::7:16:54</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4770,7 +4771,7 @@
 			<m_pParent type="s">GUID 12a7657f-7251-4a1d-9e10-0d29496afbf4</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Empty Bin</m_str>
+					<m_str type="a">Empty Bins</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4817,7 +4818,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
 					<_hclass type="a">Smart_Bins</_hclass>
-					<_hname type="a">itsEmpty Bin</_hname>
+					<_hname type="a">itsEmpty Bins</_hname>
 					<_hid type="a">GUID 13122720-a4a3-4569-a716-f6ef91ca884c</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -4986,6 +4987,10 @@
 		<ISubsystem type="e">
 			<fileName type="a">monitorbinstatuspkg</fileName>
 			<_id type="a">GUID b1e5ae2b-9744-4645-ba65-0f99fde9954c</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">EmptyBinPkg</fileName>
+			<_id type="a">GUID 1c61b4a0-28d2-4d04-a9eb-abb7b0101800</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_id>
@@ -5760,7 +5765,7 @@ the generated reports.\par%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 9e62834f-abd8-4b68-9e05-fb257096191e</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Empty Bin</_name>
+			<_name type="a">Empty Bins</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -5795,7 +5800,7 @@ When the smart bin is full, it must be emptied.\par%0D
 </_textRTF>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">6.18.2023::17:22:37</_modifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -5817,7 +5822,7 @@ When the smart bin is full, it must be emptied.\par%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsSmart_Bins</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:6:28</_modifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -5834,7 +5839,7 @@ When the smart bin is full, it must be emptied.\par%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
 					<_hclass type="a">Smart_Bins</_hclass>
-					<_hname type="a">itsEmpty Bin</_hname>
+					<_hname type="a">itsEmpty Bins</_hname>
 					<_hid type="a">GUID 13122720-a4a3-4569-a716-f6ef91ca884c</_hid>
 				</IHandle>
 			</_inverse>
@@ -5846,7 +5851,7 @@ When the smart bin is full, it must be emptied.\par%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsGarbage_Truck_Driver</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.18.2023::17:8:2</_modifiedTime>
+			<_modifiedTime type="a">6.23.2023::7:16:54</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -5863,7 +5868,7 @@ When the smart bin is full, it must be emptied.\par%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
 					<_hclass type="a">Garbage_Truck_Driver</_hclass>
-					<_hname type="a">itsEmpty Bin</_hname>
+					<_hname type="a">itsEmpty Bins</_hname>
 					<_hid type="a">GUID c28ac0c0-dffa-4d06-8f0e-62c0fe6f42f0</_hid>
 				</IHandle>
 			</_inverse>
