@@ -12,10 +12,10 @@
 			<_id type="a">GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">6.26.2023::20:0:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.26.2023::20:0:28</_modifiedTime>
-			<_lastID type="a">24</_lastID>
-			<weakCGTime type="a">6.26.2023::20:0:28</weakCGTime>
+			<_modifiedTimeWeak type="a">6.26.2023::20:21:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.26.2023::20:21:3</_modifiedTime>
+			<_lastID type="a">25</_lastID>
+			<weakCGTime type="a">6.26.2023::20:21:3</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:4:49</strongCGTime>
 			<_defaultComposite type="s">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -27,6 +27,7 @@
 				<value>GUID 1c61b4a0-28d2-4d04-a9eb-abb7b0101800</value>
 				<value>GUID bed28075-256b-45c7-83a5-ef93e80e13b6</value>
 				<value>GUID a1ac7b0d-42a0-40ad-b125-5fc7bedcade6</value>
+				<value>GUID 40e8da75-9c7d-456e-8de5-fede1955394e</value>
 				<value>GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</value>
 				<value>GUID 640323dd-bd23-495f-85f0-4bc4ba52227b</value>
 				<value>GUID 4cc51ae0-b85a-4105-86d6-b186a957a417</value>
@@ -5001,6 +5002,10 @@
 		<ISubsystem type="e">
 			<fileName type="a">GenerateReportsPkg</fileName>
 			<_id type="a">GUID a1ac7b0d-42a0-40ad-b125-5fc7bedcade6</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">TrackCollectionProgressPkg</fileName>
+			<_id type="a">GUID 40e8da75-9c7d-456e-8de5-fede1955394e</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_id>
