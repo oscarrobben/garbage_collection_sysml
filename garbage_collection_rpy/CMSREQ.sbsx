@@ -12,10 +12,10 @@
 			<_id type="a">GUID 187fc657-8a54-4000-b22e-e0ce4b3466d4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CMSREQ</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::13:53:3</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::15:6:53</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:27:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:27:5</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">6.8.2023::13:53:3</weakCGTime>
+			<weakCGTime type="a">6.28.2023::11:27:5</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:44:20</strongCGTime>
 			<_defaultComposite type="s">GUID 97d5cd65-fad0-4bb0-b649-50ddf6526294</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -30,8 +30,8 @@
 			<_id type="a">GUID fe0bfa17-176b-4f36-8c2f-6a45c23d041e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CMS Requirement</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::13:53:3</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::13:53:3</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:27:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:27:5</_modifiedTime>
 			<_lastID type="a">11</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 All SMART decisions shall happen in a Central Management System (CMS), where the data is collected, stored, proceeded and turned back to the system with real-time monitoring, guidance (users) and optimized collection routes.\par%0D
@@ -68,10 +68,10 @@
 			<_id type="a">GUID 293e1601-d7fe-4e21-8a55-24f373e5b639</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Real-Time Data Monitoring</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::13:48:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::13:48:31</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:27:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:27:5</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The CMS shall monitor real-time fill levels, status, location of bins, trucks and other actuators.\par%0D
+\viewkind4\uc1\pard\fs20 The CMS shall monitor fill levels, status, location of bins, trucks and other actuators.\par%0D
 }%0D
 </_body>
 			<reqID type="a">3.02</reqID>
@@ -349,8 +349,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::15:11:5</_modifiedTime>
-			<_lastModifiedTime type="a">6.8.2023::15:11:5</_lastModifiedTime>
+			<_modifiedTime type="a">6.28.2023::11:27:5</_modifiedTime>
+			<_lastModifiedTime type="a">6.28.2023::11:27:5</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>

@@ -12,10 +12,10 @@
 			<_id type="a">GUID ce96a48b-650e-4ba7-996c-426807a5b56e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">appREQ</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::16:58:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::16:58:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:30:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:30:45</_modifiedTime>
 			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">6.8.2023::16:58:2</weakCGTime>
+			<weakCGTime type="a">6.28.2023::11:30:45</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:44:6</strongCGTime>
 			<_defaultComposite type="s">GUID 7c96678d-60f7-4c27-92e2-900a7dde39be</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -29,8 +29,8 @@
 			<_id type="a">GUID e033e639-e0e8-412c-9dcb-0ad213b98bc5</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">App Requirement</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::16:58:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::16:58:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:30:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:30:45</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 A mobile app allows users of the system to see the status of garbage bins and notify the system owners of problems if not detected by the system itself.\par%0D
 \par%0D
@@ -103,10 +103,10 @@
 			<_id type="a">GUID 1a8967e5-c44b-4533-a160-39a792768349</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Show fill level</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::16:57:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::16:57:25</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:30:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:30:45</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The mobile app shall show the fill level of each bin.\par%0D
+\viewkind4\uc1\pard\fs20 The mobile app shall show fill level of each bin.\par%0D
 \par%0D
 }%0D
 </_body>

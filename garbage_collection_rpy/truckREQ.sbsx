@@ -12,10 +12,10 @@
 			<_id type="a">GUID be9fc7b1-cdfb-4f7c-a134-019e64fda3ad</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">truckREQ</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::14:23:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::14:23:30</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:29:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:29:46</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">6.8.2023::14:23:30</weakCGTime>
+			<weakCGTime type="a">6.28.2023::11:29:46</weakCGTime>
 			<strongCGTime type="a">6.7.2023::21:44:36</strongCGTime>
 			<_defaultComposite type="s">GUID eb192417-5c78-49c5-9364-c4cd2309f0cb</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -30,8 +30,8 @@
 			<_id type="a">GUID bc489a0e-e348-4119-b991-4a8c6fc913b2</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Truck Requirement</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::13:43:52</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::13:43:52</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:29:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:29:46</_modifiedTime>
 			<_lastID type="a">11</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The waste shall be collected using special smart waste collection trucks.\par%0D
@@ -92,10 +92,10 @@
 			<_id type="a">GUID a0b935a4-4964-4021-8069-6bf39cb48753</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Communication and Interaction with CMS</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::13:43:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::13:43:22</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.28.2023::11:21:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:21:48</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset128 NimbusRomNo9L-Regu;}{\f1\fnil\fcharset0 MS Shell Dlg;}{\f2\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\f0\fs22 The truck shall communicate/interact with the central management system by\f1  \f0 a reliable connectivity as cellular or wireless network.\f2\fs20\par%0D
+\viewkind4\uc1\pard\f0\fs22 The truck shall communicate/interact with the central management system \lang1033\f1 thorugh a \lang1031\f0 reliable connectivity \lang1033\f1 network such \lang1031\f0 as cellular or wireless \lang1033\f1 ethernet\lang1031\f0 .\f2\fs20\par%0D
 }%0D
 </_body>
 			<reqID type="a">2.04</reqID>
@@ -104,10 +104,11 @@
 			<_id type="a">GUID 2d50fe75-5ecd-4c77-8d6d-d7822037b9e3</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Waste Compactation</_name>
-			<_modifiedTimeWeak type="a">6.8.2023::13:43:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::13:43:25</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset128 NimbusRomNo9L-Regu;}{\f1\fnil\fcharset0 MS Shell Dlg;}{\f2\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\f0\fs22 The truck shall be able to measure the weight and volume of the collected\f1  \f0 waste.\f2\fs20\par%0D
+			<_modifiedTimeWeak type="a">6.28.2023::11:29:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.28.2023::11:29:46</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset128 NimbusRomNo9L-Regu;}{\f1\fnil\fcharset0 MS Shell Dlg;}}%0D
+\viewkind4\uc1\pard\f0\fs22 The truck shall be able to compact its collected waste to maximize its carrying\par%0D
+capacity\lang1033\f1 .\lang1031\f0\par%0D
 }%0D
 </_body>
 			<reqID type="a">2.05</reqID>
@@ -349,8 +350,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.8.2023::14:27:52</_modifiedTime>
-			<_lastModifiedTime type="a">6.8.2023::14:27:52</_lastModifiedTime>
+			<_modifiedTime type="a">6.28.2023::11:29:46</_modifiedTime>
+			<_lastModifiedTime type="a">6.28.2023::11:29:46</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
