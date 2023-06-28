@@ -149,7 +149,7 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</m_SearchScopeList>
-			<bUsingBrowserCustomView type="a">1</bUsingBrowserCustomView>
+			<bUsingBrowserCustomView type="a">0</bUsingBrowserCustomView>
 			<bApplyOnDiagrams type="a">0</bApplyOnDiagrams>
 			<liCustomViewIDs type="c">
 				<IRPYRawContainer type="e">
@@ -162,7 +162,20 @@
 			<favoritesItem type="e">
 				<generation type="a">0</generation>
 				<name type="a">Favorites</name>
-				<idOrFolder type="a">folder</idOrFolder>
+				<idOrFolder type="a">folder-expanded</idOrFolder>
+			</favoritesItem>
+			
+			<favoritesItem type="e">
+				<generation type="a">1</generation>
+				<name type="a">ActivityDiagram</name>
+				<idOrFolder type="a">#startHnd# INObjectHandle 
+	- _m2Class = &quot;IActivityDiagram&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\adria\\Documents\\garbage_collection_sysml\\garbage_collection_rpy\\MonitorBinStatusPkg.sbsx&quot;#hndSem#
+	- _subsystem = &quot;UseCaseAnalysisPkg::MonitorBinStatusPkg&quot;#hndSem#
+	- _class = &quot;TopLevel&quot;#hndSem#
+	- _name = &quot;ActivityDiagram&quot;#hndSem#
+	- _id = GUID 8cc6bfbb-7673-46ba-8e73-bcb4426de75c#hndSem#
+#endHnd#</idOrFolder>
 			</favoritesItem>
 			
 
