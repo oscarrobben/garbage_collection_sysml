@@ -12,14 +12,10 @@
 			<_id type="a">GUID 44996564-a930-4f54-bccc-222929fd4f45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">GuiPkg</_name>
-			<Annotations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Annotations>
-			<_modifiedTimeWeak type="a">6.28.2023::12:5:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.28.2023::12:5:48</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.30.2023::8:4:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.30.2023::8:4:13</_modifiedTime>
 			<_lastID type="a">9</_lastID>
-			<weakCGTime type="a">6.28.2023::12:5:48</weakCGTime>
+			<weakCGTime type="a">6.30.2023::8:4:13</weakCGTime>
 			<strongCGTime type="a">6.28.2023::11:48:17</strongCGTime>
 			<_defaultComposite type="s">GUID a84d962d-d32f-4c5f-b3ed-bc7d116909a5</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -1091,8 +1087,8 @@
 			</_properties>
 			<_name type="a">adminpanel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.28.2023::12:5:40</_modifiedTime>
-			<_lastModifiedTime type="a">6.28.2023::12:5:40</_lastModifiedTime>
+			<_modifiedTime type="a">6.30.2023::8:4:16</_modifiedTime>
+			<_lastModifiedTime type="a">6.30.2023::8:4:16</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1519,7 +1515,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 -93 -55 </m_transform>
+			<m_transform type="a">1 0 0 1 -93 -51 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 442 136  519 136  519 154  442 154  </m_points>
 			<m_text type="a">Temperature</m_text>
@@ -1549,7 +1545,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 54 -58 </m_transform>
+			<m_transform type="a">1 0 0 1 54 -53 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 442 136  508 136  508 154  442 154  </m_points>
 			<m_text type="a">Humidity</m_text>
@@ -1618,7 +1614,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

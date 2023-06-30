@@ -85,7 +85,7 @@ INCLUDE_PATH= \
 ADDITIONAL_OBJS=
 
 OBJS= \
-  monitorbinstatuspkg.obj \
+  RouteOptimizationPkg.obj \
   UseCaseAnalysisPkg.obj
 
 
@@ -169,9 +169,9 @@ SOCK_LIB=
 
 
 
-monitorbinstatuspkg.obj : monitorbinstatuspkg.cpp monitorbinstatuspkg.h    UseCaseAnalysisPkg.h 
+RouteOptimizationPkg.obj : RouteOptimizationPkg.cpp RouteOptimizationPkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"monitorbinstatuspkg.obj" "monitorbinstatuspkg.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"RouteOptimizationPkg.obj" "RouteOptimizationPkg.cpp" 
 
 
 
@@ -208,7 +208,7 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 
 clean:
 	@echo Cleanup
-	if exist monitorbinstatuspkg.obj erase monitorbinstatuspkg.obj
+	if exist RouteOptimizationPkg.obj erase RouteOptimizationPkg.obj
 	if exist UseCaseAnalysisPkg.obj erase UseCaseAnalysisPkg.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
