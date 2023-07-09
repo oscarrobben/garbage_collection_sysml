@@ -12,14 +12,14 @@
 			<_id type="a">GUID 49f16ca6-4361-4073-9f6d-91a25de0732f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ReceiveCollectionSchedulePkg</_name>
-			<_modifiedTimeWeak type="a">7.6.2023::13:56:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::13:55:55</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.9.2023::9:41:51</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">7.6.2023::14:0:11</weakCGTime>
+			<weakCGTime type="a">7.9.2023::9:41:51</weakCGTime>
 			<strongCGTime type="a">7.6.2023::13:28:38</strongCGTime>
 			<_defaultComposite type="s">GUID bcb151b0-8dcc-45ac-a8dd-4624c41f46b6</_defaultComposite>
 			<_eventsBaseID type="a">28601</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID bcb151b0-8dcc-45ac-a8dd-4624c41f46b6</value>
 				<value>GUID 2779ff7e-5f1d-4115-bc25-234341111de6</value>
@@ -29,10 +29,10 @@
 			<_id type="a">GUID bcb151b0-8dcc-45ac-a8dd-4624c41f46b6</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">7.6.2023::14:0:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::13:55:55</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.9.2023::9:41:51</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">7.6.2023::14:0:11</weakCGTime>
+			<weakCGTime type="a">7.9.2023::9:41:51</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -50,7 +50,7 @@
 			<_id type="a">GUID 6d8fbef1-5dd1-4985-a185-0786edbd80e7</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
@@ -67,10 +67,10 @@
 			<_id type="a">GUID a172b8e8-1624-4e1e-a70c-a74ace540cd6</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">activity_0</_name>
-			<_modifiedTimeWeak type="a">7.6.2023::14:0:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::14:0:11</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.9.2023::9:41:51</_modifiedTime>
 			<_lastID type="a">27</_lastID>
-			<weakCGTime type="a">7.6.2023::14:0:11</weakCGTime>
+			<weakCGTime type="a">7.9.2023::9:41:51</weakCGTime>
 			<strongCGTime type="a">7.6.2023::13:28:38</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -78,8 +78,8 @@
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">10</_defNumber>
-			<_version type="a">7.6.2023::16:0:11</_version>
-			<_baseVersion type="a">1.1.1970::1:0:0</_baseVersion>
+			<_version type="a">7.9.2023::11:41:54</_version>
+			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID 5eee9eec-dad5-4d5f-bc80-209930d0150f</_diagram>
 			<_AnalysisMode type="a">1</_AnalysisMode>
 			<AggregatesList type="e">
@@ -126,7 +126,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID 54fae3ce-6652-4821-8d1c-a1478b7ed470</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -159,7 +159,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID 2633a669-450d-42a0-8014-3cda531f336c</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -192,7 +192,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID 5795e214-1edc-4aa9-bfa7-3ac50a6081c4</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -225,7 +225,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID a29a74e2-2594-4b2c-93b2-d7ce657b02db</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -258,7 +258,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID 155be838-fdb1-408c-a058-1ab0123b8e17</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -291,7 +291,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID c5eadd47-cb06-4e77-837b-f42b6db2f107</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -324,7 +324,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID 1b0c4831-531d-4bed-aa5b-c2c03a4ef80c</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -367,7 +367,7 @@
 		<IGuard type="e">
 			<_id type="a">GUID 76355970-b0e2-482a-8302-0a2b757e6f20</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_body type="a">schedule received</_body>
 		</IGuard>
 		<ITransition type="e">
@@ -386,8 +386,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">7.6.2023::13:55:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::13:55:22</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.9.2023::9:41:51</_modifiedTime>
 			<_itsTarget type="s">GUID e9ed4063-29f6-41ab-890a-88988646b154</_itsTarget>
 			<_staticReaction type="a">0</_staticReaction>
 			<_itsSource type="s">GUID 70a5a79b-09b9-4153-b58f-b3a197d23f7f</_itsSource>
@@ -397,8 +397,8 @@
 		</ITransition>
 		<ILabel type="e">
 			<_id type="a">GUID cb1b9ea2-4d65-42e1-8191-1c4592eabdd3</_id>
-			<_modifiedTimeWeak type="a">7.6.2023::13:55:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::13:55:22</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.9.2023::9:41:51</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsAction>NULL</_itsAction>
 			<AggregatesList type="e">
@@ -407,9 +407,9 @@
 		</ILabel>
 		<IGuard type="e">
 			<_id type="a">GUID 0f79eaa6-da7b-4a95-ad72-8d892cf62917</_id>
-			<_modifiedTimeWeak type="a">7.6.2023::13:55:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::13:55:22</_modifiedTime>
-			<_body type="a">schedule not received</_body>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.9.2023::9:41:51</_modifiedTime>
+			<_body type="a">else</_body>
 		</IGuard>
 		<ITransition type="e">
 			<_id type="a">GUID 34eca01a-cb66-410b-ab5d-3efd0a675663</_id>
@@ -439,7 +439,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID 4f9b665e-01b6-447b-b52c-28ce28181a47</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -472,7 +472,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID cb0d68bc-f078-425f-b944-9dc603e65861</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -526,7 +526,7 @@
 				<_id type="a">GUID b1cba51d-0915-4fb2-8555-9a1db5908cf1</_id>
 				<_myState type="a">4096</_myState>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+				<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 				<_body type="a">generate a collection schedule</_body>
 			</IAction>
 			</_entryAction>
@@ -544,7 +544,7 @@
 				<_id type="a">GUID fd6cc465-3ee4-43c6-bb81-128ba3b9cd17</_id>
 				<_myState type="a">4096</_myState>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+				<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 				<_body type="a">generate notifications</_body>
 			</IAction>
 			</_entryAction>
@@ -562,7 +562,7 @@
 				<_id type="a">GUID 9540797b-3ecf-4c69-801b-6689e3ea1f26</_id>
 				<_myState type="a">4096</_myState>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+				<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 				<_body type="a">select communication channel</_body>
 			</IAction>
 			</_entryAction>
@@ -627,7 +627,7 @@
 				<_id type="a">GUID 33fb9889-3602-4586-8db1-dfaea6e21dfa</_id>
 				<_myState type="a">4096</_myState>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+				<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 				<_body type="a">notify user</_body>
 			</IAction>
 			</_entryAction>
@@ -991,9 +991,9 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">activitydiagram_0</_name>
-			<_modifiedTimeWeak type="a">7.6.2023::14:0:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">7.9.2023::9:41:51</_modifiedTimeWeak>
 			<_modifiedTime type="a">7.6.2023::14:0:11</_modifiedTime>
-			<_lastModifiedTime type="a">7.6.2023::14:0:11</_lastModifiedTime>
+			<_lastModifiedTime type="a">7.9.2023::9:41:54</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -2337,7 +2337,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">[schedule not received]</m_str>
+					<m_str type="a">[else]</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2346,19 +2346,19 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">4 -6 -9  129 -9  129 5  -6 5  </m_position>
+					<m_position type="a">4 -8 -11  37 -11  37 5  -8 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_transform type="a">1 0 0 1 433 655 </m_transform>
-					<m_nHorizontalSpacing type="a">-166</m_nHorizontalSpacing>
-					<m_nVerticalSpacing type="a">-2</m_nVerticalSpacing>
+					<m_transform type="a">1 0 0 1 504 666 </m_transform>
+					<m_nHorizontalSpacing type="a">-97</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">-10</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">1</m_line_style>
-			<m_SourcePort type="a">526 1027 </m_SourcePort>
+			<m_SourcePort type="a">526 1049 </m_SourcePort>
 			<m_TargetPort type="a">11 0 </m_TargetPort>
 			<m_pInheritsFrom type="r">
 				<IHandle type="e">
