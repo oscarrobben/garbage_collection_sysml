@@ -12,10 +12,10 @@
 			<_id type="a">GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">7.6.2023::13:56:53</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::13:56:53</_modifiedTime>
-			<_lastID type="a">28</_lastID>
-			<weakCGTime type="a">7.6.2023::13:56:53</weakCGTime>
+			<_modifiedTimeWeak type="a">7.10.2023::11:36:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.10.2023::11:36:35</_modifiedTime>
+			<_lastID type="a">29</_lastID>
+			<weakCGTime type="a">7.10.2023::11:36:35</weakCGTime>
 			<strongCGTime type="a">6.8.2023::21:4:49</strongCGTime>
 			<_defaultComposite type="s">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -32,6 +32,7 @@
 				<value>GUID 23ef2c1b-aa5c-436d-ba16-a09a7fe3a39c</value>
 				<value>GUID 49f16ca6-4361-4073-9f6d-91a25de0732f</value>
 				<value>GUID 843aeb8a-d8cc-43b3-9f9d-09ed5d9a84a1</value>
+				<value>GUID 7c3eae5c-31a6-45eb-b2ec-93062ff4a92f</value>
 				<value>GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</value>
 				<value>GUID 640323dd-bd23-495f-85f0-4bc4ba52227b</value>
 				<value>GUID 4cc51ae0-b85a-4105-86d6-b186a957a417</value>
@@ -6845,6 +6846,10 @@
 		<ISubsystem type="e">
 			<fileName type="a">ReportIssuesPkg</fileName>
 			<_id type="a">GUID 843aeb8a-d8cc-43b3-9f9d-09ed5d9a84a1</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">addTrashPkg</fileName>
+			<_id type="a">GUID 7c3eae5c-31a6-45eb-b2ec-93062ff4a92f</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID e76798f4-ebb4-4a82-b1ee-1e0c6f25cfbd</_id>

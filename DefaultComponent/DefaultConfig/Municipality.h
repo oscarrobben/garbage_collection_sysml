@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Municipality
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Municipality.h
 *********************************************************************/
 
@@ -32,6 +32,12 @@ class wastecenter;
 class Municipality {
     ////    Constructors and destructors    ////
     
+    ////    Additional operations    ////
+    
+    ////    Relations and components    ////
+    
+    ////    Framework operations    ////
+    
 public :
 
     //## auto_generated
@@ -39,8 +45,6 @@ public :
     
     //## auto_generated
     ~Municipality();
-    
-    ////    Additional operations    ////
     
     //## auto_generated
     wastecenter* getItsWastecenter() const;
@@ -71,15 +75,11 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
-    ////    Relations and components    ////
-    
     wastecenter* itsWastecenter;		//## link itsWastecenter
     
     OMCollection<road_network*> owns;		//## link owns
     
     smart_garbage_collection_system* uses;		//## link uses
-    
-    ////    Framework operations    ////
 
 public :
 

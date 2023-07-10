@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Resident_Citizen_User
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Resident_Citizen_User.h
 *********************************************************************/
 
@@ -27,6 +27,12 @@ class smartbin;
 class Resident_Citizen_User {
     ////    Constructors and destructors    ////
     
+    ////    Additional operations    ////
+    
+    ////    Relations and components    ////
+    
+    ////    Framework operations    ////
+    
 public :
 
     //## auto_generated
@@ -34,8 +40,6 @@ public :
     
     //## auto_generated
     ~Resident_Citizen_User();
-    
-    ////    Additional operations    ////
     
     //## auto_generated
     smartbin* getItsSmartbin() const;
@@ -54,13 +58,9 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
-    ////    Relations and components    ////
-    
     smartbin* itsSmartbin;		//## link itsSmartbin
     
     App* uses;		//## link uses
-    
-    ////    Framework operations    ////
 
 public :
 

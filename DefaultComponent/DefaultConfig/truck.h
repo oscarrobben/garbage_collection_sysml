@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: truck
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\truck.h
 *********************************************************************/
 
@@ -19,14 +19,14 @@
 #include "Default.h"
 //## auto_generated
 #include <oxf\omcollec.h>
-//## link is_serviced_by
-class Garbage_Truck_Driver;
-
 //## link itsCms
 class cms;
 
 //## link itsSmart_garbage_collection_system
 class smart_garbage_collection_system;
+
+//## link is_serviced_by
+class Garbage_Truck_Driver;
 
 //## package Default
 
@@ -75,8 +75,6 @@ protected :
     
     ////    Relations and components    ////
     
-    OMCollection<Garbage_Truck_Driver*> is_serviced_by;		//## link is_serviced_by
-    
     cms* itsCms;		//## link itsCms
     
     smart_garbage_collection_system* itsSmart_garbage_collection_system;		//## link itsSmart_garbage_collection_system
@@ -111,6 +109,10 @@ public :
     
     //## auto_generated
     void _clearItsSmart_garbage_collection_system();
+
+protected :
+
+    OMCollection<Garbage_Truck_Driver*> is_serviced_by;		//## link is_serviced_by
 };
 
 #endif

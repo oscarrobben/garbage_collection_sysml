@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: App
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\App.h
 *********************************************************************/
 
@@ -68,8 +68,6 @@ protected :
     
     UserDevice* itsUserDevice;		//## link itsUserDevice
     
-    OMCollection<Resident_Citizen_User*> provides;		//## link provides
-    
     ////    Framework operations    ////
 
 public :
@@ -91,6 +89,10 @@ public :
     
     //## auto_generated
     void _clearProvides();
+
+protected :
+
+    OMCollection<Resident_Citizen_User*> provides;		//## link provides
 };
 
 #endif

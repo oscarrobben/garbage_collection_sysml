@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: smartbin
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\smartbin.h
 *********************************************************************/
 
@@ -19,9 +19,12 @@
 #include "Default.h"
 //## class smartbin
 #include "bin.h"
-//## link itsResident_Citizen_User
-class Resident_Citizen_User;
-
+//## auto_generated
+#include <oxf\omreactive.h>
+//## auto_generated
+#include <oxf\state.h>
+//## auto_generated
+#include <oxf\event.h>
 //## auto_generated
 class cms;
 
@@ -37,16 +40,19 @@ class sensor;
 //## auto_generated
 class smart_garbage_collection_system;
 
+//## link itsResident_Citizen_User
+class Resident_Citizen_User;
+
 //## package Default
 
 //## class smartbin
-class smartbin : public bin {
+class smartbin : public OMReactive, public bin {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    smartbin();
+    smartbin(IOxfActive* theActiveContext = 0);
     
     //## auto_generated
     ~smartbin();
@@ -98,8 +104,6 @@ protected :
     
     lid* itsLid;		//## link itsLid
     
-    Resident_Citizen_User* itsResident_Citizen_User;		//## link itsResident_Citizen_User
-    
     sensor* sensorBoard;		//## link sensorBoard
     
     ////    Framework operations    ////
@@ -132,7 +136,85 @@ public :
     
     //## auto_generated
     void _clearItsResident_Citizen_User();
+    
+    //## auto_generated
+    int getFillLevel() const;
+    
+    //## auto_generated
+    void setFillLevel(int p_fillLevel);
+    
+    //## auto_generated
+    virtual bool startBehavior();
+
+protected :
+
+    //## auto_generated
+    void initStatechart();
+    
+    int fillLevel;		//## attribute fillLevel
+    
+    Resident_Citizen_User* itsResident_Citizen_User;		//## link itsResident_Citizen_User
+
+public :
+
+    // rootState:
+    //## statechart_method
+    inline bool rootState_IN() const;
+    
+    //## statechart_method
+    virtual void rootState_entDef();
+    
+    //## statechart_method
+    virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // not_full:
+    //## statechart_method
+    inline bool not_full_IN() const;
+    
+    //## statechart_method
+    void not_full_entDef();
+    
+    // state_5:
+    //## statechart_method
+    inline bool state_5_IN() const;
+    
+    // not_used:
+    //## statechart_method
+    inline bool not_used_IN() const;
+
+protected :
+
+//#[ ignore
+    enum smartbin_Enum {
+        OMNonState = 0,
+        not_full = 1,
+        state_5 = 2,
+        not_used = 3
+    };
+    
+    int rootState_subState;
+    
+    int rootState_active;
+    
+    int not_full_subState;
+//#]
 };
+
+inline bool smartbin::rootState_IN() const {
+    return true;
+}
+
+inline bool smartbin::not_full_IN() const {
+    return rootState_subState == not_full;
+}
+
+inline bool smartbin::state_5_IN() const {
+    return not_full_subState == state_5;
+}
+
+inline bool smartbin::not_used_IN() const {
+    return not_full_subState == not_used;
+}
 
 #endif
 /*********************************************************************

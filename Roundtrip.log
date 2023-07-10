@@ -1,0 +1,61 @@
+
+Reverse Engineering Done.
+
+Removing TriggeredOperation 'addTrash()' from Class 'smartbin'. 
+Removing Attribute 'fillLevel' from Class 'smartbin'. 
+Source Artifacts have been added to the model to ensure that the generated code reflects details from the original code, such as global comments, preprocessor directives, and the order of elements. See the log file for more details.
+To view the Source Artifacts in the Rhapsody browser, open the View menu and select Browser Display Options > Show Source Artifacts.
+Source Artifacts were added for the following files:
+Adding File 'App:impl' to Class 'App'.
+Adding File 'App:spec' to Class 'App'.
+Adding File 'bin:impl' to Class 'bin'.
+Adding File 'bin:spec' to Class 'bin'.
+Adding File 'cms:impl' to Class 'cms'.
+Adding File 'cms:spec' to Class 'cms'.
+Adding File 'Default:impl' to Package 'Default'.
+Adding File 'Default:spec' to Package 'Default'.
+Adding File 'electricity:impl' to Class 'electricity'.
+Adding File 'electricity:spec' to Class 'electricity'.
+Adding File 'EmptyBinPkg:impl' to Package 'EmptyBinPkg'.
+Adding File 'EmptyBinPkg:spec' to Package 'EmptyBinPkg'.
+Adding File 'Laptop:impl' to Class 'Laptop'.
+Adding File 'Laptop:spec' to Class 'Laptop'.
+Adding File 'lid:impl' to Class 'lid'.
+Adding File 'lid:spec' to Class 'lid'.
+Adding File 'MonitorBinStatusPkg:impl' to Package 'MonitorBinStatusPkg'.
+Adding File 'MonitorBinStatusPkg:spec' to Package 'MonitorBinStatusPkg'.
+Adding File 'Municipality:impl' to Actor 'Municipality'.
+Adding File 'Municipality:spec' to Actor 'Municipality'.
+Adding File 'ReceiveCollectionSchedulePkg:impl' to Package 'ReceiveCollectionSchedulePkg'.
+Adding File 'ReceiveCollectionSchedulePkg:spec' to Package 'ReceiveCollectionSchedulePkg'.
+Adding File 'regularbin:impl' to Class 'regularbin'.
+Adding File 'regularbin:spec' to Class 'regularbin'.
+Adding File 'ReportIssuesPkg:impl' to Package 'ReportIssuesPkg'.
+Adding File 'ReportIssuesPkg:spec' to Package 'ReportIssuesPkg'.
+Adding File 'Resident_Citizen_User:impl' to Actor 'Resident_Citizen_User'.
+Adding File 'Resident_Citizen_User:spec' to Actor 'Resident_Citizen_User'.
+Adding File 'road_network:impl' to Class 'road_network'.
+Adding File 'road_network:spec' to Class 'road_network'.
+Adding File 'RouteOptimizationPkg:impl' to Package 'RouteOptimizationPkg'.
+Adding File 'RouteOptimizationPkg:spec' to Package 'RouteOptimizationPkg'.
+Adding File 'server:impl' to Class 'server'.
+Adding File 'server:spec' to Class 'server'.
+Adding File 'smart_garbage_collection_system:impl' to Class 'smart_garbage_collection_system'.
+Adding File 'smart_garbage_collection_system:spec' to Class 'smart_garbage_collection_system'.
+Adding File 'smartbin:impl' to Class 'smartbin'.
+Adding File 'smartbin:spec' to Class 'smartbin'.
+Adding File 'SmartPhone:impl' to Class 'SmartPhone'.
+Adding File 'SmartPhone:spec' to Class 'SmartPhone'.
+Adding File 'tablet:impl' to Class 'tablet'.
+Adding File 'tablet:spec' to Class 'tablet'.
+Adding File 'truck:impl' to Class 'truck'.
+Adding File 'truck:spec' to Class 'truck'.
+Adding File 'UserDevice:impl' to Class 'UserDevice'.
+Adding File 'UserDevice:spec' to Class 'UserDevice'.
+Adding File 'Waste_Processing_Company:impl' to Actor 'Waste_Processing_Company'.
+Adding File 'Waste_Processing_Company:spec' to Actor 'Waste_Processing_Company'.
+Adding File 'wastecenter:impl' to Class 'wastecenter'.
+Adding File 'wastecenter:spec' to Class 'wastecenter'.
+Adding File 'weather:impl' to Class 'weather'.
+Adding File 'weather:spec' to Class 'weather'.
+

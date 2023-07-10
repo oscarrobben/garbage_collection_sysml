@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: smart_garbage_collection_system
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\smart_garbage_collection_system.h
 *********************************************************************/
 
@@ -19,9 +19,6 @@
 #include "Default.h"
 //## auto_generated
 #include <oxf\omcollec.h>
-//## link services
-class Municipality;
-
 //## link itsUserDevice
 class UserDevice;
 
@@ -31,9 +28,6 @@ class bin;
 //## link itsCms
 class cms;
 
-//## link operates_on
-class road_network;
-
 //## link itsTruck
 class truck;
 
@@ -42,6 +36,12 @@ class wastecenter;
 
 //## link operates_under
 class weather;
+
+//## link services
+class Municipality;
+
+//## link operates_on
+class road_network;
 
 //## package Default
 
@@ -158,8 +158,6 @@ protected :
     
     weather* operates_under;		//## link operates_under
     
-    OMCollection<Municipality*> services;		//## link services
-    
     ////    Framework operations    ////
 
 public :
@@ -235,6 +233,10 @@ public :
     
     //## auto_generated
     void _clearServices();
+
+protected :
+
+    OMCollection<Municipality*> services;		//## link services
 };
 
 #endif

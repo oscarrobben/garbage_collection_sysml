@@ -128,7 +128,8 @@ OBJS= \
   EmptyBinPkg.obj \
   RouteOptimizationPkg.obj \
   ReceiveCollectionSchedulePkg.obj \
-  ReportIssuesPkg.obj
+  ReportIssuesPkg.obj \
+  addTrashPkg.obj
 
 
 
@@ -391,7 +392,7 @@ road_network.obj : road_network.cpp road_network.h    smart_garbage_collection_s
 
 
 
-weather.obj : weather.cpp weather.h    smart_garbage_collection_system.h humidity.h temperature.h 
+weather.obj : weather.cpp weather.h    humidity.h temperature.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"weather.obj" "weather.cpp" 
 
@@ -475,6 +476,12 @@ ReportIssuesPkg.obj : ReportIssuesPkg.cpp ReportIssuesPkg.h
 
 
 
+addTrashPkg.obj : addTrashPkg.cpp addTrashPkg.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"addTrashPkg.obj" "addTrashPkg.cpp" 
+
+
+
 
 
 
@@ -546,6 +553,7 @@ clean:
 	if exist RouteOptimizationPkg.obj erase RouteOptimizationPkg.obj
 	if exist ReceiveCollectionSchedulePkg.obj erase ReceiveCollectionSchedulePkg.obj
 	if exist ReportIssuesPkg.obj erase ReportIssuesPkg.obj
+	if exist addTrashPkg.obj erase addTrashPkg.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

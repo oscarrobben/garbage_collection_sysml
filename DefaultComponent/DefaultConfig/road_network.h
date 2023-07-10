@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: road_network
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\road_network.h
 *********************************************************************/
 
@@ -64,8 +64,6 @@ protected :
     
     ////    Relations and components    ////
     
-    Municipality* is_owned_by;		//## link is_owned_by
-    
     OMCollection<smart_garbage_collection_system*> services;		//## link services
     
     ////    Framework operations    ////
@@ -89,6 +87,10 @@ public :
     
     //## auto_generated
     void _clearServices();
+
+protected :
+
+    Municipality* is_owned_by;		//## link is_owned_by
 };
 
 #endif

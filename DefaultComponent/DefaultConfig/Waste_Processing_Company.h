@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Waste_Processing_Company
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Waste_Processing_Company.h
 *********************************************************************/
 
@@ -32,6 +32,12 @@ class wastecenter;
 class Waste_Processing_Company {
     ////    Constructors and destructors    ////
     
+    ////    Additional operations    ////
+    
+    ////    Relations and components    ////
+    
+    ////    Framework operations    ////
+    
 public :
 
     //## auto_generated
@@ -39,8 +45,6 @@ public :
     
     //## auto_generated
     ~Waste_Processing_Company();
-    
-    ////    Additional operations    ////
     
     //## auto_generated
     OMIterator<Garbage_Truck_Driver*> getEmploys() const;
@@ -71,15 +75,11 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
-    ////    Relations and components    ////
-    
     OMList<Garbage_Truck_Driver*> employs;		//## classInstance employs
     
     wastecenter* itsWastecenter;		//## link itsWastecenter
     
     OMList<smart_garbage_collection_system*> operates;		//## classInstance operates
-    
-    ////    Framework operations    ////
 
 public :
 

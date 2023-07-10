@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: wastecenter
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\wastecenter.h
 *********************************************************************/
 
@@ -17,14 +17,14 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include "Default.h"
+//## link itsSmart_garbage_collection_system
+class smart_garbage_collection_system;
+
 //## link itsMunicipality
 class Municipality;
 
 //## link itsWaste_Processing_Company
 class Waste_Processing_Company;
-
-//## link itsSmart_garbage_collection_system
-class smart_garbage_collection_system;
 
 //## package Default
 
@@ -67,11 +67,7 @@ protected :
     
     ////    Relations and components    ////
     
-    Municipality* itsMunicipality;		//## link itsMunicipality
-    
     smart_garbage_collection_system* itsSmart_garbage_collection_system;		//## link itsSmart_garbage_collection_system
-    
-    Waste_Processing_Company* itsWaste_Processing_Company;		//## link itsWaste_Processing_Company
     
     ////    Framework operations    ////
 
@@ -103,6 +99,12 @@ public :
     
     //## auto_generated
     void _clearItsWaste_Processing_Company();
+
+protected :
+
+    Municipality* itsMunicipality;		//## link itsMunicipality
+    
+    Waste_Processing_Company* itsWaste_Processing_Company;		//## link itsWaste_Processing_Company
 };
 
 #endif

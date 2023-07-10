@@ -54,8 +54,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">7.9.2023::9:44:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.9.2023::10:2:14</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.10.2023::11:51:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.10.2023::11:51:22</_modifiedTime>
 			<_lastID type="a">12</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
@@ -974,8 +974,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.22.2023::21:44:58</_modifiedTime>
-			<_lastModifiedTime type="a">6.22.2023::21:44:58</_lastModifiedTime>
+			<_modifiedTime type="a">7.10.2023::11:51:22</_modifiedTime>
+			<_lastModifiedTime type="a">7.10.2023::11:51:22</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1523,10 +1523,11 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_AdditionalLabel>
+			<m_bFramesetModified type="a">1</m_bFramesetModified>
 			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=50%25,50%25&gt;
+			<frameset type="a">&lt;frameset rows=52%25,48%25&gt;
 &lt;frame name=AttributeListCompartment&gt;
 &lt;frame name=OperationListCompartment&gt;</frameset>
 			<Attrs type="c">
@@ -1566,6 +1567,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 88542bd5-fd3b-4286-bdbe-3f1ee1a34865</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -1594,7 +1624,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.0793201 0 0 0.101604 149.841 505.572 </m_transform>
+			<m_transform type="a">0.11237 0 0 0.134581 149.775 494.723 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1823,11 +1853,11 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 190 511  131 511  </m_arrow>
+			<m_arrow type="a">2 207 511  131 511  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">506 329 </m_SourcePort>
+			<m_SourcePort type="a">509 329 </m_SourcePort>
 			<m_TargetPort type="a">695 1451 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -2001,7 +2031,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
-			<m_transform type="a">-12.6071 0 -0 -9.84213 756.429 1830.64 </m_transform>
+			<m_transform type="a">-8.89913 0 -0 -7.43048 636.618 1736.3 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -3450,11 +3480,11 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 409 604  409 601  </m_arrow>
+			<m_arrow type="a">2 409 625  409 601  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">1061 969 </m_SourcePort>
+			<m_SourcePort type="a">1061 968 </m_SourcePort>
 			<m_TargetPort type="a">2 1077 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
@@ -3631,11 +3661,11 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 197 691  229 691  </m_arrow>
+			<m_arrow type="a">2 217 705  229 705  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">595 1451 </m_SourcePort>
+			<m_SourcePort type="a">598 1451 </m_SourcePort>
 			<m_TargetPort type="a">494 329 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
@@ -4896,7 +4926,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
-			<m_transform type="a">0 9.84213 -12.6071 0 1550.68 39.3685 </m_transform>
+			<m_transform type="a">0 7.43048 -8.89913 0 1406.66 116.998 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -5633,7 +5663,7 @@
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 234 504  342 504  </m_arrow>
+			<m_arrow type="a">2 269 504  342 504  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
@@ -5842,7 +5872,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">-11 1451 </m_SourcePort>
+			<m_SourcePort type="a">-7 1451 </m_SourcePort>
 			<m_TargetPort type="a">325 329 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -11577,8 +11607,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.6.2023::14:43:29</_modifiedTime>
-			<_lastModifiedTime type="a">7.6.2023::14:43:29</_lastModifiedTime>
+			<_modifiedTime type="a">7.10.2023::11:14:16</_modifiedTime>
+			<_lastModifiedTime type="a">7.10.2023::11:14:16</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>

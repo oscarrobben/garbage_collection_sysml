@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: smartbin
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\smartbin.cpp
 *********************************************************************/
 
@@ -16,20 +16,26 @@
 #include "electricity.h"
 //## link itsLid
 #include "lid.h"
-//## link itsResident_Citizen_User
-#include "Resident_Citizen_User.h"
 //## link sensorBoard
 #include "sensor.h"
 //## auto_generated
 #include "smart_garbage_collection_system.h"
+//## auto_generated
+#include <oxf\omthread.h>
+//## event addTrash()
+#include "addTrashPkg.h"
+//## link itsResident_Citizen_User
+#include "Resident_Citizen_User.h"
 //## package Default
 
 //## class smartbin
-smartbin::smartbin() {
+smartbin::smartbin(IOxfActive* theActiveContext) : fillLevel(0) {
+    setActiveContext(theActiveContext, false);
     itsElectricity = NULL;
     itsLid = NULL;
     itsResident_Citizen_User = NULL;
     sensorBoard = NULL;
+    initStatechart();
 }
 
 smartbin::~smartbin() {
@@ -168,6 +174,71 @@ void smartbin::_setItsResident_Citizen_User(Resident_Citizen_User* p_Resident_Ci
 
 void smartbin::_clearItsResident_Citizen_User() {
     itsResident_Citizen_User = NULL;
+}
+
+int smartbin::getFillLevel() const {
+    return fillLevel;
+}
+
+void smartbin::setFillLevel(int p_fillLevel) {
+    fillLevel = p_fillLevel;
+}
+
+bool smartbin::startBehavior() {
+    bool done = false;
+    done = OMReactive::startBehavior();
+    return done;
+}
+
+void smartbin::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
+    not_full_subState = OMNonState;
+}
+
+void smartbin::rootState_entDef() {
+    {
+        not_full_entDef();
+    }
+}
+
+IOxfReactive::TakeEventStatus smartbin::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (rootState_active) {
+        // State not_used
+        case not_used:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    pushNullTransition();
+                    not_full_subState = state_5;
+                    rootState_active = state_5;
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State state_5
+        case state_5:
+        {
+            
+        
+        
+    }
+    break;
+    default:
+        break;
+    }
+    return res;
+}
+
+void smartbin::not_full_entDef() {
+    rootState_subState = not_full;
+    pushNullTransition();
+    not_full_subState = not_used;
+    rootState_active = not_used;
 }
 
 /*********************************************************************

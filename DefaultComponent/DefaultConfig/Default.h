@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: adria
+	Login		: 20172539
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Sun, 9, Jul 2023  
+//!	Generated Date	: Mon, 10, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Default.h
 *********************************************************************/
 
@@ -15,6 +15,8 @@
 #include <oxf\oxf.h>
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
+//## auto_generated
+#include <oxf\event.h>
 //## auto_generated
 class App;
 
@@ -102,11 +104,30 @@ class truck;
 //## auto_generated
 class wastecenter;
 
+//#[ ignore
+#define throwAway_Default_id 18601
+//#]
+
 //## package Default
 
 
 //## classInstance server
 extern server_C server;
+
+//## event throwAway()
+class throwAway : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    throwAway();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
 
 #endif
 /*********************************************************************
