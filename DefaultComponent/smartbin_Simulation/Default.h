@@ -63,6 +63,16 @@ class wastecenter;
 #define emptyBin_Default_id 18603
 
 #define drive_Default_id 18604
+
+#define broken_Default_id 18605
+
+#define repaired_Default_id 18606
+
+#define repair_bin_Default_id 18607
+
+#define disp_repair_Default_id 18608
+
+#define req_repair_Default_id 18609
 //#]
 
 //## package Default
@@ -183,6 +193,151 @@ public :
 //#[ ignore
 class OMAnimateddrive : virtual public AOMEvent {
     DECLARE_META_EVENT(drive)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event broken()
+class broken : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedbroken;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    broken();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedbroken : virtual public AOMEvent {
+    DECLARE_META_EVENT(broken)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event repaired()
+class repaired : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedrepaired;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    repaired();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedrepaired : virtual public AOMEvent {
+    DECLARE_META_EVENT(repaired)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event repair_bin()
+class repair_bin : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedrepair_bin;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    repair_bin();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedrepair_bin : virtual public AOMEvent {
+    DECLARE_META_EVENT(repair_bin)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event disp_repair()
+class disp_repair : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimateddisp_repair;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    disp_repair();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimateddisp_repair : virtual public AOMEvent {
+    DECLARE_META_EVENT(disp_repair)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event req_repair()
+class req_repair : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedreq_repair;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    req_repair();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedreq_repair : virtual public AOMEvent {
+    DECLARE_META_EVENT(req_repair)
 };
 //#]
 #endif // _OMINSTRUMENT

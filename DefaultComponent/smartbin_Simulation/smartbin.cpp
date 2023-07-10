@@ -76,7 +76,7 @@ void smartbin::p_smartbin_C::cleanUpRelations() {
 }
 //#]
 
-smartbin::smartbin(IOxfActive* theActiveContext) : emptyReq(false), fillLevel(0), full(false) {
+smartbin::smartbin(IOxfActive* theActiveContext) : avg(0), emptyReq(false), fillLevel(0), full(false), maxFill(0), nSamples(0), repairRequested(false), totalFill(0) {
     NOTIFY_REACTIVE_CONSTRUCTOR(smartbin, smartbin(), 0, Default_smartbin_smartbin_SERIALIZE);
     setActiveContext(theActiveContext, false);
     itsElectricity = NULL;
@@ -293,6 +293,15 @@ smartbin::p_smartbin_C* smartbin::get_p_smartbin() const {
     return (smartbin::p_smartbin_C*) &p_smartbin;
 }
 
+int smartbin::getAvg() const {
+    return avg;
+}
+
+void smartbin::setAvg(int p_avg) {
+    avg = p_avg;
+    NOTIFY_SET_OPERATION;
+}
+
 bool smartbin::getEmptyReq() const {
     return emptyReq;
 }
@@ -321,6 +330,40 @@ bool smartbin::getFull() const {
 void smartbin::setFull(bool p_full) {
     full = p_full;
     NOTIFY_SET_OPERATION;
+}
+
+int smartbin::getMaxFill() const {
+    return maxFill;
+}
+
+void smartbin::setMaxFill(int p_maxFill) {
+    maxFill = p_maxFill;
+    NOTIFY_SET_OPERATION;
+}
+
+int smartbin::getNSamples() const {
+    return nSamples;
+}
+
+void smartbin::setNSamples(int p_nSamples) {
+    nSamples = p_nSamples;
+}
+
+bool smartbin::getRepairRequested() const {
+    return repairRequested;
+}
+
+void smartbin::setRepairRequested(bool p_repairRequested) {
+    repairRequested = p_repairRequested;
+    NOTIFY_SET_OPERATION;
+}
+
+int smartbin::getTotalFill() const {
+    return totalFill;
+}
+
+void smartbin::setTotalFill(int p_totalFill) {
+    totalFill = p_totalFill;
 }
 
 truck* smartbin::getItsTruck() const {
@@ -427,56 +470,8 @@ void smartbin::state_9_entDef() {
 
 void smartbin::state_9_exit() {
     state_11_exit();
-    switch (state_12_subState) {
-        // State wait
-        case wait:
-        {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait");
-        }
-        break;
-        // State dispatchTruck
-        case dispatchTruck:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.dispatchTruck");
-        }
-        break;
-        // State wait_for_empty
-        case wait_for_empty:
-        {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait_for_empty");
-        }
-        break;
-        default:
-            break;
-    }
-    state_12_subState = OMNonState;
-    NOTIFY_STATE_EXITED("ROOT.state_9.state_12");
-    switch (state_14_subState) {
-        // State wait_for_task
-        case wait_for_task:
-        {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.wait_for_task");
-        }
-        break;
-        // State empty_full_bin
-        case empty_full_bin:
-        {
-            cancel(state_14_timeout);
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.empty_full_bin");
-        }
-        break;
-        case accepttimeevent_19:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.accepttimeevent_19");
-        }
-        break;
-        default:
-            break;
-    }
-    state_14_subState = OMNonState;
-    NOTIFY_STATE_EXITED("ROOT.state_9.state_14");
+    state_12_exit();
+    state_14_exit();
     
     NOTIFY_STATE_EXITED("ROOT.state_9");
 }
@@ -516,11 +511,53 @@ IOxfReactive::TakeEventStatus smartbin::state_9_processEvent() {
 
 void smartbin::state_14_entDef() {
     NOTIFY_STATE_ENTERED("ROOT.state_9.state_14");
-    NOTIFY_TRANSITION_STARTED("9");
+    NOTIFY_TRANSITION_STARTED("8");
     NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.wait_for_task");
     state_14_subState = wait_for_task;
     state_14_active = wait_for_task;
-    NOTIFY_TRANSITION_TERMINATED("9");
+    NOTIFY_TRANSITION_TERMINATED("8");
+}
+
+void smartbin::state_14_exit() {
+    switch (state_14_subState) {
+        // State wait_for_task
+        case wait_for_task:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.wait_for_task");
+        }
+        break;
+        // State empty_full_bin
+        case empty_full_bin:
+        {
+            cancel(state_14_timeout);
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.empty_full_bin");
+        }
+        break;
+        case accepttimeevent_19:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.accepttimeevent_19");
+        }
+        break;
+        // State repair_broken_bin
+        case repair_broken_bin:
+        {
+            cancel(state_14_timeout);
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.repair_broken_bin");
+        }
+        break;
+        case accepttimeevent_28:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.accepttimeevent_28");
+        }
+        break;
+        default:
+            break;
+    }
+    state_14_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.state_9.state_14");
 }
 
 IOxfReactive::TakeEventStatus smartbin::state_14_processEvent() {
@@ -531,13 +568,24 @@ IOxfReactive::TakeEventStatus smartbin::state_14_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(drive_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("10");
+                    NOTIFY_TRANSITION_STARTED("9");
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_14.wait_for_task");
                     NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.empty_full_bin");
                     state_14_subState = empty_full_bin;
                     state_14_active = empty_full_bin;
                     state_14_timeout = scheduleTimeout(3500, "ROOT.state_9.state_14.empty_full_bin");
-                    NOTIFY_TRANSITION_TERMINATED("10");
+                    NOTIFY_TRANSITION_TERMINATED("9");
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(disp_repair_Default_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("14");
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_14.wait_for_task");
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.repair_broken_bin");
+                    state_14_subState = repair_broken_bin;
+                    state_14_active = repair_broken_bin;
+                    state_14_timeout = scheduleTimeout(5000, "ROOT.state_9.state_14.repair_broken_bin");
+                    NOTIFY_TRANSITION_TERMINATED("14");
                     res = eventConsumed;
                 }
             
@@ -551,14 +599,14 @@ IOxfReactive::TakeEventStatus smartbin::state_14_processEvent() {
                 {
                     if(getCurrentEvent() == state_14_timeout)
                         {
-                            NOTIFY_TRANSITION_STARTED("11");
+                            NOTIFY_TRANSITION_STARTED("21");
                             cancel(state_14_timeout);
                             NOTIFY_STATE_EXITED("ROOT.state_9.state_14.empty_full_bin");
                             NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.accepttimeevent_19");
                             pushNullTransition();
                             state_14_subState = accepttimeevent_19;
                             state_14_active = accepttimeevent_19;
-                            NOTIFY_TRANSITION_TERMINATED("11");
+                            NOTIFY_TRANSITION_TERMINATED("21");
                             res = eventConsumed;
                         }
                 }
@@ -570,16 +618,58 @@ IOxfReactive::TakeEventStatus smartbin::state_14_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId))
                 {
-                    NOTIFY_TRANSITION_STARTED("12");
+                    NOTIFY_TRANSITION_STARTED("22");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_14.accepttimeevent_19");
-                    //#[ transition 12 
+                    //#[ transition 22 
                     GEN(emptyBin);
                     //#]
                     NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.wait_for_task");
                     state_14_subState = wait_for_task;
                     state_14_active = wait_for_task;
-                    NOTIFY_TRANSITION_TERMINATED("12");
+                    NOTIFY_TRANSITION_TERMINATED("22");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State repair_broken_bin
+        case repair_broken_bin:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == state_14_timeout)
+                        {
+                            NOTIFY_TRANSITION_STARTED("15");
+                            cancel(state_14_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.state_9.state_14.repair_broken_bin");
+                            NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.accepttimeevent_28");
+                            pushNullTransition();
+                            state_14_subState = accepttimeevent_28;
+                            state_14_active = accepttimeevent_28;
+                            NOTIFY_TRANSITION_TERMINATED("15");
+                            res = eventConsumed;
+                        }
+                }
+            
+            
+        }
+        break;
+        case accepttimeevent_28:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("16");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_14.accepttimeevent_28");
+                    //#[ transition 16 
+                    GEN(repaired);
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_14.wait_for_task");
+                    state_14_subState = wait_for_task;
+                    state_14_active = wait_for_task;
+                    NOTIFY_TRANSITION_TERMINATED("16");
                     res = eventConsumed;
                 }
             
@@ -598,7 +688,58 @@ void smartbin::state_12_entDef() {
     NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.wait");
     state_12_subState = wait;
     state_12_active = wait;
+    //#[ state state_9.state_12.wait.(Entry) 
+    repairRequested = false;
+    //#]
     NOTIFY_TRANSITION_TERMINATED("5");
+}
+
+void smartbin::state_12_exit() {
+    switch (state_12_subState) {
+        // State wait
+        case wait:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait");
+        }
+        break;
+        // State dispatchTruck
+        case dispatchTruck:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.dispatchTruck");
+        }
+        break;
+        // State wait_for_empty
+        case wait_for_empty:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait_for_empty");
+        }
+        break;
+        // State wait_for_repair
+        case wait_for_repair:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait_for_repair");
+        }
+        break;
+        // State state_29
+        case state_29:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.state_29");
+        }
+        break;
+        // State sched_repair
+        case sched_repair:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_12.sched_repair");
+        }
+        break;
+        default:
+            break;
+    }
+    state_12_subState = OMNonState;
+    
+    NOTIFY_STATE_EXITED("ROOT.state_9.state_12");
 }
 
 IOxfReactive::TakeEventStatus smartbin::state_12_processEvent() {
@@ -607,7 +748,20 @@ IOxfReactive::TakeEventStatus smartbin::state_12_processEvent() {
         // State wait
         case wait:
         {
-            if(IS_EVENT_TYPE_OF(reqEmpty_Default_id))
+            if(IS_EVENT_TYPE_OF(req_repair_Default_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("23");
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait");
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.state_29");
+                    state_12_subState = state_29;
+                    state_12_active = state_29;
+                    //#[ state state_9.state_12.state_29.(Entry) 
+                    repairRequested = true;
+                    //#]
+                    NOTIFY_TRANSITION_TERMINATED("23");
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(reqEmpty_Default_id))
                 {
                     NOTIFY_TRANSITION_STARTED("6");
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait");
@@ -627,16 +781,16 @@ IOxfReactive::TakeEventStatus smartbin::state_12_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId))
                 {
-                    NOTIFY_TRANSITION_STARTED("7");
+                    NOTIFY_TRANSITION_STARTED("20");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_12.dispatchTruck");
-                    //#[ transition 7 
+                    //#[ transition 20 
                     GEN(drive);
                     //#]
                     NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.wait_for_empty");
                     state_12_subState = wait_for_empty;
                     state_12_active = wait_for_empty;
-                    NOTIFY_TRANSITION_TERMINATED("7");
+                    NOTIFY_TRANSITION_TERMINATED("20");
                     res = eventConsumed;
                 }
             
@@ -648,12 +802,74 @@ IOxfReactive::TakeEventStatus smartbin::state_12_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(emptyBin_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("8");
+                    NOTIFY_TRANSITION_STARTED("7");
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait_for_empty");
                     NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.wait");
                     state_12_subState = wait;
                     state_12_active = wait;
-                    NOTIFY_TRANSITION_TERMINATED("8");
+                    //#[ state state_9.state_12.wait.(Entry) 
+                    repairRequested = false;
+                    //#]
+                    NOTIFY_TRANSITION_TERMINATED("7");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State wait_for_repair
+        case wait_for_repair:
+        {
+            if(IS_EVENT_TYPE_OF(repaired_Default_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("13");
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_12.wait_for_repair");
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.wait");
+                    state_12_subState = wait;
+                    state_12_active = wait;
+                    //#[ state state_9.state_12.wait.(Entry) 
+                    repairRequested = false;
+                    //#]
+                    NOTIFY_TRANSITION_TERMINATED("13");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State state_29
+        case state_29:
+        {
+            if(IS_EVENT_TYPE_OF(repair_bin_Default_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("24");
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_12.state_29");
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.sched_repair");
+                    pushNullTransition();
+                    state_12_subState = sched_repair;
+                    state_12_active = sched_repair;
+                    NOTIFY_TRANSITION_TERMINATED("24");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State sched_repair
+        case sched_repair:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("12");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_12.sched_repair");
+                    //#[ transition 12 
+                    GEN(disp_repair);
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.state_9.state_12.wait_for_repair");
+                    state_12_subState = wait_for_repair;
+                    state_12_active = wait_for_repair;
+                    NOTIFY_TRANSITION_TERMINATED("12");
                     res = eventConsumed;
                 }
             
@@ -675,19 +891,6 @@ void smartbin::state_11_entDef() {
 
 void smartbin::state_11_exit() {
     switch (state_11_subState) {
-        // State empty_bin
-        case empty_bin:
-        {
-            popNullTransition();
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.empty_bin");
-        }
-        break;
-        // State full_bin
-        case full_bin:
-        {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.full_bin");
-        }
-        break;
         // State not_full
         case not_full:
         {
@@ -696,6 +899,9 @@ void smartbin::state_11_exit() {
                 // State not_used
                 case not_used:
                 {
+                    //#[ state state_9.state_11.not_full.not_used.(Exit) 
+                    if(rand() % 50 == 1){GEN(broken);}
+                    //#]
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.not_used");
                 }
                 break;
@@ -713,10 +919,23 @@ void smartbin::state_11_exit() {
             NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full");
         }
         break;
-        // State broken
-        case broken:
+        // State full_bin
+        case full_bin:
         {
-            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.broken");
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.full_bin");
+        }
+        break;
+        // State empty_bin
+        case empty_bin:
+        {
+            popNullTransition();
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.empty_bin");
+        }
+        break;
+        // State broken_bin
+        case broken_bin:
+        {
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.broken_bin");
         }
         break;
         default:
@@ -730,20 +949,16 @@ void smartbin::state_11_exit() {
 IOxfReactive::TakeEventStatus smartbin::state_11_processEvent() {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (state_11_active) {
-        // State empty_bin
-        case empty_bin:
+        // State not_used
+        case not_used:
         {
-            if(IS_EVENT_TYPE_OF(OMNullEventId))
-                {
-                    NOTIFY_TRANSITION_STARTED("14");
-                    popNullTransition();
-                    NOTIFY_STATE_EXITED("ROOT.state_9.state_11.empty_bin");
-                    not_full_entDef();
-                    NOTIFY_TRANSITION_TERMINATED("14");
-                    res = eventConsumed;
-                }
-            
-            
+            res = not_used_handleEvent();
+        }
+        break;
+        // State state_5
+        case state_5:
+        {
+            res = state_5_handleEvent();
         }
         break;
         // State full_bin
@@ -768,19 +983,37 @@ IOxfReactive::TakeEventStatus smartbin::state_11_processEvent() {
             
         }
         break;
-        // State not_used
-        case not_used:
+        // State empty_bin
+        case empty_bin:
         {
-            res = not_used_handleEvent();
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("17");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_11.empty_bin");
+                    not_full_entDef();
+                    NOTIFY_TRANSITION_TERMINATED("17");
+                    res = eventConsumed;
+                }
+            
+            
         }
         break;
-        // State state_5
-        case state_5:
+        // State broken_bin
+        case broken_bin:
         {
-            res = state_5_handleEvent();
+            if(IS_EVENT_TYPE_OF(repaired_Default_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("25");
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_11.broken_bin");
+                    not_full_entDef();
+                    NOTIFY_TRANSITION_TERMINATED("25");
+                    res = eventConsumed;
+                }
+            
+            
         }
         break;
-        
         default:
             break;
     }
@@ -795,22 +1028,64 @@ void smartbin::not_full_entDef() {
     NOTIFY_STATE_ENTERED("ROOT.state_9.state_11.not_full.not_used");
     not_full_subState = not_used;
     state_11_active = not_used;
+    //#[ state state_9.state_11.not_full.not_used.(Entry) 
+    if(fillLevel > maxFill){maxFill = fillLevel;}
+    nSamples += 1;
+    totalFill += fillLevel;
+    avg = totalFill/nSamples;
+    
+    //#]
     NOTIFY_TRANSITION_TERMINATED("1");
 }
 
 IOxfReactive::TakeEventStatus smartbin::not_full_handleEvent() {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
-    if(IS_EVENT_TYPE_OF(OMNullEventId))
+    if(IS_EVENT_TYPE_OF(broken_Default_id))
         {
-            //## transition 15 
+            NOTIFY_TRANSITION_STARTED("11");
+            popNullTransition();
+            switch (not_full_subState) {
+                // State not_used
+                case not_used:
+                {
+                    //#[ state state_9.state_11.not_full.not_used.(Exit) 
+                    if(rand() % 50 == 1){GEN(broken);}
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.not_used");
+                }
+                break;
+                // State state_5
+                case state_5:
+                {
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.state_5");
+                }
+                break;
+                default:
+                    break;
+            }
+            not_full_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full");
+            NOTIFY_STATE_ENTERED("ROOT.state_9.state_11.broken_bin");
+            state_11_subState = broken_bin;
+            state_11_active = broken_bin;
+            NOTIFY_TRANSITION_TERMINATED("11");
+            res = eventConsumed;
+        }
+    else if(IS_EVENT_TYPE_OF(OMNullEventId))
+        {
+            //## transition 19 
             if(fillLevel >= 95)
                 {
-                    NOTIFY_TRANSITION_STARTED("15");
+                    NOTIFY_TRANSITION_STARTED("19");
                     popNullTransition();
                     switch (not_full_subState) {
                         // State not_used
                         case not_used:
                         {
+                            //#[ state state_9.state_11.not_full.not_used.(Exit) 
+                            if(rand() % 50 == 1){GEN(broken);}
+                            //#]
                             NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.not_used");
                         }
                         break;
@@ -826,7 +1101,7 @@ IOxfReactive::TakeEventStatus smartbin::not_full_handleEvent() {
                     }
                     not_full_subState = OMNonState;
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full");
-                    //#[ transition 15 
+                    //#[ transition 19 
                     GEN(reqEmpty);
                     //#]
                     NOTIFY_STATE_ENTERED("ROOT.state_9.state_11.full_bin");
@@ -835,18 +1110,21 @@ IOxfReactive::TakeEventStatus smartbin::not_full_handleEvent() {
                     //#[ state state_9.state_11.full_bin.(Entry) 
                     full = true;
                     //#]
-                    NOTIFY_TRANSITION_TERMINATED("15");
+                    NOTIFY_TRANSITION_TERMINATED("19");
                     res = eventConsumed;
                 }
         }
     else if(IS_EVENT_TYPE_OF(reqEmpty_Default_id))
         {
-            NOTIFY_TRANSITION_STARTED("16");
+            NOTIFY_TRANSITION_STARTED("10");
             popNullTransition();
             switch (not_full_subState) {
                 // State not_used
                 case not_used:
                 {
+                    //#[ state state_9.state_11.not_full.not_used.(Exit) 
+                    if(rand() % 50 == 1){GEN(broken);}
+                    //#]
                     NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.not_used");
                 }
                 break;
@@ -868,7 +1146,7 @@ IOxfReactive::TakeEventStatus smartbin::not_full_handleEvent() {
             //#[ state state_9.state_11.full_bin.(Entry) 
             full = true;
             //#]
-            NOTIFY_TRANSITION_TERMINATED("16");
+            NOTIFY_TRANSITION_TERMINATED("10");
             res = eventConsumed;
         }
     
@@ -880,13 +1158,20 @@ IOxfReactive::TakeEventStatus smartbin::state_5_handleEvent() {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     if(IS_EVENT_TYPE_OF(OMNullEventId))
         {
-            NOTIFY_TRANSITION_STARTED("13");
+            NOTIFY_TRANSITION_STARTED("18");
             popNullTransition();
             NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.state_5");
             NOTIFY_STATE_ENTERED("ROOT.state_9.state_11.not_full.not_used");
             not_full_subState = not_used;
             state_11_active = not_used;
-            NOTIFY_TRANSITION_TERMINATED("13");
+            //#[ state state_9.state_11.not_full.not_used.(Entry) 
+            if(fillLevel > maxFill){maxFill = fillLevel;}
+            nSamples += 1;
+            totalFill += fillLevel;
+            avg = totalFill/nSamples;
+            
+            //#]
+            NOTIFY_TRANSITION_TERMINATED("18");
             res = eventConsumed;
         }
     
@@ -902,6 +1187,9 @@ IOxfReactive::TakeEventStatus smartbin::not_used_handleEvent() {
     if(IS_EVENT_TYPE_OF(throwAway_Default_id))
         {
             NOTIFY_TRANSITION_STARTED("2");
+            //#[ state state_9.state_11.not_full.not_used.(Exit) 
+            if(rand() % 50 == 1){GEN(broken);}
+            //#]
             NOTIFY_STATE_EXITED("ROOT.state_9.state_11.not_full.not_used");
             NOTIFY_STATE_ENTERED("ROOT.state_9.state_11.not_full.state_5");
             pushNullTransition();
@@ -909,7 +1197,7 @@ IOxfReactive::TakeEventStatus smartbin::not_used_handleEvent() {
             state_11_active = state_5;
             //#[ state state_9.state_11.not_full.state_5.(Entry) 
             fillLevel += 5;
-            std::cout<<fillLevel%100<<"\n";
+            std::cout<<fillLevel<<"\n";
             //#]
             NOTIFY_TRANSITION_TERMINATED("2");
             res = eventConsumed;
@@ -930,6 +1218,11 @@ void OMAnimatedsmartbin::serializeAttributes(AOMSAttributes* aomsAttributes) con
     aomsAttributes->addAttribute("flowproperty_16", x2String(myReal->flowproperty_16));
     aomsAttributes->addAttribute("emptyReq", x2String(myReal->emptyReq));
     aomsAttributes->addAttribute("full", x2String(myReal->full));
+    aomsAttributes->addAttribute("nSamples", x2String(myReal->nSamples));
+    aomsAttributes->addAttribute("avg", x2String(myReal->avg));
+    aomsAttributes->addAttribute("totalFill", x2String(myReal->totalFill));
+    aomsAttributes->addAttribute("maxFill", x2String(myReal->maxFill));
+    aomsAttributes->addAttribute("repairRequested", x2String(myReal->repairRequested));
     OMAnimatedbin::serializeAttributes(aomsAttributes);
 }
 
@@ -995,6 +1288,16 @@ void OMAnimatedsmartbin::state_14_serializeStates(AOMSState* aomsState) const {
             accepttimeevent_19_serializeStates(aomsState);
         }
         break;
+        case smartbin::repair_broken_bin:
+        {
+            repair_broken_bin_serializeStates(aomsState);
+        }
+        break;
+        case smartbin::accepttimeevent_28:
+        {
+            accepttimeevent_28_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
@@ -1004,8 +1307,16 @@ void OMAnimatedsmartbin::wait_for_task_serializeStates(AOMSState* aomsState) con
     aomsState->addState("ROOT.state_9.state_14.wait_for_task");
 }
 
+void OMAnimatedsmartbin::repair_broken_bin_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_14.repair_broken_bin");
+}
+
 void OMAnimatedsmartbin::empty_full_bin_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_9.state_14.empty_full_bin");
+}
+
+void OMAnimatedsmartbin::accepttimeevent_28_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_14.accepttimeevent_28");
 }
 
 void OMAnimatedsmartbin::accepttimeevent_19_serializeStates(AOMSState* aomsState) const {
@@ -1030,9 +1341,28 @@ void OMAnimatedsmartbin::state_12_serializeStates(AOMSState* aomsState) const {
             wait_for_empty_serializeStates(aomsState);
         }
         break;
+        case smartbin::wait_for_repair:
+        {
+            wait_for_repair_serializeStates(aomsState);
+        }
+        break;
+        case smartbin::state_29:
+        {
+            state_29_serializeStates(aomsState);
+        }
+        break;
+        case smartbin::sched_repair:
+        {
+            sched_repair_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
+}
+
+void OMAnimatedsmartbin::wait_for_repair_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_12.wait_for_repair");
 }
 
 void OMAnimatedsmartbin::wait_for_empty_serializeStates(AOMSState* aomsState) const {
@@ -1043,6 +1373,14 @@ void OMAnimatedsmartbin::wait_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_9.state_12.wait");
 }
 
+void OMAnimatedsmartbin::state_29_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_12.state_29");
+}
+
+void OMAnimatedsmartbin::sched_repair_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_12.sched_repair");
+}
+
 void OMAnimatedsmartbin::dispatchTruck_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_9.state_12.dispatchTruck");
 }
@@ -1050,9 +1388,9 @@ void OMAnimatedsmartbin::dispatchTruck_serializeStates(AOMSState* aomsState) con
 void OMAnimatedsmartbin::state_11_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_9.state_11");
     switch (myReal->state_11_subState) {
-        case smartbin::empty_bin:
+        case smartbin::not_full:
         {
-            empty_bin_serializeStates(aomsState);
+            not_full_serializeStates(aomsState);
         }
         break;
         case smartbin::full_bin:
@@ -1060,14 +1398,14 @@ void OMAnimatedsmartbin::state_11_serializeStates(AOMSState* aomsState) const {
             full_bin_serializeStates(aomsState);
         }
         break;
-        case smartbin::not_full:
+        case smartbin::empty_bin:
         {
-            not_full_serializeStates(aomsState);
+            empty_bin_serializeStates(aomsState);
         }
         break;
-        case smartbin::broken:
+        case smartbin::broken_bin:
         {
-            broken_serializeStates(aomsState);
+            broken_bin_serializeStates(aomsState);
         }
         break;
         default:
@@ -1109,8 +1447,8 @@ void OMAnimatedsmartbin::empty_bin_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.state_9.state_11.empty_bin");
 }
 
-void OMAnimatedsmartbin::broken_serializeStates(AOMSState* aomsState) const {
-    aomsState->addState("ROOT.state_9.state_11.broken");
+void OMAnimatedsmartbin::broken_bin_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_9.state_11.broken_bin");
 }
 //#]
 

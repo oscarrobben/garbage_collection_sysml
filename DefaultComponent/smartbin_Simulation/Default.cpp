@@ -62,6 +62,36 @@
 #define drive_UNSERIALIZE OM_NO_OP
 
 #define drive_CONSTRUCTOR drive()
+
+#define broken_SERIALIZE OM_NO_OP
+
+#define broken_UNSERIALIZE OM_NO_OP
+
+#define broken_CONSTRUCTOR broken()
+
+#define repaired_SERIALIZE OM_NO_OP
+
+#define repaired_UNSERIALIZE OM_NO_OP
+
+#define repaired_CONSTRUCTOR repaired()
+
+#define repair_bin_SERIALIZE OM_NO_OP
+
+#define repair_bin_UNSERIALIZE OM_NO_OP
+
+#define repair_bin_CONSTRUCTOR repair_bin()
+
+#define disp_repair_SERIALIZE OM_NO_OP
+
+#define disp_repair_UNSERIALIZE OM_NO_OP
+
+#define disp_repair_CONSTRUCTOR disp_repair()
+
+#define req_repair_SERIALIZE OM_NO_OP
+
+#define req_repair_UNSERIALIZE OM_NO_OP
+
+#define req_repair_CONSTRUCTOR req_repair()
 //#]
 
 //## package Default
@@ -137,6 +167,66 @@ bool drive::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(drive, Default, Default, drive())
+
+//## event broken()
+broken::broken() {
+    NOTIFY_EVENT_CONSTRUCTOR(broken)
+    setId(broken_Default_id);
+}
+
+bool broken::isTypeOf(const short id) const {
+    return (broken_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(broken, Default, Default, broken())
+
+//## event repaired()
+repaired::repaired() {
+    NOTIFY_EVENT_CONSTRUCTOR(repaired)
+    setId(repaired_Default_id);
+}
+
+bool repaired::isTypeOf(const short id) const {
+    return (repaired_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(repaired, Default, Default, repaired())
+
+//## event repair_bin()
+repair_bin::repair_bin() {
+    NOTIFY_EVENT_CONSTRUCTOR(repair_bin)
+    setId(repair_bin_Default_id);
+}
+
+bool repair_bin::isTypeOf(const short id) const {
+    return (repair_bin_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(repair_bin, Default, Default, repair_bin())
+
+//## event disp_repair()
+disp_repair::disp_repair() {
+    NOTIFY_EVENT_CONSTRUCTOR(disp_repair)
+    setId(disp_repair_Default_id);
+}
+
+bool disp_repair::isTypeOf(const short id) const {
+    return (disp_repair_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(disp_repair, Default, Default, disp_repair())
+
+//## event req_repair()
+req_repair::req_repair() {
+    NOTIFY_EVENT_CONSTRUCTOR(req_repair)
+    setId(req_repair_Default_id);
+}
+
+bool req_repair::isTypeOf(const short id) const {
+    return (req_repair_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(req_repair, Default, Default, req_repair())
 
 /*********************************************************************
 	File Path	: DefaultComponent\smartbin_Simulation\Default.cpp

@@ -205,6 +205,12 @@ public :
     p_smartbin_C* get_p_smartbin() const;
     
     //## auto_generated
+    int getAvg() const;
+    
+    //## auto_generated
+    void setAvg(int p_avg);
+    
+    //## auto_generated
     bool getEmptyReq() const;
     
     //## auto_generated
@@ -226,6 +232,30 @@ public :
     void setFull(bool p_full);
     
     //## auto_generated
+    int getMaxFill() const;
+    
+    //## auto_generated
+    void setMaxFill(int p_maxFill);
+    
+    //## auto_generated
+    int getNSamples() const;
+    
+    //## auto_generated
+    void setNSamples(int p_nSamples);
+    
+    //## auto_generated
+    bool getRepairRequested() const;
+    
+    //## auto_generated
+    void setRepairRequested(bool p_repairRequested);
+    
+    //## auto_generated
+    int getTotalFill() const;
+    
+    //## auto_generated
+    void setTotalFill(int p_totalFill);
+    
+    //## auto_generated
     truck* getItsTruck() const;
     
     //## auto_generated
@@ -245,6 +275,8 @@ protected :
     //## auto_generated
     bool cancelTimeout(const IOxfTimeout* arg);
     
+    int avg;		//## attribute avg
+    
     bool emptyReq;		//## attribute emptyReq
     
     int fillLevel;		//## attribute fillLevel
@@ -252,6 +284,14 @@ protected :
     int flowproperty_16;		//## attribute flowproperty_16
     
     bool full;		//## attribute full
+    
+    int maxFill;		//## attribute maxFill
+    
+    int nSamples;		//## attribute nSamples
+    
+    bool repairRequested;		//## attribute repairRequested
+    
+    int totalFill;		//## attribute totalFill
     
 //#[ ignore
     p_smartbin_C p_smartbin;
@@ -306,15 +346,26 @@ public :
     void state_14_entDef();
     
     //## statechart_method
+    void state_14_exit();
+    
+    //## statechart_method
     IOxfReactive::TakeEventStatus state_14_processEvent();
     
     // wait_for_task:
     //## statechart_method
     inline bool wait_for_task_IN() const;
     
+    // repair_broken_bin:
+    //## statechart_method
+    inline bool repair_broken_bin_IN() const;
+    
     // empty_full_bin:
     //## statechart_method
     inline bool empty_full_bin_IN() const;
+    
+    // accepttimeevent_28:
+    //## statechart_method
+    inline bool accepttimeevent_28_IN() const;
     
     // accepttimeevent_19:
     //## statechart_method
@@ -328,7 +379,14 @@ public :
     void state_12_entDef();
     
     //## statechart_method
+    void state_12_exit();
+    
+    //## statechart_method
     IOxfReactive::TakeEventStatus state_12_processEvent();
+    
+    // wait_for_repair:
+    //## statechart_method
+    inline bool wait_for_repair_IN() const;
     
     // wait_for_empty:
     //## statechart_method
@@ -337,6 +395,14 @@ public :
     // wait:
     //## statechart_method
     inline bool wait_IN() const;
+    
+    // state_29:
+    //## statechart_method
+    inline bool state_29_IN() const;
+    
+    // sched_repair:
+    //## statechart_method
+    inline bool sched_repair_IN() const;
     
     // dispatchTruck:
     //## statechart_method
@@ -387,9 +453,9 @@ public :
     //## statechart_method
     inline bool empty_bin_IN() const;
     
-    // broken:
+    // broken_bin:
     //## statechart_method
-    inline bool broken_IN() const;
+    inline bool broken_bin_IN() const;
 
 protected :
 
@@ -399,19 +465,24 @@ protected :
         state_9 = 1,
         state_14 = 2,
         wait_for_task = 3,
-        empty_full_bin = 4,
-        accepttimeevent_19 = 5,
-        state_12 = 6,
-        wait_for_empty = 7,
-        wait = 8,
-        dispatchTruck = 9,
-        state_11 = 10,
-        not_full = 11,
-        state_5 = 12,
-        not_used = 13,
-        full_bin = 14,
-        empty_bin = 15,
-        broken = 16
+        repair_broken_bin = 4,
+        empty_full_bin = 5,
+        accepttimeevent_28 = 6,
+        accepttimeevent_19 = 7,
+        state_12 = 8,
+        wait_for_repair = 9,
+        wait_for_empty = 10,
+        wait = 11,
+        state_29 = 12,
+        sched_repair = 13,
+        dispatchTruck = 14,
+        state_11 = 15,
+        not_full = 16,
+        state_5 = 17,
+        not_used = 18,
+        full_bin = 19,
+        empty_bin = 20,
+        broken_bin = 21
     };
     
     int rootState_subState;
@@ -462,7 +533,13 @@ public :
     void wait_for_task_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void repair_broken_bin_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void empty_full_bin_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void accepttimeevent_28_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void accepttimeevent_19_serializeStates(AOMSState* aomsState) const;
@@ -471,10 +548,19 @@ public :
     void state_12_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void wait_for_repair_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void wait_for_empty_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void wait_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_29_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void sched_repair_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void dispatchTruck_serializeStates(AOMSState* aomsState) const;
@@ -498,7 +584,7 @@ public :
     void empty_bin_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void broken_serializeStates(AOMSState* aomsState) const;
+    void broken_bin_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -519,8 +605,16 @@ inline bool smartbin::wait_for_task_IN() const {
     return state_14_subState == wait_for_task;
 }
 
+inline bool smartbin::repair_broken_bin_IN() const {
+    return state_14_subState == repair_broken_bin;
+}
+
 inline bool smartbin::empty_full_bin_IN() const {
     return state_14_subState == empty_full_bin;
+}
+
+inline bool smartbin::accepttimeevent_28_IN() const {
+    return state_14_subState == accepttimeevent_28;
 }
 
 inline bool smartbin::accepttimeevent_19_IN() const {
@@ -531,12 +625,24 @@ inline bool smartbin::state_12_IN() const {
     return state_9_IN();
 }
 
+inline bool smartbin::wait_for_repair_IN() const {
+    return state_12_subState == wait_for_repair;
+}
+
 inline bool smartbin::wait_for_empty_IN() const {
     return state_12_subState == wait_for_empty;
 }
 
 inline bool smartbin::wait_IN() const {
     return state_12_subState == wait;
+}
+
+inline bool smartbin::state_29_IN() const {
+    return state_12_subState == state_29;
+}
+
+inline bool smartbin::sched_repair_IN() const {
+    return state_12_subState == sched_repair;
 }
 
 inline bool smartbin::dispatchTruck_IN() const {
@@ -567,8 +673,8 @@ inline bool smartbin::empty_bin_IN() const {
     return state_11_subState == empty_bin;
 }
 
-inline bool smartbin::broken_IN() const {
-    return state_11_subState == broken;
+inline bool smartbin::broken_bin_IN() const {
+    return state_11_subState == broken_bin;
 }
 
 #endif
