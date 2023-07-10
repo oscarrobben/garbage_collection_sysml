@@ -111,7 +111,8 @@ OBJS= \
   ActorPkg.obj \
   UseCaseAnalysisPkg.obj \
   EnvPkg.obj \
-  addTrashPkg.obj
+  addTrashPkg.obj \
+  ProxyPortInterfaces.obj
 
 
 
@@ -194,7 +195,7 @@ SOCK_LIB=
 
 
 
-smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h electricity.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
+smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h electricity.h truck.h bool_emptyReq_ProxyFlowPropertyInterface.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"smartbin.obj" "smartbin.cpp" 
 
@@ -254,7 +255,7 @@ wastecenter.obj : wastecenter.cpp wastecenter.h    Default.h smart_garbage_colle
 
 
 
-cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_system.h server.h 
+cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_system.h server.h bool_emptyReq_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"cms.obj" "cms.cpp" 
 
@@ -266,7 +267,7 @@ bin.obj : bin.cpp bin.h    Default.h cms.h smart_garbage_collection_system.h
 
 
 
-truck.obj : truck.cpp truck.h    Default.h cms.h smart_garbage_collection_system.h Garbage_Truck_Driver.h 
+truck.obj : truck.cpp truck.h    Default.h cms.h smart_garbage_collection_system.h Garbage_Truck_Driver.h smartbin.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"truck.obj" "truck.cpp" 
 
@@ -356,6 +357,12 @@ addTrashPkg.obj : addTrashPkg.cpp addTrashPkg.h    UseCaseAnalysisPkg.h
 
 
 
+ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    bool_emptyReq_ProxyFlowPropertyInterface.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ProxyPortInterfaces.obj" "ProxyPortInterfaces.cpp" 
+
+
+
 
 
 
@@ -410,6 +417,7 @@ clean:
 	if exist UseCaseAnalysisPkg.obj erase UseCaseAnalysisPkg.obj
 	if exist EnvPkg.obj erase EnvPkg.obj
 	if exist addTrashPkg.obj erase addTrashPkg.obj
+	if exist ProxyPortInterfaces.obj erase ProxyPortInterfaces.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

@@ -14,14 +14,21 @@
 #include "cms.h"
 //## link itsSmart_garbage_collection_system
 #include "smart_garbage_collection_system.h"
+//## auto_generated
+#include <oxf\omthread.h>
 //## link is_serviced_by
 #include "Garbage_Truck_Driver.h"
+//## link itsSmartbin
+#include "smartbin.h"
 //## package Default
 
 //## class truck
-truck::truck() {
+truck::truck(IOxfActive* theActiveContext) {
+    setActiveContext(theActiveContext, false);
     itsCms = NULL;
     itsSmart_garbage_collection_system = NULL;
+    itsSmartbin = NULL;
+    initStatechart();
 }
 
 truck::~truck() {
@@ -117,6 +124,15 @@ void truck::cleanUpRelations() {
                 }
             itsSmart_garbage_collection_system = NULL;
         }
+    if(itsSmartbin != NULL)
+        {
+            truck* p_truck = itsSmartbin->getItsTruck();
+            if(p_truck != NULL)
+                {
+                    itsSmartbin->__setItsTruck(NULL);
+                }
+            itsSmartbin = NULL;
+        }
 }
 
 void truck::_addIs_serviced_by(Garbage_Truck_Driver* p_Garbage_Truck_Driver) {
@@ -161,6 +177,70 @@ void truck::_setItsSmart_garbage_collection_system(smart_garbage_collection_syst
 
 void truck::_clearItsSmart_garbage_collection_system() {
     itsSmart_garbage_collection_system = NULL;
+}
+
+smartbin* truck::getItsSmartbin() const {
+    return itsSmartbin;
+}
+
+void truck::setItsSmartbin(smartbin* p_smartbin) {
+    if(p_smartbin != NULL)
+        {
+            p_smartbin->_setItsTruck(this);
+        }
+    _setItsSmartbin(p_smartbin);
+}
+
+bool truck::startBehavior() {
+    bool done = false;
+    done = OMReactive::startBehavior();
+    return done;
+}
+
+void truck::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
+}
+
+void truck::__setItsSmartbin(smartbin* p_smartbin) {
+    itsSmartbin = p_smartbin;
+}
+
+void truck::_setItsSmartbin(smartbin* p_smartbin) {
+    if(itsSmartbin != NULL)
+        {
+            itsSmartbin->__setItsTruck(NULL);
+        }
+    __setItsSmartbin(p_smartbin);
+}
+
+void truck::_clearItsSmartbin() {
+    itsSmartbin = NULL;
+}
+
+void truck::rootState_entDef() {
+    {
+        pushNullTransition();
+        rootState_subState = state_0;
+        rootState_active = state_0;
+    }
+}
+
+IOxfReactive::TakeEventStatus truck::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    // State state_0
+    if(rootState_active == state_0)
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    rootState_subState = state_1;
+                    rootState_active = state_1;
+                    res = eventConsumed;
+                }
+            
+        }
+    return res;
 }
 
 /*********************************************************************

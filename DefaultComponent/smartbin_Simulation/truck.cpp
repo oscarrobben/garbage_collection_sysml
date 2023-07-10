@@ -10,6 +10,8 @@
 
 //#[ ignore
 #define NAMESPACE_PREFIX
+
+#define _OMSTATECHART_ANIMATED
 //#]
 
 //## auto_generated
@@ -20,6 +22,8 @@
 #include "smart_garbage_collection_system.h"
 //## link is_serviced_by
 #include "Garbage_Truck_Driver.h"
+//## link itsSmartbin
+#include "smartbin.h"
 //#[ ignore
 #define Default_truck_truck_SERIALIZE OM_NO_OP
 //#]
@@ -27,10 +31,13 @@
 //## package Default
 
 //## class truck
-truck::truck() {
-    NOTIFY_CONSTRUCTOR(truck, truck(), 0, Default_truck_truck_SERIALIZE);
+truck::truck(IOxfActive* theActiveContext) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(truck, truck(), 0, Default_truck_truck_SERIALIZE);
+    setActiveContext(theActiveContext, false);
     itsCms = NULL;
     itsSmart_garbage_collection_system = NULL;
+    itsSmartbin = NULL;
+    initStatechart();
 }
 
 truck::~truck() {
@@ -129,6 +136,16 @@ void truck::cleanUpRelations() {
                 }
             itsSmart_garbage_collection_system = NULL;
         }
+    if(itsSmartbin != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsSmartbin");
+            truck* p_truck = itsSmartbin->getItsTruck();
+            if(p_truck != NULL)
+                {
+                    itsSmartbin->__setItsTruck(NULL);
+                }
+            itsSmartbin = NULL;
+        }
 }
 
 void truck::_addIs_serviced_by(Garbage_Truck_Driver* p_Garbage_Truck_Driver) {
@@ -203,6 +220,87 @@ void truck::_clearItsSmart_garbage_collection_system() {
     itsSmart_garbage_collection_system = NULL;
 }
 
+smartbin* truck::getItsSmartbin() const {
+    return itsSmartbin;
+}
+
+void truck::setItsSmartbin(smartbin* p_smartbin) {
+    if(p_smartbin != NULL)
+        {
+            p_smartbin->_setItsTruck(this);
+        }
+    _setItsSmartbin(p_smartbin);
+}
+
+bool truck::startBehavior() {
+    bool done = false;
+    done = OMReactive::startBehavior();
+    return done;
+}
+
+void truck::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
+}
+
+void truck::__setItsSmartbin(smartbin* p_smartbin) {
+    itsSmartbin = p_smartbin;
+    if(p_smartbin != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsSmartbin", p_smartbin, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsSmartbin");
+        }
+}
+
+void truck::_setItsSmartbin(smartbin* p_smartbin) {
+    if(itsSmartbin != NULL)
+        {
+            itsSmartbin->__setItsTruck(NULL);
+        }
+    __setItsSmartbin(p_smartbin);
+}
+
+void truck::_clearItsSmartbin() {
+    NOTIFY_RELATION_CLEARED("itsSmartbin");
+    itsSmartbin = NULL;
+}
+
+void truck::rootState_entDef() {
+    {
+        NOTIFY_STATE_ENTERED("ROOT");
+        NOTIFY_TRANSITION_STARTED("0");
+        NOTIFY_STATE_ENTERED("ROOT.state_0");
+        pushNullTransition();
+        rootState_subState = state_0;
+        rootState_active = state_0;
+        NOTIFY_TRANSITION_TERMINATED("0");
+    }
+}
+
+IOxfReactive::TakeEventStatus truck::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    // State state_0
+    if(rootState_active == state_0)
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("1");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.state_0");
+                    NOTIFY_STATE_ENTERED("ROOT.state_1");
+                    rootState_subState = state_1;
+                    rootState_active = state_1;
+                    NOTIFY_TRANSITION_TERMINATED("1");
+                    res = eventConsumed;
+                }
+            
+        }
+    return res;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedtruck::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -224,10 +322,41 @@ void OMAnimatedtruck::serializeRelations(AOMSRelations* aomsRelations) const {
             iter++;
         }
     }
+    aomsRelations->addRelation("itsSmartbin", false, true);
+    if(myReal->itsSmartbin)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsSmartbin);
+        }
+}
+
+void OMAnimatedtruck::rootState_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT");
+    switch (myReal->rootState_subState) {
+        case truck::state_0:
+        {
+            state_0_serializeStates(aomsState);
+        }
+        break;
+        case truck::state_1:
+        {
+            state_1_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedtruck::state_1_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_1");
+}
+
+void OMAnimatedtruck::state_0_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.state_0");
 }
 //#]
 
-IMPLEMENT_META_P(truck, Default, Default, false, OMAnimatedtruck)
+IMPLEMENT_REACTIVE_META_P(truck, Default, Default, false, OMAnimatedtruck)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

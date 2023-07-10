@@ -44,6 +44,24 @@
 #define throwAway_UNSERIALIZE OM_NO_OP
 
 #define throwAway_CONSTRUCTOR throwAway()
+
+#define reqEmpty_SERIALIZE OM_NO_OP
+
+#define reqEmpty_UNSERIALIZE OM_NO_OP
+
+#define reqEmpty_CONSTRUCTOR reqEmpty()
+
+#define emptyBin_SERIALIZE OM_NO_OP
+
+#define emptyBin_UNSERIALIZE OM_NO_OP
+
+#define emptyBin_CONSTRUCTOR emptyBin()
+
+#define drive_SERIALIZE OM_NO_OP
+
+#define drive_UNSERIALIZE OM_NO_OP
+
+#define drive_CONSTRUCTOR drive()
 //#]
 
 //## package Default
@@ -83,6 +101,42 @@ bool throwAway::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(throwAway, Default, Default, throwAway())
+
+//## event reqEmpty()
+reqEmpty::reqEmpty() {
+    NOTIFY_EVENT_CONSTRUCTOR(reqEmpty)
+    setId(reqEmpty_Default_id);
+}
+
+bool reqEmpty::isTypeOf(const short id) const {
+    return (reqEmpty_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(reqEmpty, Default, Default, reqEmpty())
+
+//## event emptyBin()
+emptyBin::emptyBin() {
+    NOTIFY_EVENT_CONSTRUCTOR(emptyBin)
+    setId(emptyBin_Default_id);
+}
+
+bool emptyBin::isTypeOf(const short id) const {
+    return (emptyBin_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(emptyBin, Default, Default, emptyBin())
+
+//## event drive()
+drive::drive() {
+    NOTIFY_EVENT_CONSTRUCTOR(drive)
+    setId(drive_Default_id);
+}
+
+bool drive::isTypeOf(const short id) const {
+    return (drive_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(drive, Default, Default, drive())
 
 /*********************************************************************
 	File Path	: DefaultComponent\smartbin_Simulation\Default.cpp

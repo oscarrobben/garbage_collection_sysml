@@ -25,6 +25,8 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
+//## class p_smartbin_C
+#include "bool_emptyReq_ProxyFlowPropertyInterface.h"
 //## auto_generated
 class cms;
 
@@ -40,6 +42,9 @@ class sensor;
 //## auto_generated
 class smart_garbage_collection_system;
 
+//## link itsTruck
+class truck;
+
 //## link itsResident_Citizen_User
 class Resident_Citizen_User;
 
@@ -47,10 +52,54 @@ class Resident_Citizen_User;
 
 //## class smartbin
 class smartbin : public OMReactive, public bin {
-    ////    Constructors and destructors    ////
-    
 public :
 
+//#[ ignore
+    //## package Default
+    class p_smartbin_C : public bool_emptyReq_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_smartbin_C();
+        
+        //## auto_generated
+        virtual ~p_smartbin_C();
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        bool_emptyReq_ProxyFlowPropertyInterface* getItsBool_emptyReq_ProxyFlowPropertyInterface();
+        
+        //## auto_generated
+        bool_emptyReq_ProxyFlowPropertyInterface* getOutBound();
+        
+        //## auto_generated
+        virtual void setEmptyReq(bool p_emptyReq);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations();
+        
+        ////    Attributes    ////
+        
+        int _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        bool_emptyReq_ProxyFlowPropertyInterface* itsBool_emptyReq_ProxyFlowPropertyInterface;		//## link itsBool_emptyReq_ProxyFlowPropertyInterface
+    };
+//#]
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     smartbin(IOxfActive* theActiveContext = 0);
     
@@ -137,11 +186,42 @@ public :
     //## auto_generated
     void _clearItsResident_Citizen_User();
     
+//#[ ignore
+    void setEmptyReq(bool p_emptyReq);
+//#]
+
+    //## auto_generated
+    p_smartbin_C* getP_smartbin() const;
+    
+    //## auto_generated
+    p_smartbin_C* get_p_smartbin() const;
+    
+    //## auto_generated
+    bool getEmptyBin() const;
+    
+    //## auto_generated
+    void setEmptyBin(bool p_emptyBin);
+    
+    //## auto_generated
+    bool getEmptyReq() const;
+    
     //## auto_generated
     int getFillLevel() const;
     
     //## auto_generated
     void setFillLevel(int p_fillLevel);
+    
+    //## auto_generated
+    int getFlowproperty_16() const;
+    
+    //## auto_generated
+    void setFlowproperty_16(int p_flowproperty_16);
+    
+    //## auto_generated
+    truck* getItsTruck() const;
+    
+    //## auto_generated
+    void setItsTruck(truck* p_truck);
     
     //## auto_generated
     virtual bool startBehavior();
@@ -151,12 +231,33 @@ protected :
     //## auto_generated
     void initStatechart();
     
+    bool emptyBin;		//## attribute emptyBin
+    
+    bool emptyReq;		//## attribute emptyReq
+    
     int fillLevel;		//## attribute fillLevel
     
+    int flowproperty_16;		//## attribute flowproperty_16
+    
+//#[ ignore
+    p_smartbin_C p_smartbin;
+//#]
+
     Resident_Citizen_User* itsResident_Citizen_User;		//## link itsResident_Citizen_User
+    
+    truck* itsTruck;		//## link itsTruck
 
 public :
 
+    //## auto_generated
+    void __setItsTruck(truck* p_truck);
+    
+    //## auto_generated
+    void _setItsTruck(truck* p_truck);
+    
+    //## auto_generated
+    void _clearItsTruck();
+    
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;
@@ -174,6 +275,9 @@ public :
     //## statechart_method
     void not_full_entDef();
     
+    //## statechart_method
+    IOxfReactive::TakeEventStatus not_full_handleEvent();
+    
     // state_5:
     //## statechart_method
     inline bool state_5_IN() const;
@@ -181,6 +285,14 @@ public :
     // not_used:
     //## statechart_method
     inline bool not_used_IN() const;
+    
+    // full:
+    //## statechart_method
+    inline bool full_IN() const;
+    
+    // empty_bin:
+    //## statechart_method
+    inline bool empty_bin_IN() const;
 
 protected :
 
@@ -189,7 +301,9 @@ protected :
         OMNonState = 0,
         not_full = 1,
         state_5 = 2,
-        not_used = 3
+        not_used = 3,
+        full = 4,
+        empty_bin = 5
     };
     
     int rootState_subState;
@@ -214,6 +328,14 @@ inline bool smartbin::state_5_IN() const {
 
 inline bool smartbin::not_used_IN() const {
     return not_full_subState == not_used;
+}
+
+inline bool smartbin::full_IN() const {
+    return rootState_subState == full;
+}
+
+inline bool smartbin::empty_bin_IN() const {
+    return rootState_subState == empty_bin;
 }
 
 #endif

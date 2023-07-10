@@ -13,10 +13,18 @@
 //## package Default
 
 //## class SensorData
-SensorData::SensorData() : fill(0), fill_level(0) {
+SensorData::SensorData() : empty(false), fill(0), fill_level(0) {
 }
 
 SensorData::~SensorData() {
+}
+
+bool SensorData::getEmpty() const {
+    return empty;
+}
+
+void SensorData::setEmpty(bool p_empty) {
+    empty = p_empty;
 }
 
 int SensorData::getFill() const {

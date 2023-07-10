@@ -57,6 +57,12 @@ class wastecenter;
 
 //#[ ignore
 #define throwAway_Default_id 18601
+
+#define reqEmpty_Default_id 18602
+
+#define emptyBin_Default_id 18603
+
+#define drive_Default_id 18604
 //#]
 
 //## package Default
@@ -90,6 +96,93 @@ public :
 //#[ ignore
 class OMAnimatedthrowAway : virtual public AOMEvent {
     DECLARE_META_EVENT(throwAway)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event reqEmpty()
+class reqEmpty : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedreqEmpty;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    reqEmpty();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedreqEmpty : virtual public AOMEvent {
+    DECLARE_META_EVENT(reqEmpty)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event emptyBin()
+class emptyBin : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedemptyBin;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    emptyBin();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedemptyBin : virtual public AOMEvent {
+    DECLARE_META_EVENT(emptyBin)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event drive()
+class drive : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimateddrive;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    drive();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimateddrive : virtual public AOMEvent {
+    DECLARE_META_EVENT(drive)
 };
 //#]
 #endif // _OMINSTRUMENT

@@ -29,6 +29,8 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
+//## class p_smartbin_C
+#include "bool_emptyReq_ProxyFlowPropertyInterface.h"
 //## auto_generated
 class cms;
 
@@ -44,6 +46,9 @@ class sensor;
 //## auto_generated
 class smart_garbage_collection_system;
 
+//## link itsTruck
+class truck;
+
 //## link itsResident_Citizen_User
 class Resident_Citizen_User;
 
@@ -52,6 +57,50 @@ class Resident_Citizen_User;
 //## class smartbin
 class smartbin : public OMReactive, public bin {
 public :
+
+//#[ ignore
+    //## package Default
+    class p_smartbin_C : public bool_emptyReq_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_smartbin_C();
+        
+        //## auto_generated
+        virtual ~p_smartbin_C();
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        bool_emptyReq_ProxyFlowPropertyInterface* getItsBool_emptyReq_ProxyFlowPropertyInterface();
+        
+        //## auto_generated
+        bool_emptyReq_ProxyFlowPropertyInterface* getOutBound();
+        
+        //## auto_generated
+        virtual void setEmptyReq(bool p_emptyReq);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations();
+        
+        ////    Attributes    ////
+        
+        int _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        bool_emptyReq_ProxyFlowPropertyInterface* itsBool_emptyReq_ProxyFlowPropertyInterface;		//## link itsBool_emptyReq_ProxyFlowPropertyInterface
+    };
+//#]
 
 #ifdef _OMINSTRUMENT
     friend class OMAnimatedsmartbin;
@@ -145,11 +194,42 @@ public :
     //## auto_generated
     void _clearItsResident_Citizen_User();
     
+//#[ ignore
+    void setEmptyReq(bool p_emptyReq);
+//#]
+
+    //## auto_generated
+    p_smartbin_C* getP_smartbin() const;
+    
+    //## auto_generated
+    p_smartbin_C* get_p_smartbin() const;
+    
+    //## auto_generated
+    bool getEmptyReq() const;
+    
     //## auto_generated
     int getFillLevel() const;
     
     //## auto_generated
     void setFillLevel(int p_fillLevel);
+    
+    //## auto_generated
+    int getFlowproperty_16() const;
+    
+    //## auto_generated
+    void setFlowproperty_16(int p_flowproperty_16);
+    
+    //## auto_generated
+    bool getFull() const;
+    
+    //## auto_generated
+    void setFull(bool p_full);
+    
+    //## auto_generated
+    truck* getItsTruck() const;
+    
+    //## auto_generated
+    void setItsTruck(truck* p_truck);
     
     //## auto_generated
     virtual bool startBehavior();
@@ -159,12 +239,39 @@ protected :
     //## auto_generated
     void initStatechart();
     
+    //## auto_generated
+    void cancelTimeouts();
+    
+    //## auto_generated
+    bool cancelTimeout(const IOxfTimeout* arg);
+    
+    bool emptyReq;		//## attribute emptyReq
+    
     int fillLevel;		//## attribute fillLevel
     
+    int flowproperty_16;		//## attribute flowproperty_16
+    
+    bool full;		//## attribute full
+    
+//#[ ignore
+    p_smartbin_C p_smartbin;
+//#]
+
     Resident_Citizen_User* itsResident_Citizen_User;		//## link itsResident_Citizen_User
+    
+    truck* itsTruck;		//## link itsTruck
 
 public :
 
+    //## auto_generated
+    void __setItsTruck(truck* p_truck);
+    
+    //## auto_generated
+    void _setItsTruck(truck* p_truck);
+    
+    //## auto_generated
+    void _clearItsTruck();
+    
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;
@@ -173,7 +280,80 @@ public :
     virtual void rootState_entDef();
     
     //## statechart_method
+    void rootStateEntDef();
+    
+    //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // state_9:
+    //## statechart_method
+    inline bool state_9_IN() const;
+    
+    //## statechart_method
+    void state_9_entDef();
+    
+    //## statechart_method
+    void state_9_exit();
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_9_processEvent();
+    
+    // state_14:
+    //## statechart_method
+    inline bool state_14_IN() const;
+    
+    //## statechart_method
+    void state_14_entDef();
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_14_processEvent();
+    
+    // wait_for_task:
+    //## statechart_method
+    inline bool wait_for_task_IN() const;
+    
+    // empty_full_bin:
+    //## statechart_method
+    inline bool empty_full_bin_IN() const;
+    
+    // accepttimeevent_19:
+    //## statechart_method
+    inline bool accepttimeevent_19_IN() const;
+    
+    // state_12:
+    //## statechart_method
+    inline bool state_12_IN() const;
+    
+    //## statechart_method
+    void state_12_entDef();
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_12_processEvent();
+    
+    // wait_for_empty:
+    //## statechart_method
+    inline bool wait_for_empty_IN() const;
+    
+    // wait:
+    //## statechart_method
+    inline bool wait_IN() const;
+    
+    // dispatchTruck:
+    //## statechart_method
+    inline bool dispatchTruck_IN() const;
+    
+    // state_11:
+    //## statechart_method
+    inline bool state_11_IN() const;
+    
+    //## statechart_method
+    void state_11_entDef();
+    
+    //## statechart_method
+    void state_11_exit();
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_11_processEvent();
     
     // not_full:
     //## statechart_method
@@ -189,28 +369,68 @@ public :
     //## statechart_method
     inline bool state_5_IN() const;
     
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_5_handleEvent();
+    
     // not_used:
     //## statechart_method
     inline bool not_used_IN() const;
     
-    // full:
     //## statechart_method
-    inline bool full_IN() const;
+    IOxfReactive::TakeEventStatus not_used_handleEvent();
+    
+    // full_bin:
+    //## statechart_method
+    inline bool full_bin_IN() const;
+    
+    // empty_bin:
+    //## statechart_method
+    inline bool empty_bin_IN() const;
+    
+    // broken:
+    //## statechart_method
+    inline bool broken_IN() const;
 
 protected :
 
 //#[ ignore
     enum smartbin_Enum {
         OMNonState = 0,
-        not_full = 1,
-        state_5 = 2,
-        not_used = 3,
-        full = 4
+        state_9 = 1,
+        state_14 = 2,
+        wait_for_task = 3,
+        empty_full_bin = 4,
+        accepttimeevent_19 = 5,
+        state_12 = 6,
+        wait_for_empty = 7,
+        wait = 8,
+        dispatchTruck = 9,
+        state_11 = 10,
+        not_full = 11,
+        state_5 = 12,
+        not_used = 13,
+        full_bin = 14,
+        empty_bin = 15,
+        broken = 16
     };
     
     int rootState_subState;
     
     int rootState_active;
+    
+    int state_14_subState;
+    
+    int state_14_active;
+    
+    IOxfTimeout* state_14_timeout;
+    
+    int state_12_subState;
+    
+    int state_12_active;
+    
+    int state_11_subState;
+    
+    int state_11_active;
     
     int not_full_subState;
 //#]
@@ -233,6 +453,36 @@ public :
     void rootState_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void state_9_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_14_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void wait_for_task_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void empty_full_bin_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void accepttimeevent_19_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_12_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void wait_for_empty_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void wait_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void dispatchTruck_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_11_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void not_full_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
@@ -242,7 +492,13 @@ public :
     void not_used_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void full_serializeStates(AOMSState* aomsState) const;
+    void full_bin_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void empty_bin_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void broken_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -251,8 +507,48 @@ inline bool smartbin::rootState_IN() const {
     return true;
 }
 
+inline bool smartbin::state_9_IN() const {
+    return rootState_subState == state_9;
+}
+
+inline bool smartbin::state_14_IN() const {
+    return state_9_IN();
+}
+
+inline bool smartbin::wait_for_task_IN() const {
+    return state_14_subState == wait_for_task;
+}
+
+inline bool smartbin::empty_full_bin_IN() const {
+    return state_14_subState == empty_full_bin;
+}
+
+inline bool smartbin::accepttimeevent_19_IN() const {
+    return state_14_subState == accepttimeevent_19;
+}
+
+inline bool smartbin::state_12_IN() const {
+    return state_9_IN();
+}
+
+inline bool smartbin::wait_for_empty_IN() const {
+    return state_12_subState == wait_for_empty;
+}
+
+inline bool smartbin::wait_IN() const {
+    return state_12_subState == wait;
+}
+
+inline bool smartbin::dispatchTruck_IN() const {
+    return state_12_subState == dispatchTruck;
+}
+
+inline bool smartbin::state_11_IN() const {
+    return state_9_IN();
+}
+
 inline bool smartbin::not_full_IN() const {
-    return rootState_subState == not_full;
+    return state_11_subState == not_full;
 }
 
 inline bool smartbin::state_5_IN() const {
@@ -263,8 +559,16 @@ inline bool smartbin::not_used_IN() const {
     return not_full_subState == not_used;
 }
 
-inline bool smartbin::full_IN() const {
-    return rootState_subState == full;
+inline bool smartbin::full_bin_IN() const {
+    return state_11_subState == full_bin;
+}
+
+inline bool smartbin::empty_bin_IN() const {
+    return state_11_subState == empty_bin;
+}
+
+inline bool smartbin::broken_IN() const {
+    return state_11_subState == broken;
 }
 
 #endif

@@ -21,6 +21,8 @@
 #include <oxf\omcollec.h>
 //## auto_generated
 #include <aom\aom.h>
+//## class cms
+#include "bool_emptyReq_ProxyFlowPropertyInterface.h"
 //## link itsBin
 class bin;
 
@@ -36,8 +38,94 @@ class truck;
 //## package Default
 
 //## class cms
-class cms {
+class cms : public bool_emptyReq_ProxyFlowPropertyInterface {
 public :
+
+//#[ ignore
+    //## package Default
+    class p_cms_C : public bool_emptyReq_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_cms_C();
+        
+        //## auto_generated
+        virtual ~p_cms_C();
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        void connectCms(cms* part);
+        
+        //## auto_generated
+        bool_emptyReq_ProxyFlowPropertyInterface* getItsBool_emptyReq_ProxyFlowPropertyInterface();
+        
+        //## auto_generated
+        virtual void setEmptyReq(bool p_emptyReq);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations();
+        
+        ////    Attributes    ////
+        
+        int _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        bool_emptyReq_ProxyFlowPropertyInterface* itsBool_emptyReq_ProxyFlowPropertyInterface;		//## link itsBool_emptyReq_ProxyFlowPropertyInterface
+    };
+    
+    //## package Default
+    class p_smartbin_C : public bool_emptyReq_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_smartbin_C();
+        
+        //## auto_generated
+        virtual ~p_smartbin_C();
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        void connectCms(cms* part);
+        
+        //## auto_generated
+        bool_emptyReq_ProxyFlowPropertyInterface* getItsBool_emptyReq_ProxyFlowPropertyInterface();
+        
+        //## auto_generated
+        virtual void setEmptyReq(bool p_emptyReq);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations();
+        
+        ////    Attributes    ////
+        
+        int _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        bool_emptyReq_ProxyFlowPropertyInterface* itsBool_emptyReq_ProxyFlowPropertyInterface;		//## link itsBool_emptyReq_ProxyFlowPropertyInterface
+    };
+//#]
 
 #ifdef _OMINSTRUMENT
     friend class OMAnimatedcms;
@@ -134,6 +222,29 @@ public :
     
     //## auto_generated
     void _clearItsTruck();
+    
+    //## auto_generated
+    p_cms_C* getP_cms() const;
+    
+    //## auto_generated
+    p_cms_C* get_p_cms() const;
+    
+    //## auto_generated
+    p_smartbin_C* getP_smartbin() const;
+    
+    //## auto_generated
+    p_smartbin_C* get_p_smartbin() const;
+
+protected :
+
+    //## auto_generated
+    void initRelations();
+    
+//#[ ignore
+    p_cms_C p_cms;
+    
+    p_smartbin_C p_smartbin;
+//#]
 };
 
 #ifdef _OMINSTRUMENT
@@ -145,6 +256,8 @@ class OMAnimatedcms : virtual public AOMInstance {
     
 public :
 
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

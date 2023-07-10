@@ -26,14 +26,54 @@
 #include "addTrashPkg.h"
 //## link itsResident_Citizen_User
 #include "Resident_Citizen_User.h"
+//## link itsTruck
+#include "truck.h"
 //## package Default
 
 //## class smartbin
-smartbin::smartbin(IOxfActive* theActiveContext) : fillLevel(0) {
+//#[ ignore
+smartbin::p_smartbin_C::p_smartbin_C() : _p_(0) {
+    itsBool_emptyReq_ProxyFlowPropertyInterface = NULL;
+}
+
+smartbin::p_smartbin_C::~p_smartbin_C() {
+    cleanUpRelations();
+}
+
+bool_emptyReq_ProxyFlowPropertyInterface* smartbin::p_smartbin_C::getItsBool_emptyReq_ProxyFlowPropertyInterface() {
+    return this;
+}
+
+bool_emptyReq_ProxyFlowPropertyInterface* smartbin::p_smartbin_C::getOutBound() {
+    return this;
+}
+
+void smartbin::p_smartbin_C::setEmptyReq(bool p_emptyReq) {
+    
+    if (itsBool_emptyReq_ProxyFlowPropertyInterface != NULL) {
+        itsBool_emptyReq_ProxyFlowPropertyInterface->setEmptyReq(p_emptyReq);
+    }
+    
+}
+
+void smartbin::p_smartbin_C::setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface) {
+    itsBool_emptyReq_ProxyFlowPropertyInterface = p_bool_emptyReq_ProxyFlowPropertyInterface;
+}
+
+void smartbin::p_smartbin_C::cleanUpRelations() {
+    if(itsBool_emptyReq_ProxyFlowPropertyInterface != NULL)
+        {
+            itsBool_emptyReq_ProxyFlowPropertyInterface = NULL;
+        }
+}
+//#]
+
+smartbin::smartbin(IOxfActive* theActiveContext) : emptyBin(false), emptyReq(false), fillLevel(0) {
     setActiveContext(theActiveContext, false);
     itsElectricity = NULL;
     itsLid = NULL;
     itsResident_Citizen_User = NULL;
+    itsTruck = NULL;
     sensorBoard = NULL;
     initStatechart();
 }
@@ -122,6 +162,15 @@ void smartbin::cleanUpRelations() {
                 }
             itsResident_Citizen_User = NULL;
         }
+    if(itsTruck != NULL)
+        {
+            smartbin* p_smartbin = itsTruck->getItsSmartbin();
+            if(p_smartbin != NULL)
+                {
+                    itsTruck->__setItsSmartbin(NULL);
+                }
+            itsTruck = NULL;
+        }
     if(sensorBoard != NULL)
         {
             sensorBoard = NULL;
@@ -176,12 +225,61 @@ void smartbin::_clearItsResident_Citizen_User() {
     itsResident_Citizen_User = NULL;
 }
 
+//#[ ignore
+void smartbin::setEmptyReq(bool p_emptyReq) {
+    if (emptyReq != p_emptyReq)  {
+        emptyReq = p_emptyReq;
+        FLOW_DATA_SEND(emptyReq, p_smartbin, setEmptyReq, x2String);
+    }
+}
+//#]
+
+smartbin::p_smartbin_C* smartbin::getP_smartbin() const {
+    return (smartbin::p_smartbin_C*) &p_smartbin;
+}
+
+smartbin::p_smartbin_C* smartbin::get_p_smartbin() const {
+    return (smartbin::p_smartbin_C*) &p_smartbin;
+}
+
+bool smartbin::getEmptyBin() const {
+    return emptyBin;
+}
+
+void smartbin::setEmptyBin(bool p_emptyBin) {
+    emptyBin = p_emptyBin;
+}
+
+bool smartbin::getEmptyReq() const {
+    return emptyReq;
+}
+
 int smartbin::getFillLevel() const {
     return fillLevel;
 }
 
 void smartbin::setFillLevel(int p_fillLevel) {
     fillLevel = p_fillLevel;
+}
+
+int smartbin::getFlowproperty_16() const {
+    return flowproperty_16;
+}
+
+void smartbin::setFlowproperty_16(int p_flowproperty_16) {
+    flowproperty_16 = p_flowproperty_16;
+}
+
+truck* smartbin::getItsTruck() const {
+    return itsTruck;
+}
+
+void smartbin::setItsTruck(truck* p_truck) {
+    if(p_truck != NULL)
+        {
+            p_truck->_setItsSmartbin(this);
+        }
+    _setItsTruck(p_truck);
 }
 
 bool smartbin::startBehavior() {
@@ -196,6 +294,22 @@ void smartbin::initStatechart() {
     not_full_subState = OMNonState;
 }
 
+void smartbin::__setItsTruck(truck* p_truck) {
+    itsTruck = p_truck;
+}
+
+void smartbin::_setItsTruck(truck* p_truck) {
+    if(itsTruck != NULL)
+        {
+            itsTruck->__setItsSmartbin(NULL);
+        }
+    __setItsTruck(p_truck);
+}
+
+void smartbin::_clearItsTruck() {
+    itsTruck = NULL;
+}
+
 void smartbin::rootState_entDef() {
     {
         not_full_entDef();
@@ -208,37 +322,110 @@ IOxfReactive::TakeEventStatus smartbin::rootState_processEvent() {
         // State not_used
         case not_used:
         {
-            if(IS_EVENT_TYPE_OF(OMNullEventId))
+            if(IS_EVENT_TYPE_OF(throwAway_Default_id))
                 {
-                    popNullTransition();
                     pushNullTransition();
                     not_full_subState = state_5;
                     rootState_active = state_5;
+                    //#[ state not_full.state_5.(Entry) 
+                    fillLevel += 5;
+                    std::cout<<fillLevel<<"\n";
+                    //#]
                     res = eventConsumed;
                 }
             
-            
+            if(res == eventNotConsumed)
+                {
+                    res = not_full_handleEvent();
+                }
         }
         break;
         // State state_5
         case state_5:
         {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    not_full_subState = not_used;
+                    rootState_active = not_used;
+                    res = eventConsumed;
+                }
             
-        
-        
-    }
-    break;
-    default:
+            if(res == eventNotConsumed)
+                {
+                    res = not_full_handleEvent();
+                }
+        }
         break;
+        // State full
+        case full:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    pushNullTransition();
+                    rootState_subState = empty_bin;
+                    rootState_active = empty_bin;
+                    //#[ state empty_bin.(Entry) 
+                    fillLevel = 0;
+                    //#]
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State empty_bin
+        case empty_bin:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    not_full_entDef();
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        default:
+            break;
     }
     return res;
 }
 
 void smartbin::not_full_entDef() {
-    rootState_subState = not_full;
     pushNullTransition();
+    rootState_subState = not_full;
     not_full_subState = not_used;
     rootState_active = not_used;
+}
+
+IOxfReactive::TakeEventStatus smartbin::not_full_handleEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(OMNullEventId))
+        {
+            //## transition 4 
+            if(fillLevel >= 95)
+                {
+                    popNullTransition();
+                    switch (not_full_subState) {
+                        // State state_5
+                        case state_5:
+                        {
+                            popNullTransition();
+                        }
+                        break;
+                        default:
+                            break;
+                    }
+                    not_full_subState = OMNonState;
+                    pushNullTransition();
+                    rootState_subState = full;
+                    rootState_active = full;
+                    res = eventConsumed;
+                }
+        }
+    
+    return res;
 }
 
 /*********************************************************************

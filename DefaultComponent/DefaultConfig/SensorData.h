@@ -34,6 +34,12 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
+    bool getEmpty() const;
+    
+    //## auto_generated
+    void setEmpty(bool p_empty);
+    
+    //## auto_generated
     int getFill() const;
     
     //## auto_generated
@@ -49,6 +55,8 @@ public :
 
 protected :
 
+    bool empty;		//## attribute empty
+    
     int fill;		//## attribute fill
     
     int fill_level;		//## attribute fill_level

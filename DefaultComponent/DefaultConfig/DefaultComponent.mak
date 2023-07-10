@@ -114,6 +114,7 @@ OBJS= \
   App.obj \
   electricity.obj \
   tablet.obj \
+  cms_inst.obj \
   road_network.obj \
   weather.obj \
   temperature.obj \
@@ -224,7 +225,7 @@ bin.obj : bin.cpp bin.h    Default.h cms.h smart_garbage_collection_system.h
 
 
 
-truck.obj : truck.cpp truck.h    Default.h cms.h smart_garbage_collection_system.h Garbage_Truck_Driver.h 
+truck.obj : truck.cpp truck.h    Default.h cms.h smart_garbage_collection_system.h Garbage_Truck_Driver.h smartbin.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"truck.obj" "truck.cpp" 
 
@@ -242,13 +243,13 @@ block_7.obj : block_7.cpp block_7.h    Default.h
 
 
 
-cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_system.h server.h 
+cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_system.h server.h bool_emptyReq_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"cms.obj" "cms.cpp" 
 
 
 
-smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h electricity.h bin.h cms.h smart_garbage_collection_system.h 
+smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h electricity.h truck.h bool_emptyReq_ProxyFlowPropertyInterface.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"smartbin.obj" "smartbin.cpp" 
 
@@ -386,6 +387,12 @@ tablet.obj : tablet.cpp tablet.h    Default.h UserDevice.h smart_garbage_collect
 
 
 
+cms_inst.obj : cms_inst.cpp cms_inst.h    Default.h cms.h bin.h truck.h smart_garbage_collection_system.h server.h bool_emptyReq_ProxyFlowPropertyInterface.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"cms_inst.obj" "cms_inst.cpp" 
+
+
+
 road_network.obj : road_network.cpp road_network.h    smart_garbage_collection_system.h Municipality.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"road_network.obj" "road_network.cpp" 
@@ -440,7 +447,7 @@ Smart_Bins.obj : Smart_Bins.cpp Smart_Bins.h
 
 
 
-Default.obj : Default.cpp Default.h    bin.h truck.h wastecenter.h block_7.h cms.h smartbin.h regularbin.h open_sensor.h lid.h block_19.h block_21.h smart_garbage_collection_system.h sensor.h audio_sensor.h temp_sensor.h fill_sensor.h humidity_sensor.h SensorData.h TruckData.h RouteData.h UserDevice.h interface_48.h AppData.h SmartPhone.h Laptop.h App.h electricity.h tablet.h server.h 
+Default.obj : Default.cpp Default.h    bin.h truck.h wastecenter.h block_7.h cms.h smartbin.h regularbin.h open_sensor.h lid.h block_19.h block_21.h smart_garbage_collection_system.h sensor.h audio_sensor.h temp_sensor.h fill_sensor.h humidity_sensor.h SensorData.h TruckData.h RouteData.h UserDevice.h interface_48.h AppData.h SmartPhone.h Laptop.h App.h electricity.h tablet.h cms_inst.h server.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -538,6 +545,7 @@ clean:
 	if exist App.obj erase App.obj
 	if exist electricity.obj erase electricity.obj
 	if exist tablet.obj erase tablet.obj
+	if exist cms_inst.obj erase cms_inst.obj
 	if exist road_network.obj erase road_network.obj
 	if exist weather.obj erase weather.obj
 	if exist temperature.obj erase temperature.obj

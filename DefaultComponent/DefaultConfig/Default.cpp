@@ -29,6 +29,8 @@
 //## auto_generated
 #include "cms.h"
 //## auto_generated
+#include "cms_inst.h"
+//## auto_generated
 #include "electricity.h"
 //## auto_generated
 #include "fill_sensor.h"
@@ -81,6 +83,15 @@ throwAway::throwAway() {
 
 bool throwAway::isTypeOf(const short id) const {
     return (throwAway_Default_id==id);
+}
+
+//## event reqEmpty()
+reqEmpty::reqEmpty() {
+    setId(reqEmpty_Default_id);
+}
+
+bool reqEmpty::isTypeOf(const short id) const {
+    return (reqEmpty_Default_id==id);
 }
 
 /*********************************************************************

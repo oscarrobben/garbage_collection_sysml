@@ -1,19 +1,21 @@
 I-Logix-RPY-Archive version 8.15.0 * 202002261110
 
 - m_fileModifyTime = { IRPYRawContainer 
-	- size = 54;
+	- size = 57;
 	- value = "DefaultComponent\\smartbin_Simulation\\ActorPkg.cpp" 7.10.2023::11:15:20
 	"DefaultComponent\\smartbin_Simulation\\ActorPkg.h" 7.10.2023::11:15:20
 	"DefaultComponent\\smartbin_Simulation\\App.cpp" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\App.h" 7.10.2023::12:5:9
-	"DefaultComponent\\smartbin_Simulation\\Default.cpp" 7.10.2023::12:14:53
-	"DefaultComponent\\smartbin_Simulation\\Default.h" 7.10.2023::12:14:53
+	"DefaultComponent\\smartbin_Simulation\\Default.cpp" 7.10.2023::13:53:27
+	"DefaultComponent\\smartbin_Simulation\\Default.h" 7.10.2023::13:53:27
 	"DefaultComponent\\smartbin_Simulation\\EnvPkg.cpp" 7.10.2023::11:15:20
 	"DefaultComponent\\smartbin_Simulation\\EnvPkg.h" 7.10.2023::11:15:20
 	"DefaultComponent\\smartbin_Simulation\\Garbage_Truck_Driver.cpp" 7.10.2023::11:15:19
 	"DefaultComponent\\smartbin_Simulation\\Garbage_Truck_Driver.h" 7.10.2023::11:15:19
 	"DefaultComponent\\smartbin_Simulation\\Municipality.cpp" 7.10.2023::11:15:19
 	"DefaultComponent\\smartbin_Simulation\\Municipality.h" 7.10.2023::12:5:8
+	"DefaultComponent\\smartbin_Simulation\\ProxyPortInterfaces.cpp" 7.10.2023::13:12:4
+	"DefaultComponent\\smartbin_Simulation\\ProxyPortInterfaces.h" 7.10.2023::13:12:4
 	"DefaultComponent\\smartbin_Simulation\\Resident_Citizen_User.cpp" 7.10.2023::11:15:19
 	"DefaultComponent\\smartbin_Simulation\\Resident_Citizen_User.h" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\Smart_Bins.cpp" 7.10.2023::11:15:19
@@ -28,8 +30,9 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	"DefaultComponent\\smartbin_Simulation\\addTrashPkg.h" 7.10.2023::11:38:22
 	"DefaultComponent\\smartbin_Simulation\\bin.cpp" 7.10.2023::11:15:19
 	"DefaultComponent\\smartbin_Simulation\\bin.h" 7.10.2023::12:5:9
-	"DefaultComponent\\smartbin_Simulation\\cms.cpp" 7.10.2023::11:15:19
-	"DefaultComponent\\smartbin_Simulation\\cms.h" 7.10.2023::12:5:9
+	"DefaultComponent\\smartbin_Simulation\\bool_emptyReq_ProxyFlowPropertyInterface.h" 7.10.2023::13:12:3
+	"DefaultComponent\\smartbin_Simulation\\cms.cpp" 7.10.2023::13:27:17
+	"DefaultComponent\\smartbin_Simulation\\cms.h" 7.10.2023::13:27:17
 	"DefaultComponent\\smartbin_Simulation\\electricity.cpp" 7.10.2023::11:15:20
 	"DefaultComponent\\smartbin_Simulation\\electricity.h" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\humidity.cpp" 7.10.2023::11:15:19
@@ -46,12 +49,12 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	"DefaultComponent\\smartbin_Simulation\\server.h" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\smart_garbage_collection_system.cpp" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\smart_garbage_collection_system.h" 7.10.2023::12:5:9
-	"DefaultComponent\\smartbin_Simulation\\smartbin.cpp" 7.10.2023::12:41:27
-	"DefaultComponent\\smartbin_Simulation\\smartbin.h" 7.10.2023::12:40:36
+	"DefaultComponent\\smartbin_Simulation\\smartbin.cpp" 7.10.2023::14:19:35
+	"DefaultComponent\\smartbin_Simulation\\smartbin.h" 7.10.2023::14:17:5
 	"DefaultComponent\\smartbin_Simulation\\temperature.cpp" 7.10.2023::11:15:19
 	"DefaultComponent\\smartbin_Simulation\\temperature.h" 7.10.2023::11:15:19
-	"DefaultComponent\\smartbin_Simulation\\truck.cpp" 7.10.2023::12:5:9
-	"DefaultComponent\\smartbin_Simulation\\truck.h" 7.10.2023::12:5:9
+	"DefaultComponent\\smartbin_Simulation\\truck.cpp" 7.10.2023::13:37:15
+	"DefaultComponent\\smartbin_Simulation\\truck.h" 7.10.2023::13:37:15
 	"DefaultComponent\\smartbin_Simulation\\wastecenter.cpp" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\wastecenter.h" 7.10.2023::12:5:9
 	"DefaultComponent\\smartbin_Simulation\\weather.cpp" 7.10.2023::12:5:9
@@ -59,16 +62,17 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	
 }
 - m_saveUnitAndOwnerSaveUnit = { IRPYRawContainer 
-	- size = 6;
+	- size = 7;
 	- value = "GUID 0c884478-8cc5-4c56-9da0-5aca8cfabc01" "GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857"
 	"GUID 17a1c953-170e-4f1d-8b6f-9552e24fb07f" "GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857"
 	"GUID 587171fc-41a0-45df-8668-499a1b37170d" "GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857"
 	"GUID 7c3eae5c-31a6-45eb-b2ec-93062ff4a92f" "GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45"
 	"GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45" "GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857"
+	"GUID e4fc64f5-b8be-4db3-90e2-21a59f48035a" "GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857"
 	"GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45" "GUID 8f5f7454-27a1-46cd-a099-b3b14eee5857"
 	
 }
-- size = 28;
+- size = 30;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -76,7 +80,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "wastecenter";
 	- _id = GUID 2b0cd79c-5563-43b3-b98c-05486a8eae32;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\EnvPkg.sbsx";
@@ -84,7 +88,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "temperature";
 	- _id = GUID b62040ef-8910-4dca-9dca-a52059ded341;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\ActorPkg.sbsx";
@@ -92,7 +96,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "Smart_Bins";
 	- _id = GUID 75001f2d-12f6-46d7-9e06-8bc76bc45e7c;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -100,7 +104,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "lid";
 	- _id = GUID ba40942b-c2b2-4c3b-b6da-75f9fc6d5237;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -108,7 +112,15 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "smartbin";
 	- _id = GUID 1cedd5c8-0a62-4630-acf6-48471124ee6e;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\garbage_collection_rpy\\ProxyPortInterfaces.sbsx";
+	- _subsystem = "ProxyPortInterfaces";
+	- _name = "bool_emptyReq_ProxyFlowPropertyInterface";
+	- _id = GUID 26fd229e-0013-4e1e-95cb-070898750d07;
+}
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\ActorPkg.sbsx";
@@ -116,14 +128,21 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "Garbage_Truck_Driver";
 	- _id = GUID 03ed12da-f894-4448-8ed6-603a1f398cb8;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\EnvPkg.sbsx";
 	- _name = "EnvPkg";
 	- _id = GUID 0c884478-8cc5-4c56-9da0-5aca8cfabc01;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = ".\\..\\..\\garbage_collection_rpy\\DefaultComponent.cmpx";
+	- _name = "DefaultComponent\\smartbin_Simulation";
+	- _id = GUID 52adc7e7-24cf-4db1-a6e7-8ca417ab88c2;
+}
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -131,7 +150,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "cms";
 	- _id = GUID 9f2ff663-3006-45e0-a73f-2edfda5d11bf;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\EnvPkg.sbsx";
@@ -139,7 +158,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "weather";
 	- _id = GUID aca32737-8cd7-43da-959b-4894f5726bc9;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\ActorPkg.sbsx";
@@ -147,7 +166,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "Municipality";
 	- _id = GUID 1dab6170-ce29-416a-a406-f088f7e4e79d;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -155,7 +174,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "open_sensor";
 	- _id = GUID e27250f1-92a6-42de-94b2-2c040fff48e0;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -163,14 +182,14 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "smart_garbage_collection_system";
 	- _id = GUID 3faf8ba3-4dcf-4dcf-8bc8-f304c95dcdb2;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\ActorPkg.sbsx";
 	- _name = "ActorPkg";
 	- _id = GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -178,7 +197,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "sensor";
 	- _id = GUID 309fd642-fc1f-4ca8-85cc-00c17015f60f;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -186,7 +205,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "truck";
 	- _id = GUID c53c4d5e-665c-4124-942d-a90b7150a1c2;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -194,7 +213,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "UserDevice";
 	- _id = GUID 91deb1db-978a-4e40-8bcf-cbfa60faf40c;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -202,14 +221,21 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "bin";
 	- _id = GUID 08a252a0-c4df-4165-b0bf-32398106851f;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
 	- _name = "Default";
 	- _id = GUID 587171fc-41a0-45df-8668-499a1b37170d;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\garbage_collection_rpy\\ProxyPortInterfaces.sbsx";
+	- _name = "ProxyPortInterfaces";
+	- _id = GUID e4fc64f5-b8be-4db3-90e2-21a59f48035a;
+}
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -217,7 +243,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "electricity";
 	- _id = GUID cff4c300-7497-428a-982a-e46d33b11168;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -226,7 +252,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "server";
 	- _id = GUID bf797ec3-00a6-44db-83fe-56fca1f1339a;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\addTrashPkg.sbsx";
@@ -234,7 +260,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "addTrashPkg";
 	- _id = GUID 7c3eae5c-31a6-45eb-b2ec-93062ff4a92f;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\ActorPkg.sbsx";
@@ -242,7 +268,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "Waste_Processing_Company";
 	- _id = GUID d344e527-8139-4016-8363-5a98cb168672;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\ActorPkg.sbsx";
@@ -250,14 +276,14 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "Resident_Citizen_User";
 	- _id = GUID 5f0df579-5e61-4123-9d7a-a8d781519975;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\UseCaseAnalysisPkg.sbsx";
 	- _name = "UseCaseAnalysisPkg";
 	- _id = GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\EnvPkg.sbsx";
@@ -265,7 +291,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "road_network";
 	- _id = GUID 274a928d-c7e6-4c5b-89c2-0f251c3a6a64;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\EnvPkg.sbsx";
@@ -273,7 +299,7 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "humidity";
 	- _id = GUID 7f578d88-4406-4e6b-8c0b-7f35f1c0ffd4;
 }
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\garbage_collection_rpy\\Default.sbsx";
@@ -281,12 +307,5 @@ I-Logix-RPY-Archive version 8.15.0 * 202002261110
 	- _name = "App";
 	- _id = GUID 62cf02d0-eb42-4513-a281-59df755011f5;
 }
-- genTime = 7.10.2023::12:41:27;
-- hElement = { IHandle 
-	- _m2Class = "ICodeGenConfigInfo";
-	- _filename = ".\\..\\..\\garbage_collection_rpy\\DefaultComponent.cmpx";
-	- _name = "DefaultComponent\\smartbin_Simulation";
-	- _id = GUID 829e879e-c8b5-46d4-9fd9-94da4cded2f7;
-}
-- genTime = 7.10.2023::12:41:27;
+- genTime = 7.10.2023::14:19:35;
 

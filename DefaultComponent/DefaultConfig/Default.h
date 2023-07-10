@@ -60,6 +60,9 @@ class block_7;
 class cms;
 
 //## auto_generated
+class cms_inst;
+
+//## auto_generated
 class electricity;
 
 //## auto_generated
@@ -106,6 +109,8 @@ class wastecenter;
 
 //#[ ignore
 #define throwAway_Default_id 18601
+
+#define reqEmpty_Default_id 18602
 //#]
 
 //## package Default
@@ -122,6 +127,21 @@ public :
 
     //## auto_generated
     throwAway();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event reqEmpty()
+class reqEmpty : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    reqEmpty();
     
     ////    Framework operations    ////
     

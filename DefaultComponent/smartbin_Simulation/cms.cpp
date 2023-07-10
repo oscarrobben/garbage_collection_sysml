@@ -29,10 +29,85 @@
 //## package Default
 
 //## class cms
+//#[ ignore
+cms::p_cms_C::p_cms_C() : _p_(0) {
+    itsBool_emptyReq_ProxyFlowPropertyInterface = NULL;
+}
+
+cms::p_cms_C::~p_cms_C() {
+    cleanUpRelations();
+}
+
+void cms::p_cms_C::connectCms(cms* part) {
+    setItsBool_emptyReq_ProxyFlowPropertyInterface(part);
+    
+}
+
+bool_emptyReq_ProxyFlowPropertyInterface* cms::p_cms_C::getItsBool_emptyReq_ProxyFlowPropertyInterface() {
+    return this;
+}
+
+void cms::p_cms_C::setEmptyReq(bool p_emptyReq) {
+    
+    if (itsBool_emptyReq_ProxyFlowPropertyInterface != NULL) {
+        itsBool_emptyReq_ProxyFlowPropertyInterface->setEmptyReq(p_emptyReq);
+    }
+    
+}
+
+void cms::p_cms_C::setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface) {
+    itsBool_emptyReq_ProxyFlowPropertyInterface = p_bool_emptyReq_ProxyFlowPropertyInterface;
+}
+
+void cms::p_cms_C::cleanUpRelations() {
+    if(itsBool_emptyReq_ProxyFlowPropertyInterface != NULL)
+        {
+            itsBool_emptyReq_ProxyFlowPropertyInterface = NULL;
+        }
+}
+
+cms::p_smartbin_C::p_smartbin_C() : _p_(0) {
+    itsBool_emptyReq_ProxyFlowPropertyInterface = NULL;
+}
+
+cms::p_smartbin_C::~p_smartbin_C() {
+    cleanUpRelations();
+}
+
+void cms::p_smartbin_C::connectCms(cms* part) {
+    setItsBool_emptyReq_ProxyFlowPropertyInterface(part);
+    
+}
+
+bool_emptyReq_ProxyFlowPropertyInterface* cms::p_smartbin_C::getItsBool_emptyReq_ProxyFlowPropertyInterface() {
+    return this;
+}
+
+void cms::p_smartbin_C::setEmptyReq(bool p_emptyReq) {
+    
+    if (itsBool_emptyReq_ProxyFlowPropertyInterface != NULL) {
+        itsBool_emptyReq_ProxyFlowPropertyInterface->setEmptyReq(p_emptyReq);
+    }
+    
+}
+
+void cms::p_smartbin_C::setItsBool_emptyReq_ProxyFlowPropertyInterface(bool_emptyReq_ProxyFlowPropertyInterface* p_bool_emptyReq_ProxyFlowPropertyInterface) {
+    itsBool_emptyReq_ProxyFlowPropertyInterface = p_bool_emptyReq_ProxyFlowPropertyInterface;
+}
+
+void cms::p_smartbin_C::cleanUpRelations() {
+    if(itsBool_emptyReq_ProxyFlowPropertyInterface != NULL)
+        {
+            itsBool_emptyReq_ProxyFlowPropertyInterface = NULL;
+        }
+}
+//#]
+
 cms::cms() {
     NOTIFY_CONSTRUCTOR(cms, cms(), 0, Default_cms_cms_SERIALIZE);
     itsServer = NULL;
     itsSmart_garbage_collection_system = NULL;
+    initRelations();
 }
 
 cms::~cms() {
@@ -239,8 +314,36 @@ void cms::_clearItsTruck() {
     itsTruck.removeAll();
 }
 
+cms::p_cms_C* cms::getP_cms() const {
+    return (cms::p_cms_C*) &p_cms;
+}
+
+cms::p_cms_C* cms::get_p_cms() const {
+    return (cms::p_cms_C*) &p_cms;
+}
+
+cms::p_smartbin_C* cms::getP_smartbin() const {
+    return (cms::p_smartbin_C*) &p_smartbin;
+}
+
+cms::p_smartbin_C* cms::get_p_smartbin() const {
+    return (cms::p_smartbin_C*) &p_smartbin;
+}
+
+void cms::initRelations() {
+    if (get_p_cms() != NULL) {
+        get_p_cms()->connectCms(this);
+    }
+    if (get_p_smartbin() != NULL) {
+        get_p_smartbin()->connectCms(this);
+    }
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
+void OMAnimatedcms::serializeAttributes(AOMSAttributes* aomsAttributes) const {
+}
+
 void OMAnimatedcms::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->addRelation("itsBin", false, false);
     {
