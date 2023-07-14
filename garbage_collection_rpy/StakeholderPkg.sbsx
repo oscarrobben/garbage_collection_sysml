@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 87c7e07f-a013-4328-9c16-1934e25869f3</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">StakeholderPkg</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:33:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::13:38:55</_modifiedTime>
+			<_lastID type="a">3</_lastID>
+			<weakCGTime type="a">7.14.2023::13:33:31</weakCGTime>
+			<strongCGTime type="a">7.14.2023::13:32:49</strongCGTime>
+			<_defaultComposite type="s">GUID a79d74cf-f17a-43dd-9ac4-aadbe9c42d83</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID a79d74cf-f17a-43dd-9ac4-aadbe9c42d83</value>
+				<value>GUID eef3f9d9-6e12-4571-9f5f-ae21bc996738</value>
+				<value>GUID 9eef1e77-de5b-401c-8cb0-e6514576b961</value>
+				<value>GUID 92318506-98e5-41f5-9c77-5eba63e25158</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID a79d74cf-f17a-43dd-9ac4-aadbe9c42d83</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IActor type="e">
+			<_id type="a">GUID eef3f9d9-6e12-4571-9f5f-ae21bc996738</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Maintenance_Staff</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:38:40</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hname type="a">projectcontext</_hname>
+					<_hid type="a">GUID 908ef344-93a1-488c-82ad-6d18d72e0534</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">7.14.2023::13:38:40</_modifiedTime>
+			<weakCGTime type="a">7.14.2023::13:38:40</weakCGTime>
+			<strongCGTime type="a">7.14.2023::13:33:9</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 11dc9409-93bf-4906-bb22-9e52ade1b424</value>
+				<value>GUID 214944cb-c0ba-4785-a7d9-5b5afa8b9c21</value>
+			</AggregatesList>
+		</IActor>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 11dc9409-93bf-4906-bb22-9e52ade1b424</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStakeholders</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:34:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::13:34:46</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">Stakeholders</_hname>
+					<_hid type="a">GUID 1734d75c-6151-4627-9a92-6961e2b77fa5</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">Stakeholders</_hclass>
+					<_hname type="a">itsMaintenance_Staff</_hname>
+					<_hid type="a">GUID 6a33ed49-3ca2-4cf8-8b9b-dda9c25065ed</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 214944cb-c0ba-4785-a7d9-5b5afa8b9c21</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsUsers_Endusers</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:38:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::13:38:40</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">Users_Endusers</_hname>
+					<_hid type="a">GUID ba22b878-9d8e-4d0c-8ed0-350640f132fb</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">Users_Endusers</_hclass>
+					<_hname type="a">itsMaintenance_Staff</_hname>
+					<_hid type="a">GUID 92573aa9-58cf-4ce8-b8f3-5cc0a0aa927f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IActor type="e">
+			<_id type="a">GUID 9eef1e77-de5b-401c-8cb0-e6514576b961</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Technology_Providers</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:34:49</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hname type="a">projectcontext</_hname>
+					<_hid type="a">GUID 908ef344-93a1-488c-82ad-6d18d72e0534</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">7.14.2023::13:34:49</_modifiedTime>
+			<weakCGTime type="a">7.14.2023::13:34:49</weakCGTime>
+			<strongCGTime type="a">7.14.2023::13:33:25</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID ab575bd5-876e-48e2-9f0d-3b77abfb8dd5</value>
+				<value>GUID 660c4f32-8c4d-4130-bd89-0fe005024b43</value>
+			</AggregatesList>
+		</IActor>
+		<IPart type="e">
+			<_id type="a">GUID ab575bd5-876e-48e2-9f0d-3b77abfb8dd5</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">part_0</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:33:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::13:33:55</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 70ac56c4-c4dd-469c-b997-fa874a99bb7d</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_implicitClass type="p"><IClass type="e">
+				<_id type="a">GUID 70ac56c4-c4dd-469c-b997-fa874a99bb7d</_id>
+				<_myState type="a">10240</_myState>
+				<_name type="a">part_0</_name>
+				<_modifiedTimeWeak type="a">7.14.2023::13:33:55</_modifiedTimeWeak>
+				<_theMainDiagram type="r">
+					<IHandle type="e">
+						<_hm2Class type="a">IDiagram</_hm2Class>
+						<_hname type="a">projectcontext</_hname>
+						<_hid type="a">GUID 908ef344-93a1-488c-82ad-6d18d72e0534</_hid>
+					</IHandle>
+				</_theMainDiagram>
+				<_modifiedTime type="a">7.14.2023::13:33:55</_modifiedTime>
+				<weakCGTime type="a">7.14.2023::13:33:55</weakCGTime>
+				<strongCGTime type="a">7.14.2023::13:33:55</strongCGTime>
+				<_itsStateChart type="r">
+					<IHandle type="e">
+					</IHandle>
+				</_itsStateChart>
+				<_classModifier type="a">Unspecified</_classModifier>
+			</IClass>
+			</_implicitClass>
+		</IPart>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 660c4f32-8c4d-4130-bd89-0fe005024b43</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStakeholders</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:34:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::13:34:49</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">Stakeholders</_hname>
+					<_hid type="a">GUID 1734d75c-6151-4627-9a92-6961e2b77fa5</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">Stakeholders</_hclass>
+					<_hname type="a">itsTechnology_Providers</_hname>
+					<_hid type="a">GUID 72ce8555-33fa-4964-b000-29606314ed0f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IActor type="e">
+			<_id type="a">GUID 92318506-98e5-41f5-9c77-5eba63e25158</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Environmental_Organisations</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:34:53</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hname type="a">projectcontext</_hname>
+					<_hid type="a">GUID 908ef344-93a1-488c-82ad-6d18d72e0534</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">7.14.2023::13:34:53</_modifiedTime>
+			<weakCGTime type="a">7.14.2023::13:34:53</weakCGTime>
+			<strongCGTime type="a">7.14.2023::13:33:40</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 9f0e74ba-7e50-457e-ad43-ea93f5c81ece</value>
+			</AggregatesList>
+		</IActor>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 9f0e74ba-7e50-457e-ad43-ea93f5c81ece</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStakeholders</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::13:34:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::13:34:53</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">Stakeholders</_hname>
+					<_hid type="a">GUID 1734d75c-6151-4627-9a92-6961e2b77fa5</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">Stakeholders</_hclass>
+					<_hname type="a">itsEnvironmental_Organisations</_hname>
+					<_hid type="a">GUID dbf80f8a-71a7-409a-ac0f-8e0f9c7f5f58</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
