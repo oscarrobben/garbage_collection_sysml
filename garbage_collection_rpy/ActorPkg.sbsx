@@ -12,10 +12,10 @@
 			<_id type="a">GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:32:53</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">7.14.2023::15:37:59</_modifiedTimeWeak>
 			<_modifiedTime type="a">7.14.2023::13:38:55</_modifiedTime>
 			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">7.14.2023::13:32:53</weakCGTime>
+			<weakCGTime type="a">7.14.2023::15:37:59</weakCGTime>
 			<strongCGTime type="a">7.14.2023::13:32:32</strongCGTime>
 			<_defaultComposite type="s">GUID 99fe68ee-02e7-4ea5-b333-a6b67f3de4e4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -51,7 +51,7 @@
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">systemenvironment</_hname>
+					<_hname type="a">operatingenvironment</_hname>
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
@@ -250,16 +250,16 @@
 			<_id type="a">GUID 5f0df579-5e61-4123-9d7a-a8d781519975</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Resident_Citizen_User</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:38:35</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">7.14.2023::15:38:44</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">systemenvironment</_hname>
+					<_hname type="a">operatingenvironment</_hname>
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">7.14.2023::13:38:35</_modifiedTime>
-			<weakCGTime type="a">7.14.2023::13:38:35</weakCGTime>
+			<_modifiedTime type="a">7.14.2023::15:38:44</_modifiedTime>
+			<weakCGTime type="a">7.14.2023::15:38:44</weakCGTime>
 			<strongCGTime type="a">7.14.2023::13:32:32</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -276,14 +276,15 @@
 				<value>GUID 18d685ec-2976-4f50-920f-22fc9bdef126</value>
 				<value>GUID 4726a2e3-089c-48cc-9906-1f24be40acd9</value>
 				<value>GUID eca57dfe-28f8-4fe3-8146-9bbc23ca6394</value>
+				<value>GUID 8467ae13-8fd9-4248-9fc8-21d6c8cc0364</value>
 			</AggregatesList>
 		</IActor>
 		<IFile type="e">
 			<_id type="a">GUID 3ebde3da-817e-4fe9-97a8-34e57ab7eff3</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">Resident_Citizen_User</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:38:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.14.2023::13:38:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.14.2023::15:37:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::15:37:59</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 51118d2f-024c-4100-8403-42f958ffc13c</value>
@@ -326,8 +327,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID e6fd2dfb-d40f-4ff4-8486-99f3554225a0</_id>
 			<_name type="a">Resident_Citizen_User</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:38:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.14.2023::13:38:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.14.2023::15:37:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::15:37:59</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">27</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -470,8 +471,8 @@
 			<_id type="a">GUID b9278cf7-22f6-4297-9c67-f3644d21685c</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">Resident_Citizen_User</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:38:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.14.2023::13:38:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.14.2023::15:37:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::15:37:59</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 1c51d07a-e488-4da7-94b3-989524a21993</value>
@@ -497,8 +498,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID d2530064-893a-45de-a27c-0c464d83b2b1</_id>
 			<_name type="a">Resident_Citizen_User</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:38:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.14.2023::13:38:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.14.2023::15:37:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::15:37:59</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">20</m_startRow>
 			<m_startCol_Short type="a">24</m_startCol_Short>
@@ -714,6 +715,35 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 8467ae13-8fd9-4248-9fc8-21d6c8cc0364</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">used_by</_name>
+			<_modifiedTimeWeak type="a">7.14.2023::15:38:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.14.2023::15:38:44</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">smart_garbage_collection_system</_hname>
+					<_hid type="a">GUID 3faf8ba3-4dcf-4dcf-8bc8-f304c95dcdb2</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smart_garbage_collection_system</_hclass>
+					<_hname type="a">uses</_hname>
+					<_hid type="a">GUID 20da0790-a66f-4943-9831-8bcfa132e25f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID d344e527-8139-4016-8363-5a98cb168672</_id>
 			<_myState type="a">8192</_myState>
@@ -722,7 +752,7 @@
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">systemenvironment</_hname>
+					<_hname type="a">operatingenvironment</_hname>
 					<_hid type="a">GUID 133a9e27-ebe2-4eef-bfee-7f22fdc9ca5f</_hid>
 				</IHandle>
 			</_theMainDiagram>
