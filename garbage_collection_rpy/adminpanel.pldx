@@ -323,8 +323,8 @@
 			</_properties>
 			<_name type="a">adminpanel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.15.2023::15:2:13</_modifiedTime>
-			<_lastModifiedTime type="a">7.15.2023::15:2:13</_lastModifiedTime>
+			<_modifiedTime type="a">7.15.2023::16:54:9</_modifiedTime>
+			<_lastModifiedTime type="a">7.15.2023::16:54:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1450,6 +1450,7 @@
 			<AggregatesList type="e">
 				<value>GUID dd8e6e31-1262-48a4-8805-01282d7fe167</value>
 				<value>GUID 52d3445d-ef0f-4a2f-8db6-8717342cfef4</value>
+				<value>GUID b33db619-075b-4e87-91df-14c081f9aed3</value>
 			</AggregatesList>
 		</CGIButtonArray>
 		<CGICompartment type="e">
@@ -1462,6 +1463,13 @@
 		<CGICompartment type="e">
 			<_id type="a">GUID 52d3445d-ef0f-4a2f-8db6-8717342cfef4</_id>
 			<m_name type="a">ButtonArrayItem1</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
+		<CGICompartment type="e">
+			<_id type="a">GUID b33db619-075b-4e87-91df-14c081f9aed3</_id>
+			<m_name type="a">ButtonArrayItem2</m_name>
 			<m_displayOption type="a">All</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -1772,6 +1780,12 @@
 												<IProperty type="e">
 													<_Name type="a">Font.Size</_Name>
 													<_Value type="a">16</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.Weight</_Name>
+													<_Value type="a">700</_Value>
 													<_Type type="a">Int</_Type>
 												</IProperty>
 												
