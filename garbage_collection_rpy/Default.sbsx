@@ -12,10 +12,10 @@
 			<_id type="a">GUID 587171fc-41a0-45df-8668-499a1b37170d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">7.16.2023::10:19:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.16.2023::14:9:38</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.16.2023::17:43:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.16.2023::18:0:39</_modifiedTime>
 			<_lastID type="a">128</_lastID>
-			<weakCGTime type="a">7.16.2023::10:19:36</weakCGTime>
+			<weakCGTime type="a">7.16.2023::17:43:28</weakCGTime>
 			<strongCGTime type="a">7.15.2023::20:38:29</strongCGTime>
 			<_defaultComposite type="s">GUID 14426929-d967-438c-bd11-c7a14c809a51</_defaultComposite>
 			<_eventsBaseID type="a">18601</_eventsBaseID>
@@ -30994,7 +30994,7 @@ repairReqSelect = repairRequested1;</_body>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">7.14.2023::15:42:41</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">7.16.2023::17:43:28</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -31002,8 +31002,8 @@ repairReqSelect = repairRequested1;</_body>
 					<_hid type="a">GUID 79bab322-aece-485a-9d44-b9c8f8515554</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">7.14.2023::15:42:41</_modifiedTime>
-			<weakCGTime type="a">7.14.2023::15:42:41</weakCGTime>
+			<_modifiedTime type="a">7.16.2023::17:43:28</_modifiedTime>
+			<weakCGTime type="a">7.16.2023::17:43:28</weakCGTime>
 			<strongCGTime type="a">7.14.2023::13:32:32</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -36602,9 +36602,9 @@ repairReqSelect = repairRequested1;</_body>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 82c01cb6-c44f-4c10-8cbe-270cd99c6461</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsStandards_Regulations_Compliances</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:52:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.14.2023::13:52:46</_modifiedTime>
+			<_name type="a">itsStandards_Regulations_Compliance</_name>
+			<_modifiedTimeWeak type="a">7.16.2023::17:43:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.16.2023::17:43:28</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -42742,7 +42742,7 @@ repairReqSelect = repairRequested1;</_body>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">7.14.2023::13:38:59</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">7.16.2023::17:44:17</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -42750,8 +42750,8 @@ repairReqSelect = repairRequested1;</_body>
 					<_hid type="a">GUID 908ef344-93a1-488c-82ad-6d18d72e0534</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">7.14.2023::13:38:59</_modifiedTime>
-			<weakCGTime type="a">7.14.2023::13:38:59</weakCGTime>
+			<_modifiedTime type="a">7.16.2023::17:44:17</_modifiedTime>
+			<weakCGTime type="a">7.16.2023::17:44:17</weakCGTime>
 			<strongCGTime type="a">7.14.2023::13:38:20</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -42763,6 +42763,7 @@ repairReqSelect = repairRequested1;</_body>
 				<value>GUID 4d7cefb4-8774-4b14-9838-90b278b31711</value>
 				<value>GUID 92573aa9-58cf-4ce8-b8f3-5cc0a0aa927f</value>
 				<value>GUID 5941255d-6b8a-45ab-9938-52d29dc09331</value>
+				<value>GUID 7a326fab-e020-479e-b5a2-3f042c29c158</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
@@ -42869,6 +42870,35 @@ repairReqSelect = repairRequested1;</_body>
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID 6e51457e-c3f2-4143-803d-29df59020d6d</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 7a326fab-e020-479e-b5a2-3f042c29c158</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsWaste_Processing_Company</_name>
+			<_modifiedTimeWeak type="a">7.16.2023::17:44:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.16.2023::17:44:17</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hname type="a">Waste_Processing_Company</_hname>
+					<_hid type="a">GUID d344e527-8139-4016-8363-5a98cb168672</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hclass type="a">Waste_Processing_Company</_hclass>
+					<_hname type="a">itsUsers_Endusers</_hname>
+					<_hid type="a">GUID d40b38e8-43f9-4f3c-9e71-3fb9007c2ce3</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -43448,7 +43478,7 @@ repairReqSelect = repairRequested1;</_body>
 		<IClass type="e">
 			<_id type="a">GUID 07091359-9bd6-4ebc-b9d9-17a2a968637e</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Standards_Regulations_Compliances</_name>
+			<_name type="a">Standards_Regulations_Compliance</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -43462,7 +43492,7 @@ repairReqSelect = repairRequested1;</_body>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">7.14.2023::13:52:46</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">7.16.2023::17:43:28</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -43470,9 +43500,9 @@ repairReqSelect = repairRequested1;</_body>
 					<_hid type="a">GUID 908ef344-93a1-488c-82ad-6d18d72e0534</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">7.14.2023::13:52:46</_modifiedTime>
-			<weakCGTime type="a">7.14.2023::13:52:46</weakCGTime>
-			<strongCGTime type="a">7.14.2023::13:48:3</strongCGTime>
+			<_modifiedTime type="a">7.16.2023::17:43:28</_modifiedTime>
+			<weakCGTime type="a">7.16.2023::17:43:28</weakCGTime>
+			<strongCGTime type="a">7.16.2023::17:43:28</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -43486,8 +43516,8 @@ repairReqSelect = repairRequested1;</_body>
 			<_id type="a">GUID c09e88cc-3daa-4d96-bb58-16f216ee684a</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsSmart_garbage_collection_system</_name>
-			<_modifiedTimeWeak type="a">7.14.2023::13:52:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.14.2023::13:52:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.16.2023::17:43:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.16.2023::17:43:28</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
