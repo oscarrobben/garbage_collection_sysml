@@ -323,8 +323,8 @@
 			</_properties>
 			<_name type="a">adminpanel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.16.2023::0:0:45</_modifiedTime>
-			<_lastModifiedTime type="a">7.16.2023::0:0:45</_lastModifiedTime>
+			<_modifiedTime type="a">7.16.2023::9:22:24</_modifiedTime>
+			<_lastModifiedTime type="a">7.16.2023::9:22:24</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -967,10 +967,10 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 8 236 </m_transform>
+			<m_transform type="a">1 0 0 1 -8 237 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_points type="a">4 59 230  97 230  97 248  59 248  </m_points>
-			<m_text type="a">Average</m_text>
+			<m_points type="a">4 59 230  116 230  116 248  59 248  </m_points>
+			<m_text type="a">Average fill level</m_text>
 		</CGIFreeText>
 		<CGIFreeText type="e">
 			<_id type="a">GUID 1f7915ba-caa4-40d0-82c1-1f5bd4d2d6ad</_id>
@@ -997,10 +997,10 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 138 238 </m_transform>
+			<m_transform type="a">1 0 0 1 124 237 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_points type="a">4 59 230  120 230  120 262  59 262  </m_points>
-			<m_text type="a">Maximum</m_text>
+			<m_points type="a">4 59 230  127 230  127 248  59 248  </m_points>
+			<m_text type="a">Maximum fill level</m_text>
 		</CGIFreeText>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID b28af41a-71eb-477c-ae95-87402c7c45bb</_id>
@@ -1939,7 +1939,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 53 -170 </m_transform>
+			<m_transform type="a">1 0 0 1 45 -167 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  220 230  220 251  59 251  </m_points>
 			<m_text type="a">Select bin</m_text>
@@ -2010,7 +2010,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 42 -41 </m_transform>
+			<m_transform type="a">1 0 0 1 33 -38 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  159 230  159 257  59 257  </m_points>
 			<m_text type="a">Selected bin</m_text>
@@ -2951,6 +2951,7 @@
 													<_Name type="a">ShowName</_Name>
 													<_Value type="a">None</_Value>
 													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">BoundElement</_ExtraTypeInfo>
 												</IProperty>
 												
 											</IRPYRawContainer>
@@ -3008,7 +3009,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">8192</m_drawBehavior>
-			<m_transform type="a">0.00111672 0 0 0.000932527 182 313.039 </m_transform>
+			<m_transform type="a">0.00111672 0 0 0.00100225 183 297.117 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3084,7 +3085,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1.28571 0 0 0.888889 127.143 90.556 </m_transform>
+			<m_transform type="a">1.28571 0 0 0.888889 125.143 194.556 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
 			<m_text type="a">Update FQ</m_text>
