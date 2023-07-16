@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: weather
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\weather.h
 *********************************************************************/
 
@@ -21,6 +21,10 @@
 #include "humidity.h"
 //## classInstance its_temperature
 #include "temperature.h"
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "EnvPkg.h"
 //## link influences
 class smart_garbage_collection_system;
 
@@ -28,6 +32,16 @@ class smart_garbage_collection_system;
 
 //## class weather
 class weather {
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedweather;
+#endif // _OMINSTRUMENT
+
+#ifdef _OMINSTRUMENT
+    OM_DECLARE_COMPOSITE_OFFSET
+#endif // _OMINSTRUMENT
+
     ////    Constructors and destructors    ////
     
 public :
@@ -84,6 +98,20 @@ public :
     //## auto_generated
     void _clearInfluences();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedweather : virtual public AOMInstance {
+    DECLARE_META(weather, OMAnimatedweather)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

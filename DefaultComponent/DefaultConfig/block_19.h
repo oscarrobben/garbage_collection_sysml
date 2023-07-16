@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: block_19
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\block_19.h
 *********************************************************************/
 
@@ -16,21 +16,37 @@
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 #include "Default.h"
 //## package Default
 
 //## class block_19
 class block_19 {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedblock_19;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     block_19();
     
     //## auto_generated
     ~block_19();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedblock_19 : virtual public AOMInstance {
+    DECLARE_META(block_19, OMAnimatedblock_19)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

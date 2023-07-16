@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: bin
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\bin.h
 *********************************************************************/
 
@@ -17,6 +17,8 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include "Default.h"
+//## auto_generated
+#include <aom\aom.h>
 //## link itsCms
 class cms;
 
@@ -27,10 +29,14 @@ class smart_garbage_collection_system;
 
 //## class bin
 class bin {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedbin;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     bin();
     
@@ -84,6 +90,20 @@ public :
     //## auto_generated
     void _clearItsSmart_garbage_collection_system();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedbin : virtual public AOMInstance {
+    DECLARE_META(bin, OMAnimatedbin)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

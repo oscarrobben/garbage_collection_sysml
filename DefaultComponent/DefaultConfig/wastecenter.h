@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: wastecenter
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\wastecenter.h
 *********************************************************************/
 
@@ -17,6 +17,8 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include "Default.h"
+//## auto_generated
+#include <aom\aom.h>
 //## link itsSmart_garbage_collection_system
 class smart_garbage_collection_system;
 
@@ -30,10 +32,14 @@ class Waste_Processing_Company;
 
 //## class wastecenter
 class wastecenter {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedwastecenter;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     wastecenter();
     
@@ -106,6 +112,20 @@ protected :
     
     Waste_Processing_Company* itsWaste_Processing_Company;		//## link itsWaste_Processing_Company
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedwastecenter : virtual public AOMInstance {
+    DECLARE_META(wastecenter, OMAnimatedwastecenter)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

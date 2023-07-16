@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorData
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\SensorData.h
 *********************************************************************/
 
@@ -16,15 +16,23 @@
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 #include "Default.h"
 //## package Default
 
 //## class SensorData
 class SensorData {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedSensorData;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     SensorData();
     
@@ -61,6 +69,20 @@ protected :
     
     int fill_level;		//## attribute fill_level
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedSensorData : virtual public AOMInstance {
+    DECLARE_META(SensorData, OMAnimatedSensorData)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

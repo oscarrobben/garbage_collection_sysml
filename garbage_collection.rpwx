@@ -20,31 +20,67 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
 								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
-								<m_nLeft type="a">716</m_nLeft>
-								<m_nTop type="a">0</m_nTop>
-								<m_nRight type="a">1432</m_nRight>
-								<m_nBottom type="a">414</m_nBottom>
+								<m_nLeft type="a">0</m_nLeft>
+								<m_nTop type="a">404</m_nTop>
+								<m_nRight type="a">698</m_nRight>
+								<m_nBottom type="a">808</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
-								<_hm2Class type="a">IPanelDiagram</_hm2Class>
-								<_hfilename type="a">.\garbage_collection_rpy\adminpanel.pldx</_hfilename>
-								<_hsubsystem type="a">GuiPkg</_hsubsystem>
-								<_hname type="a">adminpanel</_hname>
-								<_hid type="a">GUID 30f65f99-0f30-4c49-93de-84260e098773</_hid>
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\garbage_collection_rpy\Default.sbsx</_hfilename>
+								<_hsubsystem type="a">Default</_hsubsystem>
+								<_hclass type="a">smartbin</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 65682088-c3a5-4331-84b0-9262386ad92c</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">939 728 </_DownRight>
+						<_UpLeft type="a">1935 163 </_UpLeft>
+						<_DownRight type="a">2596 507 </_DownRight>
+						<_instanceName type="a">itsSmartbin</_instanceName>
 						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">-4</m_nLeft>
+								<m_nTop type="a">397</m_nTop>
+								<m_nRight type="a">695</m_nRight>
+								<m_nBottom type="a">801</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\garbage_collection_rpy\Default.sbsx</_hfilename>
+								<_hsubsystem type="a">Default</_hsubsystem>
+								<_hclass type="a">smartbin</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 65682088-c3a5-4331-84b0-9262386ad92c</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">1934 163 </_UpLeft>
+						<_DownRight type="a">2596 507 </_DownRight>
+						<_instanceName type="a">smartbin[1]</_instanceName>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -58,10 +94,74 @@
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
 								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
-								<m_nLeft type="a">755</m_nLeft>
-								<m_nTop type="a">406</m_nTop>
-								<m_nRight type="a">1471</m_nRight>
-								<m_nBottom type="a">752</m_nBottom>
+								<m_nLeft type="a">702</m_nLeft>
+								<m_nTop type="a">-1</m_nTop>
+								<m_nRight type="a">1660</m_nRight>
+								<m_nBottom type="a">733</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IPanelDiagram</_hm2Class>
+								<_hfilename type="a">.\garbage_collection_rpy\adminpanel.pldx</_hfilename>
+								<_hsubsystem type="a">GuiPkg</_hsubsystem>
+								<_hname type="a">adminpanel</_hname>
+								<_hid type="a">GUID 30f65f99-0f30-4c49-93de-84260e098773</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 28 </_UpLeft>
+						<_DownRight type="a">877 670 </_DownRight>
+						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">638</m_nLeft>
+								<m_nTop type="a">404</m_nTop>
+								<m_nRight type="a">1276</m_nRight>
+								<m_nBottom type="a">808</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">0</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IPanelDiagram</_hm2Class>
+								<_hfilename type="a">.\garbage_collection_rpy\GuiPkg.sbsx</_hfilename>
+								<_hsubsystem type="a">GuiPkg</_hsubsystem>
+								<_hname type="a">linking_testing</_hname>
+								<_hid type="a">GUID a4077a38-9f88-4abb-85df-46a38609a550</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">-40 0 </_UpLeft>
+						<_DownRight type="a">561 344 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">350</m_nLeft>
+								<m_nTop type="a">-7</m_nTop>
+								<m_nRight type="a">699</m_nRight>
+								<m_nBottom type="a">429</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
@@ -75,8 +175,40 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">679 286 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_DownRight type="a">312 376 </_DownRight>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">-8</m_nLeft>
+								<m_nTop type="a">-4</m_nTop>
+								<m_nRight type="a">350</m_nRight>
+								<m_nBottom type="a">426</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IPanelDiagram</_hm2Class>
+								<_hfilename type="a">.\garbage_collection_rpy\GuiPkg.sbsx</_hfilename>
+								<_hsubsystem type="a">GuiPkg</_hsubsystem>
+								<_hname type="a">userinterface_copy</_hname>
+								<_hid type="a">GUID 652f5f54-ca3d-4b20-adf2-5a8e0bfbbd2f</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">321 370 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					

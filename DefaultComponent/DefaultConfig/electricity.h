@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: electricity
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\electricity.h
 *********************************************************************/
 
@@ -16,31 +16,39 @@
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 #include "Default.h"
-//## link itsSmartbin
-class smartbin;
+//## link itsSmart_garbage_collection_system
+class smart_garbage_collection_system;
 
 //## package Default
 
 //## class electricity
 class electricity {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedelectricity;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     electricity();
     
     //## auto_generated
-    virtual ~electricity();
+    ~electricity();
     
     ////    Additional operations    ////
     
     //## auto_generated
-    smartbin* getItsSmartbin() const;
+    smart_garbage_collection_system* getItsSmart_garbage_collection_system() const;
     
     //## auto_generated
-    void setItsSmartbin(smartbin* p_smartbin);
+    void setItsSmart_garbage_collection_system(smart_garbage_collection_system* p_smart_garbage_collection_system);
 
 protected :
 
@@ -49,21 +57,35 @@ protected :
     
     ////    Relations and components    ////
     
-    smartbin* itsSmartbin;		//## link itsSmartbin
+    smart_garbage_collection_system* itsSmart_garbage_collection_system;		//## link itsSmart_garbage_collection_system
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsSmartbin(smartbin* p_smartbin);
+    void __setItsSmart_garbage_collection_system(smart_garbage_collection_system* p_smart_garbage_collection_system);
     
     //## auto_generated
-    void _setItsSmartbin(smartbin* p_smartbin);
+    void _setItsSmart_garbage_collection_system(smart_garbage_collection_system* p_smart_garbage_collection_system);
     
     //## auto_generated
-    void _clearItsSmartbin();
+    void _clearItsSmart_garbage_collection_system();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedelectricity : virtual public AOMInstance {
+    DECLARE_META(electricity, OMAnimatedelectricity)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

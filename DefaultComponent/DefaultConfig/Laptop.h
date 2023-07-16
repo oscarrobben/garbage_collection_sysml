@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Laptop
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Laptop.h
 *********************************************************************/
 
@@ -20,6 +20,8 @@
 //## class Laptop
 #include "UserDevice.h"
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 class App;
 
 //## auto_generated
@@ -29,16 +31,36 @@ class smart_garbage_collection_system;
 
 //## class Laptop
 class Laptop : public UserDevice {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedLaptop;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     Laptop();
     
     //## auto_generated
     ~Laptop();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedLaptop : public OMAnimatedUserDevice {
+    DECLARE_META(Laptop, OMAnimatedLaptop)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: addTrashPkg
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\addTrashPkg.h
 *********************************************************************/
 
@@ -16,7 +16,11 @@
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 #include <oxf\event.h>
+//## auto_generated
+#include "UseCaseAnalysisPkg.h"
 //#[ ignore
 #define addTrash_addTrashPkg_UseCaseAnalysisPkg_id 3601
 //#]
@@ -27,10 +31,16 @@
 
 //## event addTrash()
 class addTrash : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedaddTrash;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     addTrash();
     
@@ -39,6 +49,14 @@ public :
     //## statechart_method
     virtual bool isTypeOf(const short id) const;
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedaddTrash : virtual public AOMEvent {
+    DECLARE_META_EVENT(addTrash)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

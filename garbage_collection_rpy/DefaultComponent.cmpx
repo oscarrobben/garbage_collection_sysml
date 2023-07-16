@@ -12,8 +12,8 @@
 			<_id type="a">GUID 17a1c953-170e-4f1d-8b6f-9552e24fb07f</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">DefaultComponent</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2023::21:33:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.15.2023::22:42:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.15.2023::22:42:5</_modifiedTime>
 			<m_buildType type="a">Executable</m_buildType>
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
@@ -25,6 +25,14 @@
 				<IRPYRawContainer type="e">
 					
 						<IHandle type="e">
+							<_hm2Class type="a">IProfile</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hname type="a">SysML</_hname>
+							<_hid type="a">GUID d9689b73-885e-44c4-896b-de43defa0a33</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
 							<_hfilename type="a">.\Default.sbsx</_hfilename>
 							<_hname type="a">Default</_hname>
@@ -33,10 +41,176 @@
 					
 					
 						<IHandle type="e">
-							<_hm2Class type="a">IProfile</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hname type="a">SysML</_hname>
-							<_hid type="a">GUID d9689b73-885e-44c4-896b-de43defa0a33</_hid>
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\RequirementsAnalysis.sbsx</_hfilename>
+							<_hname type="a">RequirementsAnalysis</_hname>
+							<_hid type="a">GUID 946c798e-d882-47cb-8c2f-c8819bf6c697</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\adminREQ.sbsx</_hfilename>
+							<_hsubsystem type="a">RequirementsAnalysis</_hsubsystem>
+							<_hname type="a">adminREQ</_hname>
+							<_hid type="a">GUID f033551c-adbc-42c1-b733-7b51fb0c31cd</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\appREQ.sbsx</_hfilename>
+							<_hsubsystem type="a">RequirementsAnalysis</_hsubsystem>
+							<_hname type="a">appREQ</_hname>
+							<_hid type="a">GUID ce96a48b-650e-4ba7-996c-426807a5b56e</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\binREQ.sbsx</_hfilename>
+							<_hsubsystem type="a">RequirementsAnalysis</_hsubsystem>
+							<_hname type="a">binREQ</_hname>
+							<_hid type="a">GUID c6f6dea2-d177-41e6-bfbb-dce7724ac154</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\CMSREQ.sbsx</_hfilename>
+							<_hsubsystem type="a">RequirementsAnalysis</_hsubsystem>
+							<_hname type="a">CMSREQ</_hname>
+							<_hid type="a">GUID 187fc657-8a54-4000-b22e-e0ce4b3466d4</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\truckREQ.sbsx</_hfilename>
+							<_hsubsystem type="a">RequirementsAnalysis</_hsubsystem>
+							<_hname type="a">truckREQ</_hname>
+							<_hid type="a">GUID be9fc7b1-cdfb-4f7c-a134-019e64fda3ad</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\wastecenterREQ.sbsx</_hfilename>
+							<_hsubsystem type="a">RequirementsAnalysis</_hsubsystem>
+							<_hname type="a">wastecenterREQ</_hname>
+							<_hid type="a">GUID 623e2e96-db88-45bb-9c0f-b4bb27f9a7ac</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\EnvPkg.sbsx</_hfilename>
+							<_hname type="a">EnvPkg</_hname>
+							<_hid type="a">GUID 0c884478-8cc5-4c56-9da0-5aca8cfabc01</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+							<_hname type="a">UseCaseAnalysisPkg</_hname>
+							<_hid type="a">GUID 817b5bff-f3a3-46b9-96e0-e3357fc2ff45</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\MonitorBinStatusPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">MonitorBinStatusPkg</_hname>
+							<_hid type="a">GUID b1e5ae2b-9744-4645-ba65-0f99fde9954c</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\EmptyBinPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">EmptyBinPkg</_hname>
+							<_hid type="a">GUID 1c61b4a0-28d2-4d04-a9eb-abb7b0101800</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\RouteOptimizationPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">RouteOptimizationPkg</_hname>
+							<_hid type="a">GUID bed28075-256b-45c7-83a5-ef93e80e13b6</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\GenerateReportsPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">GenerateReportsPkg</_hname>
+							<_hid type="a">GUID a1ac7b0d-42a0-40ad-b125-5fc7bedcade6</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\TrackCollectionProgressPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">TrackCollectionProgressPkg</_hname>
+							<_hid type="a">GUID 40e8da75-9c7d-456e-8de5-fede1955394e</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\ReceiveCollectionSchedulePkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">ReceiveCollectionSchedulePkg</_hname>
+							<_hid type="a">GUID 49f16ca6-4361-4073-9f6d-91a25de0732f</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\ReportIssuesPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">ReportIssuesPkg</_hname>
+							<_hid type="a">GUID 843aeb8a-d8cc-43b3-9f9d-09ed5d9a84a1</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\addTrashPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+							<_hname type="a">addTrashPkg</_hname>
+							<_hid type="a">GUID 7c3eae5c-31a6-45eb-b2ec-93062ff4a92f</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+							<_hname type="a">ActorPkg</_hname>
+							<_hid type="a">GUID fe8b5ac1-7fe5-41ac-acb0-fea69bb7bf45</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\GuiPkg.sbsx</_hfilename>
+							<_hname type="a">GuiPkg</_hname>
+							<_hid type="a">GUID 44996564-a930-4f54-bccc-222929fd4f45</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\StakeholderPkg.sbsx</_hfilename>
+							<_hname type="a">StakeholderPkg</_hname>
+							<_hid type="a">GUID 87c7e07f-a013-4328-9c16-1934e25869f3</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
@@ -49,8 +223,8 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</SelectedVariants>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">7.15.2023::22:42:5</weakCGTime>
+			<strongCGTime type="a">7.15.2023::21:47:33</strongCGTime>
 			<AggregatesList type="e">
 				<value>GUID 4dc260f3-1e3a-40b0-a3d3-a1b156651a6b</value>
 				<value>GUID 0c10739e-ef68-4f05-9df4-7d4abcf5d7db</value>
@@ -75,10 +249,10 @@
 			<_id type="a">GUID 0c10739e-ef68-4f05-9df4-7d4abcf5d7db</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultConfig</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2023::21:33:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">7.15.2023::22:42:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.15.2023::22:42:5</_modifiedTime>
 			<_scopeType type="a">Explicit</_scopeType>
-			<_instrumentation type="a">None</_instrumentation>
+			<_instrumentation type="a">Animation</_instrumentation>
 			<_timeModel type="a">RealTime</_timeModel>
 			<m_generateActors type="a">1</m_generateActors>
 			<_statechartImplementation type="a">Flat</_statechartImplementation>
@@ -90,10 +264,19 @@
 			</ScopeElements>
 			<InitialInstances type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hname type="a">smartbin</_hname>
+							<_hid type="a">GUID 1cedd5c8-0a62-4630-acf6-48471124ee6e</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</InitialInstances>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">7.15.2023::22:42:5</weakCGTime>
+			<strongCGTime type="a">7.15.2023::20:26:34</strongCGTime>
 			<AnimScopeElements type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
@@ -101,9 +284,37 @@
 			<m_allInAnimScope type="a">1</m_allInAnimScope>
 			<m_generateUsecases type="a">0</m_generateUsecases>
 			<AggregatesList type="e">
+				<value>GUID 07be7509-0b0f-4eef-a04e-0502c5d0c50b</value>
+				<value>GUID ede62e96-e8f6-4776-ad2b-3a8cc0884b5b</value>
 				<value>GUID 70bccc85-0431-4741-9f10-800eaf1690ff</value>
 			</AggregatesList>
 		</ICodeGenConfigInfo>
+		<IMHyperLink type="e">
+			<_id type="a">GUID 07be7509-0b0f-4eef-a04e-0502c5d0c50b</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.15.2023::20:23:34</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Makefile</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">DefaultComponent.mak</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IMHyperLink type="e">
+			<_id type="a">GUID ede62e96-e8f6-4776-ad2b-3a8cc0884b5b</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">7.15.2023::20:23:34</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Main File</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">MainDefaultComponent</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
 		<IFolder type="e">
 			<_id type="a">GUID 70bccc85-0431-4741-9f10-800eaf1690ff</_id>
 			<_myState type="a">8192</_myState>

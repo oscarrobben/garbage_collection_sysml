@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: road_network
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\road_network.h
 *********************************************************************/
 
@@ -17,8 +17,15 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <oxf\omcollec.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "EnvPkg.h"
 //## link is_owned_by
 class Municipality;
+
+//## link shows
+class route_planning_system;
 
 //## link services
 class smart_garbage_collection_system;
@@ -27,10 +34,14 @@ class smart_garbage_collection_system;
 
 //## class road_network
 class road_network {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedroad_network;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     road_network();
     
@@ -87,11 +98,44 @@ public :
     
     //## auto_generated
     void _clearServices();
+    
+    //## auto_generated
+    route_planning_system* getShows() const;
+    
+    //## auto_generated
+    void setShows(route_planning_system* p_route_planning_system);
 
 protected :
 
     Municipality* is_owned_by;		//## link is_owned_by
+    
+    route_planning_system* shows;		//## link shows
+
+public :
+
+    //## auto_generated
+    void __setShows(route_planning_system* p_route_planning_system);
+    
+    //## auto_generated
+    void _setShows(route_planning_system* p_route_planning_system);
+    
+    //## auto_generated
+    void _clearShows();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedroad_network : virtual public AOMInstance {
+    DECLARE_META(road_network, OMAnimatedroad_network)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

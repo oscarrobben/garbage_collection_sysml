@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ReportIssuesPkg
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\ReportIssuesPkg.h
 *********************************************************************/
 
@@ -17,6 +17,10 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <oxf\event.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "UseCaseAnalysisPkg.h"
 //#[ ignore
 #define send_report_ReportIssuesPkg_UseCaseAnalysisPkg_id 10801
 
@@ -30,10 +34,16 @@
 // s
 //## event send_report()
 class send_report : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedsend_report;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     send_report();
     
@@ -43,12 +53,26 @@ public :
     virtual bool isTypeOf(const short id) const;
 };
 
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedsend_report : virtual public AOMEvent {
+    DECLARE_META_EVENT(send_report)
+};
+//#]
+#endif // _OMINSTRUMENT
+
 //## event problem_resolved()
 class problem_resolved : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedproblem_resolved;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     problem_resolved();
     
@@ -57,6 +81,14 @@ public :
     //## statechart_method
     virtual bool isTypeOf(const short id) const;
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedproblem_resolved : virtual public AOMEvent {
+    DECLARE_META_EVENT(problem_resolved)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

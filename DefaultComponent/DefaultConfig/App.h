@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: App
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\App.h
 *********************************************************************/
 
@@ -19,6 +19,8 @@
 #include "Default.h"
 //## auto_generated
 #include <oxf\omcollec.h>
+//## auto_generated
+#include <aom\aom.h>
 //## link provides
 class Resident_Citizen_User;
 
@@ -29,10 +31,14 @@ class UserDevice;
 
 //## class App
 class App {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedApp;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     App();
     
@@ -94,6 +100,20 @@ protected :
 
     OMCollection<Resident_Citizen_User*> provides;		//## link provides
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedApp : virtual public AOMInstance {
+    DECLARE_META(App, OMAnimatedApp)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: truck
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\truck.h
 *********************************************************************/
 
@@ -19,6 +19,10 @@
 #include "Default.h"
 //## auto_generated
 #include <oxf\omcollec.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include <oxf\omthread.h>
 //## auto_generated
 #include <oxf\omreactive.h>
 //## auto_generated
@@ -41,10 +45,14 @@ class Garbage_Truck_Driver;
 
 //## class truck
 class truck : public OMReactive {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedtruck;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     truck(IOxfActive* theActiveContext = 0);
     
@@ -180,6 +188,29 @@ protected :
     int rootState_active;
 //#]
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedtruck : virtual public AOMInstance {
+    DECLARE_REACTIVE_META(truck, OMAnimatedtruck)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_1_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_0_serializeStates(AOMSState* aomsState) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 inline bool truck::rootState_IN() const {
     return true;

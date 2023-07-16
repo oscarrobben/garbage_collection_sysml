@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Waste_Processing_Company
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Waste_Processing_Company.h
 *********************************************************************/
 
@@ -17,8 +17,15 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <oxf\omlist.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "ActorPkg.h"
 //## classInstance employs
 class Garbage_Truck_Driver;
+
+//## link itsStakeholders
+class Stakeholders;
 
 //## classInstance operates
 class smart_garbage_collection_system;
@@ -30,6 +37,16 @@ class wastecenter;
 
 //## actor Waste_Processing_Company
 class Waste_Processing_Company {
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedWaste_Processing_Company;
+#endif // _OMINSTRUMENT
+
+#ifdef _OMINSTRUMENT
+    OM_DECLARE_COMPOSITE_OFFSET
+#endif // _OMINSTRUMENT
+
     ////    Constructors and destructors    ////
     
     ////    Additional operations    ////
@@ -56,6 +73,12 @@ public :
     void deleteEmploys(Garbage_Truck_Driver* p_Garbage_Truck_Driver);
     
     //## auto_generated
+    Stakeholders* getItsStakeholders() const;
+    
+    //## auto_generated
+    void setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
     wastecenter* getItsWastecenter() const;
     
     //## auto_generated
@@ -77,12 +100,23 @@ protected :
     
     OMList<Garbage_Truck_Driver*> employs;		//## classInstance employs
     
+    Stakeholders* itsStakeholders;		//## link itsStakeholders
+    
     wastecenter* itsWastecenter;		//## link itsWastecenter
     
     OMList<smart_garbage_collection_system*> operates;		//## classInstance operates
 
 public :
 
+    //## auto_generated
+    void __setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    void _setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    void _clearItsStakeholders();
+    
     //## auto_generated
     void __setItsWastecenter(wastecenter* p_wastecenter);
     
@@ -92,6 +126,20 @@ public :
     //## auto_generated
     void _clearItsWastecenter();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedWaste_Processing_Company : virtual public AOMInstance {
+    DECLARE_META(Waste_Processing_Company, OMAnimatedWaste_Processing_Company)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

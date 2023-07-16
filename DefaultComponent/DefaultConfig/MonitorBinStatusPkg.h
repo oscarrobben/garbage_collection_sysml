@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: MonitorBinStatusPkg
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\MonitorBinStatusPkg.h
 *********************************************************************/
 
@@ -17,6 +17,10 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <oxf\event.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "UseCaseAnalysisPkg.h"
 //#[ ignore
 #define secure_connection_established_MonitorBinStatusPkg_UseCaseAnalysisPkg_id 23401
 
@@ -33,10 +37,16 @@
 
 //## event secure_connection_established()
 class secure_connection_established : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedsecure_connection_established;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     secure_connection_established();
     
@@ -46,12 +56,26 @@ public :
     virtual bool isTypeOf(const short id) const;
 };
 
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedsecure_connection_established : virtual public AOMEvent {
+    DECLARE_META_EVENT(secure_connection_established)
+};
+//#]
+#endif // _OMINSTRUMENT
+
 //## event connection_request()
 class connection_request : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedconnection_request;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     connection_request();
     
@@ -61,12 +85,26 @@ public :
     virtual bool isTypeOf(const short id) const;
 };
 
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedconnection_request : virtual public AOMEvent {
+    DECLARE_META_EVENT(connection_request)
+};
+//#]
+#endif // _OMINSTRUMENT
+
 //## event connection_comfirm()
 class connection_comfirm : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedconnection_comfirm;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     connection_comfirm();
     
@@ -76,12 +114,26 @@ public :
     virtual bool isTypeOf(const short id) const;
 };
 
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedconnection_comfirm : virtual public AOMEvent {
+    DECLARE_META_EVENT(connection_comfirm)
+};
+//#]
+#endif // _OMINSTRUMENT
+
 //## event terminate_connection()
 class terminate_connection : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedterminate_connection;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     terminate_connection();
     
@@ -90,6 +142,14 @@ public :
     //## statechart_method
     virtual bool isTypeOf(const short id) const;
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedterminate_connection : virtual public AOMEvent {
+    DECLARE_META_EVENT(terminate_connection)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

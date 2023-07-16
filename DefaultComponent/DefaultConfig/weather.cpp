@@ -4,21 +4,31 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: weather
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\weather.cpp
 *********************************************************************/
+
+//#[ ignore
+#define NAMESPACE_PREFIX
+//#]
 
 //## auto_generated
 #include "weather.h"
 //## link influences
 #include "smart_garbage_collection_system.h"
+//#[ ignore
+#define EnvPkg_weather_weather_SERIALIZE OM_NO_OP
+//#]
+
 //## package EnvPkg
 
 //## class weather
 weather::weather() {
+    NOTIFY_CONSTRUCTOR(weather, weather(), 0, EnvPkg_weather_weather_SERIALIZE);
 }
 
 weather::~weather() {
+    NOTIFY_DESTRUCTOR(~weather, true);
     cleanUpRelations();
 }
 
@@ -76,16 +86,47 @@ void weather::cleanUpRelations() {
 }
 
 void weather::_addInfluences(smart_garbage_collection_system* p_smart_garbage_collection_system) {
+    if(p_smart_garbage_collection_system != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("influences", p_smart_garbage_collection_system, false, false);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("influences");
+        }
     influences.add(p_smart_garbage_collection_system);
 }
 
 void weather::_removeInfluences(smart_garbage_collection_system* p_smart_garbage_collection_system) {
+    NOTIFY_RELATION_ITEM_REMOVED("influences", p_smart_garbage_collection_system);
     influences.remove(p_smart_garbage_collection_system);
 }
 
 void weather::_clearInfluences() {
+    NOTIFY_RELATION_CLEARED("influences");
     influences.removeAll();
 }
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+void OMAnimatedweather::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("its_humidity", true, true);
+    aomsRelations->ADD_ITEM(&myReal->its_humidity);
+    aomsRelations->addRelation("its_temperature", true, true);
+    aomsRelations->ADD_ITEM(&myReal->its_temperature);
+    aomsRelations->addRelation("influences", false, false);
+    {
+        OMIterator<smart_garbage_collection_system*> iter(myReal->influences);
+        while (*iter){
+            aomsRelations->ADD_ITEM(*iter);
+            iter++;
+        }
+    }
+}
+//#]
+
+IMPLEMENT_META_P(weather, EnvPkg, EnvPkg, false, OMAnimatedweather)
+#endif // _OMINSTRUMENT
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\weather.cpp

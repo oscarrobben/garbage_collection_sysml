@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: fill_sensor
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\fill_sensor.h
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 #include "Default.h"
 //## class fill_sensor
 #include "sensor.h"
@@ -23,10 +25,16 @@
 
 //## class fill_sensor
 class fill_sensor : public sensor {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedfill_sensor;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     fill_sensor();
     
@@ -47,6 +55,22 @@ protected :
 
     float temp;		//## attribute temp
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedfill_sensor : public OMAnimatedsensor {
+    DECLARE_META(fill_sensor, OMAnimatedfill_sensor)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

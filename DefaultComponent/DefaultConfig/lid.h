@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: lid
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\lid.h
 *********************************************************************/
 
@@ -17,6 +17,8 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include "Default.h"
+//## auto_generated
+#include <aom\aom.h>
 //## link itsOpen_sensor
 class open_sensor;
 
@@ -27,10 +29,14 @@ class smartbin;
 
 //## class lid
 class lid {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedlid;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     lid();
     
@@ -75,6 +81,20 @@ public :
     //## auto_generated
     void _clearItsSmartbin();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedlid : virtual public AOMInstance {
+    DECLARE_META(lid, OMAnimatedlid)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

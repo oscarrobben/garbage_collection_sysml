@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Municipality
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\Municipality.h
 *********************************************************************/
 
@@ -17,6 +17,13 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <oxf\omcollec.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "ActorPkg.h"
+//## link itsStakeholders
+class Stakeholders;
+
 //## link owns
 class road_network;
 
@@ -30,6 +37,12 @@ class wastecenter;
 
 //## actor Municipality
 class Municipality {
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedMunicipality;
+#endif // _OMINSTRUMENT
+
     ////    Constructors and destructors    ////
     
     ////    Additional operations    ////
@@ -38,13 +51,17 @@ class Municipality {
     
     ////    Framework operations    ////
     
-public :
-
     //## auto_generated
     Municipality();
     
     //## auto_generated
     ~Municipality();
+    
+    //## auto_generated
+    Stakeholders* getItsStakeholders() const;
+    
+    //## auto_generated
+    void setItsStakeholders(Stakeholders* p_Stakeholders);
     
     //## auto_generated
     wastecenter* getItsWastecenter() const;
@@ -75,6 +92,8 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
+    Stakeholders* itsStakeholders;		//## link itsStakeholders
+    
     wastecenter* itsWastecenter;		//## link itsWastecenter
     
     OMCollection<road_network*> owns;		//## link owns
@@ -83,6 +102,15 @@ protected :
 
 public :
 
+    //## auto_generated
+    void __setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    void _setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    void _clearItsStakeholders();
+    
     //## auto_generated
     void __setItsWastecenter(wastecenter* p_wastecenter);
     
@@ -110,6 +138,20 @@ public :
     //## auto_generated
     void _clearUses();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedMunicipality : virtual public AOMInstance {
+    DECLARE_META(Municipality, OMAnimatedMunicipality)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

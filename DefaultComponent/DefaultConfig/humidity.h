@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: humidity
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\humidity.h
 *********************************************************************/
 
@@ -15,20 +15,38 @@
 #include <oxf\oxf.h>
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
+//## auto_generated
+#include <aom\aom.h>
+//## auto_generated
+#include "EnvPkg.h"
 //## package EnvPkg
 
 //## class humidity
 class humidity {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedhumidity;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     humidity();
     
     //## auto_generated
     ~humidity();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedhumidity : virtual public AOMInstance {
+    DECLARE_META(humidity, OMAnimatedhumidity)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

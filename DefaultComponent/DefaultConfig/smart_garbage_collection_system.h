@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: smart_garbage_collection_system
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\smart_garbage_collection_system.h
 *********************************************************************/
 
@@ -19,14 +19,55 @@
 #include "Default.h"
 //## auto_generated
 #include <oxf\omcollec.h>
+//## auto_generated
+#include <aom\aom.h>
+//## link itsINPUT
+class INPUT;
+
+//## link itsOUTPUT
+class OUTPUT;
+
+//## link itsOppurtunities
+class Oppurtunities;
+
+//## link uses
+class Resident_Citizen_User;
+
+//## link itsResources
+class Resources;
+
+//## link itsRisks
+class Risks;
+
+//## link itsStakeholders
+class Stakeholders;
+
+//## link itsStandards_Regulations_Compliances
+class Standards_Regulations_Compliances;
+
+//## link itsThreats
+class Threats;
+
 //## link itsUserDevice
 class UserDevice;
+
+//## link itsUsers_Endusers
+class Users_Endusers;
 
 //## link itsBin
 class bin;
 
 //## link itsCms
 class cms;
+
+//## link itsElectricity
+class electricity;
+
+//## link do_maintenance_on
+class maintenance_system;
+
+//## link show_traffic
+class route_planning_system;
 
 //## link itsTruck
 class truck;
@@ -47,10 +88,14 @@ class road_network;
 
 //## class smart_garbage_collection_system
 class smart_garbage_collection_system {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedsmart_garbage_collection_system;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     smart_garbage_collection_system();
     
@@ -233,11 +278,248 @@ public :
     
     //## auto_generated
     void _clearServices();
+    
+    //## auto_generated
+    maintenance_system* getDo_maintenance_on() const;
+    
+    //## auto_generated
+    void setDo_maintenance_on(maintenance_system* p_maintenance_system);
+    
+    //## auto_generated
+    electricity* getItsElectricity() const;
+    
+    //## auto_generated
+    void setItsElectricity(electricity* p_electricity);
+    
+    //## auto_generated
+    INPUT* getItsINPUT() const;
+    
+    //## auto_generated
+    void setItsINPUT(INPUT* p_INPUT);
+    
+    //## auto_generated
+    OUTPUT* getItsOUTPUT() const;
+    
+    //## auto_generated
+    void setItsOUTPUT(OUTPUT* p_OUTPUT);
+    
+    //## auto_generated
+    Oppurtunities* getItsOppurtunities() const;
+    
+    //## auto_generated
+    void setItsOppurtunities(Oppurtunities* p_Oppurtunities);
+    
+    //## auto_generated
+    Resources* getItsResources() const;
+    
+    //## auto_generated
+    void setItsResources(Resources* p_Resources);
+    
+    //## auto_generated
+    Risks* getItsRisks() const;
+    
+    //## auto_generated
+    void setItsRisks(Risks* p_Risks);
+    
+    //## auto_generated
+    Stakeholders* getItsStakeholders() const;
+    
+    //## auto_generated
+    void setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    Standards_Regulations_Compliances* getItsStandards_Regulations_Compliances() const;
+    
+    //## auto_generated
+    void setItsStandards_Regulations_Compliances(Standards_Regulations_Compliances* p_Standards_Regulations_Compliances);
+    
+    //## auto_generated
+    Threats* getItsThreats() const;
+    
+    //## auto_generated
+    void setItsThreats(Threats* p_Threats);
+    
+    //## auto_generated
+    Users_Endusers* getItsUsers_Endusers() const;
+    
+    //## auto_generated
+    void setItsUsers_Endusers(Users_Endusers* p_Users_Endusers);
+    
+    //## auto_generated
+    route_planning_system* getShow_traffic() const;
+    
+    //## auto_generated
+    void setShow_traffic(route_planning_system* p_route_planning_system);
+    
+    //## auto_generated
+    Resident_Citizen_User* getUses() const;
+    
+    //## auto_generated
+    void setUses(Resident_Citizen_User* p_Resident_Citizen_User);
 
 protected :
 
+    maintenance_system* do_maintenance_on;		//## link do_maintenance_on
+    
+    electricity* itsElectricity;		//## link itsElectricity
+    
+    INPUT* itsINPUT;		//## link itsINPUT
+    
+    OUTPUT* itsOUTPUT;		//## link itsOUTPUT
+    
+    Oppurtunities* itsOppurtunities;		//## link itsOppurtunities
+    
+    Resources* itsResources;		//## link itsResources
+    
+    Risks* itsRisks;		//## link itsRisks
+    
+    Stakeholders* itsStakeholders;		//## link itsStakeholders
+    
+    Standards_Regulations_Compliances* itsStandards_Regulations_Compliances;		//## link itsStandards_Regulations_Compliances
+    
+    Threats* itsThreats;		//## link itsThreats
+    
+    Users_Endusers* itsUsers_Endusers;		//## link itsUsers_Endusers
+    
     OMCollection<Municipality*> services;		//## link services
+    
+    route_planning_system* show_traffic;		//## link show_traffic
+    
+    Resident_Citizen_User* uses;		//## link uses
+
+public :
+
+    //## auto_generated
+    void __setDo_maintenance_on(maintenance_system* p_maintenance_system);
+    
+    //## auto_generated
+    void _setDo_maintenance_on(maintenance_system* p_maintenance_system);
+    
+    //## auto_generated
+    void _clearDo_maintenance_on();
+    
+    //## auto_generated
+    void __setItsElectricity(electricity* p_electricity);
+    
+    //## auto_generated
+    void _setItsElectricity(electricity* p_electricity);
+    
+    //## auto_generated
+    void _clearItsElectricity();
+    
+    //## auto_generated
+    void __setItsINPUT(INPUT* p_INPUT);
+    
+    //## auto_generated
+    void _setItsINPUT(INPUT* p_INPUT);
+    
+    //## auto_generated
+    void _clearItsINPUT();
+    
+    //## auto_generated
+    void __setItsOUTPUT(OUTPUT* p_OUTPUT);
+    
+    //## auto_generated
+    void _setItsOUTPUT(OUTPUT* p_OUTPUT);
+    
+    //## auto_generated
+    void _clearItsOUTPUT();
+    
+    //## auto_generated
+    void __setItsOppurtunities(Oppurtunities* p_Oppurtunities);
+    
+    //## auto_generated
+    void _setItsOppurtunities(Oppurtunities* p_Oppurtunities);
+    
+    //## auto_generated
+    void _clearItsOppurtunities();
+    
+    //## auto_generated
+    void __setItsResources(Resources* p_Resources);
+    
+    //## auto_generated
+    void _setItsResources(Resources* p_Resources);
+    
+    //## auto_generated
+    void _clearItsResources();
+    
+    //## auto_generated
+    void __setItsRisks(Risks* p_Risks);
+    
+    //## auto_generated
+    void _setItsRisks(Risks* p_Risks);
+    
+    //## auto_generated
+    void _clearItsRisks();
+    
+    //## auto_generated
+    void __setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    void _setItsStakeholders(Stakeholders* p_Stakeholders);
+    
+    //## auto_generated
+    void _clearItsStakeholders();
+    
+    //## auto_generated
+    void __setItsStandards_Regulations_Compliances(Standards_Regulations_Compliances* p_Standards_Regulations_Compliances);
+    
+    //## auto_generated
+    void _setItsStandards_Regulations_Compliances(Standards_Regulations_Compliances* p_Standards_Regulations_Compliances);
+    
+    //## auto_generated
+    void _clearItsStandards_Regulations_Compliances();
+    
+    //## auto_generated
+    void __setItsThreats(Threats* p_Threats);
+    
+    //## auto_generated
+    void _setItsThreats(Threats* p_Threats);
+    
+    //## auto_generated
+    void _clearItsThreats();
+    
+    //## auto_generated
+    void __setItsUsers_Endusers(Users_Endusers* p_Users_Endusers);
+    
+    //## auto_generated
+    void _setItsUsers_Endusers(Users_Endusers* p_Users_Endusers);
+    
+    //## auto_generated
+    void _clearItsUsers_Endusers();
+    
+    //## auto_generated
+    void __setShow_traffic(route_planning_system* p_route_planning_system);
+    
+    //## auto_generated
+    void _setShow_traffic(route_planning_system* p_route_planning_system);
+    
+    //## auto_generated
+    void _clearShow_traffic();
+    
+    //## auto_generated
+    void __setUses(Resident_Citizen_User* p_Resident_Citizen_User);
+    
+    //## auto_generated
+    void _setUses(Resident_Citizen_User* p_Resident_Citizen_User);
+    
+    //## auto_generated
+    void _clearUses();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedsmart_garbage_collection_system : virtual public AOMInstance {
+    DECLARE_META(smart_garbage_collection_system, OMAnimatedsmart_garbage_collection_system)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

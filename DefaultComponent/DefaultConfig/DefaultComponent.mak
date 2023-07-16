@@ -65,7 +65,7 @@ OBJ_EXT=.obj
 EXE_EXT=.exe
 LIB_EXT=.lib
 
-INSTRUMENTATION=None
+INSTRUMENTATION=Animation
 
 TIME_MODEL=RealTime
 
@@ -86,6 +86,19 @@ ADDITIONAL_OBJS=
 
 OBJS= \
   server.obj \
+  ResistancetoChange.obj \
+  Technological_Challenges.obj \
+  Technologie.obj \
+  Human.obj \
+  DataSecurity_Privacy.obj \
+  Technological.obj \
+  Adoption.obj \
+  Efficiency.obj \
+  Sustainability.obj \
+  part_1.obj \
+  Cost_Reduction.obj \
+  SmartBin_Data.obj \
+  Optimized_Collection_Route.obj \
   bin.obj \
   truck.obj \
   wastecenter.obj \
@@ -107,30 +120,48 @@ OBJS= \
   TruckData.obj \
   RouteData.obj \
   UserDevice.obj \
-  interface_48.obj \
   AppData.obj \
   SmartPhone.obj \
   Laptop.obj \
   App.obj \
-  electricity.obj \
   tablet.obj \
-  cms_inst.obj \
+  Stakeholders.obj \
+  block_73.obj \
+  Users_Endusers.obj \
+  Resources.obj \
+  block_112.obj \
+  Risks.obj \
+  Oppurtunities.obj \
+  Threats.obj \
+  Standards_Regulations_Compliances.obj \
+  INPUT.obj \
+  OUTPUT.obj \
+  electricity.obj \
   road_network.obj \
   weather.obj \
   temperature.obj \
   humidity.obj \
+  route_planning_system.obj \
+  maintenance_system.obj \
   Garbage_Truck_Driver.obj \
   Resident_Citizen_User.obj \
   Waste_Processing_Company.obj \
   Municipality.obj \
   Smart_Bins.obj \
+  Maintenance_Staff.obj \
+  Technology_Providers.obj \
+  Environmental_Organisations.obj \
   Default.obj \
+  EnvPkg.obj \
+  UseCaseAnalysisPkg.obj \
   MonitorBinStatusPkg.obj \
   EmptyBinPkg.obj \
   RouteOptimizationPkg.obj \
   ReceiveCollectionSchedulePkg.obj \
   ReportIssuesPkg.obj \
-  addTrashPkg.obj
+  addTrashPkg.obj \
+  ActorPkg.obj \
+  StakeholderPkg.obj
 
 
 
@@ -219,6 +250,84 @@ server.obj : server.cpp server.h    Default.h cms.h
 
 
 
+ResistancetoChange.obj : ResistancetoChange.cpp ResistancetoChange.h    Default.h Threats.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ResistancetoChange.obj" "ResistancetoChange.cpp" 
+
+
+
+Technological_Challenges.obj : Technological_Challenges.cpp Technological_Challenges.h    Default.h Threats.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Technological_Challenges.obj" "Technological_Challenges.cpp" 
+
+
+
+Technologie.obj : Technologie.cpp Technologie.h    Default.h Resources.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Technologie.obj" "Technologie.cpp" 
+
+
+
+Human.obj : Human.cpp Human.h    Default.h Resources.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Human.obj" "Human.cpp" 
+
+
+
+DataSecurity_Privacy.obj : DataSecurity_Privacy.cpp DataSecurity_Privacy.h    Default.h Risks.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataSecurity_Privacy.obj" "DataSecurity_Privacy.cpp" 
+
+
+
+Technological.obj : Technological.cpp Technological.h    Default.h Risks.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Technological.obj" "Technological.cpp" 
+
+
+
+Adoption.obj : Adoption.cpp Adoption.h    Default.h Risks.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Adoption.obj" "Adoption.cpp" 
+
+
+
+Efficiency.obj : Efficiency.cpp Efficiency.h    Default.h Oppurtunities.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Efficiency.obj" "Efficiency.cpp" 
+
+
+
+Sustainability.obj : Sustainability.cpp Sustainability.h    Default.h Oppurtunities.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Sustainability.obj" "Sustainability.cpp" 
+
+
+
+part_1.obj : part_1.cpp part_1.h    Default.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"part_1.obj" "part_1.cpp" 
+
+
+
+Cost_Reduction.obj : Cost_Reduction.cpp Cost_Reduction.h    Default.h Oppurtunities.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Cost_Reduction.obj" "Cost_Reduction.cpp" 
+
+
+
+SmartBin_Data.obj : SmartBin_Data.cpp SmartBin_Data.h    Default.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SmartBin_Data.obj" "SmartBin_Data.cpp" 
+
+
+
+Optimized_Collection_Route.obj : Optimized_Collection_Route.cpp Optimized_Collection_Route.h    Default.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Optimized_Collection_Route.obj" "Optimized_Collection_Route.cpp" 
+
+
+
 bin.obj : bin.cpp bin.h    Default.h cms.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"bin.obj" "bin.cpp" 
@@ -243,13 +352,13 @@ block_7.obj : block_7.cpp block_7.h    Default.h
 
 
 
-cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_system.h server.h bool_emptyReq_ProxyFlowPropertyInterface.h 
+cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_system.h server.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"cms.obj" "cms.cpp" 
 
 
 
-smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h electricity.h truck.h bool_emptyReq_ProxyFlowPropertyInterface.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
+smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h truck.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"smartbin.obj" "smartbin.cpp" 
 
@@ -285,7 +394,7 @@ block_21.obj : block_21.cpp block_21.h    Default.h
 
 
 
-smart_garbage_collection_system.obj : smart_garbage_collection_system.cpp smart_garbage_collection_system.h    Default.h road_network.h weather.h bin.h cms.h truck.h wastecenter.h UserDevice.h Municipality.h 
+smart_garbage_collection_system.obj : smart_garbage_collection_system.cpp smart_garbage_collection_system.h    Default.h road_network.h weather.h bin.h cms.h truck.h wastecenter.h UserDevice.h Municipality.h Stakeholders.h Users_Endusers.h Resources.h Risks.h Oppurtunities.h OUTPUT.h INPUT.h Standards_Regulations_Compliances.h Threats.h electricity.h Resident_Citizen_User.h maintenance_system.h route_planning_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"smart_garbage_collection_system.obj" "smart_garbage_collection_system.cpp" 
 
@@ -345,12 +454,6 @@ UserDevice.obj : UserDevice.cpp UserDevice.h    Default.h smart_garbage_collecti
 
 
 
-interface_48.obj : interface_48.cpp interface_48.h    Default.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"interface_48.obj" "interface_48.cpp" 
-
-
-
 AppData.obj : AppData.cpp AppData.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"AppData.obj" "AppData.cpp" 
@@ -375,117 +478,231 @@ App.obj : App.cpp App.h    Default.h UserDevice.h Resident_Citizen_User.h
 
 
 
-electricity.obj : electricity.cpp electricity.h    Default.h smartbin.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"electricity.obj" "electricity.cpp" 
-
-
-
 tablet.obj : tablet.cpp tablet.h    Default.h UserDevice.h smart_garbage_collection_system.h App.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"tablet.obj" "tablet.cpp" 
 
 
 
-cms_inst.obj : cms_inst.cpp cms_inst.h    Default.h cms.h bin.h truck.h smart_garbage_collection_system.h server.h bool_emptyReq_ProxyFlowPropertyInterface.h 
+Stakeholders.obj : Stakeholders.cpp Stakeholders.h    Default.h smart_garbage_collection_system.h Waste_Processing_Company.h Municipality.h Garbage_Truck_Driver.h Resident_Citizen_User.h Maintenance_Staff.h Technology_Providers.h Environmental_Organisations.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"cms_inst.obj" "cms_inst.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Stakeholders.obj" "Stakeholders.cpp" 
 
 
 
-road_network.obj : road_network.cpp road_network.h    smart_garbage_collection_system.h Municipality.h 
+block_73.obj : block_73.cpp block_73.h    Default.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"block_73.obj" "block_73.cpp" 
+
+
+
+Users_Endusers.obj : Users_Endusers.cpp Users_Endusers.h    Default.h Garbage_Truck_Driver.h Resident_Citizen_User.h Maintenance_Staff.h smart_garbage_collection_system.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Users_Endusers.obj" "Users_Endusers.cpp" 
+
+
+
+Resources.obj : Resources.cpp Resources.h    Default.h smart_garbage_collection_system.h block_112.h Technologie.h Human.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Resources.obj" "Resources.cpp" 
+
+
+
+block_112.obj : block_112.cpp block_112.h    Default.h Resources.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"block_112.obj" "block_112.cpp" 
+
+
+
+Risks.obj : Risks.cpp Risks.h    Default.h smart_garbage_collection_system.h DataSecurity_Privacy.h Technological.h Adoption.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Risks.obj" "Risks.cpp" 
+
+
+
+Oppurtunities.obj : Oppurtunities.cpp Oppurtunities.h    Default.h smart_garbage_collection_system.h Efficiency.h Sustainability.h Cost_Reduction.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Oppurtunities.obj" "Oppurtunities.cpp" 
+
+
+
+Threats.obj : Threats.cpp Threats.h    Default.h smart_garbage_collection_system.h ResistancetoChange.h Technological_Challenges.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Threats.obj" "Threats.cpp" 
+
+
+
+Standards_Regulations_Compliances.obj : Standards_Regulations_Compliances.cpp Standards_Regulations_Compliances.h    Default.h smart_garbage_collection_system.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Standards_Regulations_Compliances.obj" "Standards_Regulations_Compliances.cpp" 
+
+
+
+INPUT.obj : INPUT.cpp INPUT.h    Default.h smart_garbage_collection_system.h SmartBin_Data.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"INPUT.obj" "INPUT.cpp" 
+
+
+
+OUTPUT.obj : OUTPUT.cpp OUTPUT.h    Default.h smart_garbage_collection_system.h Optimized_Collection_Route.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"OUTPUT.obj" "OUTPUT.cpp" 
+
+
+
+electricity.obj : electricity.cpp electricity.h    Default.h smart_garbage_collection_system.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"electricity.obj" "electricity.cpp" 
+
+
+
+road_network.obj : road_network.cpp road_network.h    EnvPkg.h smart_garbage_collection_system.h Municipality.h route_planning_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"road_network.obj" "road_network.cpp" 
 
 
 
-weather.obj : weather.cpp weather.h    humidity.h temperature.h smart_garbage_collection_system.h 
+weather.obj : weather.cpp weather.h    EnvPkg.h humidity.h temperature.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"weather.obj" "weather.cpp" 
 
 
 
-temperature.obj : temperature.cpp temperature.h    
+temperature.obj : temperature.cpp temperature.h    EnvPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"temperature.obj" "temperature.cpp" 
 
 
 
-humidity.obj : humidity.cpp humidity.h    
+humidity.obj : humidity.cpp humidity.h    EnvPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"humidity.obj" "humidity.cpp" 
 
 
 
-Garbage_Truck_Driver.obj : Garbage_Truck_Driver.cpp Garbage_Truck_Driver.h    truck.h 
+route_planning_system.obj : route_planning_system.cpp route_planning_system.h    EnvPkg.h smart_garbage_collection_system.h road_network.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"route_planning_system.obj" "route_planning_system.cpp" 
+
+
+
+maintenance_system.obj : maintenance_system.cpp maintenance_system.h    EnvPkg.h smart_garbage_collection_system.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"maintenance_system.obj" "maintenance_system.cpp" 
+
+
+
+Garbage_Truck_Driver.obj : Garbage_Truck_Driver.cpp Garbage_Truck_Driver.h    ActorPkg.h truck.h Stakeholders.h Users_Endusers.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Garbage_Truck_Driver.obj" "Garbage_Truck_Driver.cpp" 
 
 
 
-Resident_Citizen_User.obj : Resident_Citizen_User.cpp Resident_Citizen_User.h    App.h smartbin.h 
+Resident_Citizen_User.obj : Resident_Citizen_User.cpp Resident_Citizen_User.h    ActorPkg.h App.h smartbin.h Stakeholders.h Users_Endusers.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Resident_Citizen_User.obj" "Resident_Citizen_User.cpp" 
 
 
 
-Waste_Processing_Company.obj : Waste_Processing_Company.cpp Waste_Processing_Company.h    smart_garbage_collection_system.h Garbage_Truck_Driver.h wastecenter.h 
+Waste_Processing_Company.obj : Waste_Processing_Company.cpp Waste_Processing_Company.h    ActorPkg.h smart_garbage_collection_system.h Garbage_Truck_Driver.h wastecenter.h Stakeholders.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Waste_Processing_Company.obj" "Waste_Processing_Company.cpp" 
 
 
 
-Municipality.obj : Municipality.cpp Municipality.h    smart_garbage_collection_system.h road_network.h wastecenter.h 
+Municipality.obj : Municipality.cpp Municipality.h    ActorPkg.h smart_garbage_collection_system.h road_network.h wastecenter.h Stakeholders.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Municipality.obj" "Municipality.cpp" 
 
 
 
-Smart_Bins.obj : Smart_Bins.cpp Smart_Bins.h    
+Smart_Bins.obj : Smart_Bins.cpp Smart_Bins.h    ActorPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Smart_Bins.obj" "Smart_Bins.cpp" 
 
 
 
-Default.obj : Default.cpp Default.h    bin.h truck.h wastecenter.h block_7.h cms.h smartbin.h regularbin.h open_sensor.h lid.h block_19.h block_21.h smart_garbage_collection_system.h sensor.h audio_sensor.h temp_sensor.h fill_sensor.h humidity_sensor.h SensorData.h TruckData.h RouteData.h UserDevice.h interface_48.h AppData.h SmartPhone.h Laptop.h App.h electricity.h tablet.h cms_inst.h server.h 
+Maintenance_Staff.obj : Maintenance_Staff.cpp Maintenance_Staff.h    StakeholderPkg.h Stakeholders.h Users_Endusers.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Maintenance_Staff.obj" "Maintenance_Staff.cpp" 
+
+
+
+Technology_Providers.obj : Technology_Providers.cpp Technology_Providers.h    StakeholderPkg.h Stakeholders.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Technology_Providers.obj" "Technology_Providers.cpp" 
+
+
+
+Environmental_Organisations.obj : Environmental_Organisations.cpp Environmental_Organisations.h    StakeholderPkg.h Stakeholders.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Environmental_Organisations.obj" "Environmental_Organisations.cpp" 
+
+
+
+Default.obj : Default.cpp Default.h    bin.h truck.h wastecenter.h block_7.h cms.h smartbin.h regularbin.h open_sensor.h lid.h block_19.h block_21.h smart_garbage_collection_system.h sensor.h audio_sensor.h temp_sensor.h fill_sensor.h humidity_sensor.h SensorData.h TruckData.h RouteData.h UserDevice.h AppData.h SmartPhone.h Laptop.h App.h tablet.h Stakeholders.h block_73.h Users_Endusers.h Resources.h block_112.h Risks.h Oppurtunities.h Threats.h Standards_Regulations_Compliances.h INPUT.h OUTPUT.h electricity.h server.h ResistancetoChange.h Technological_Challenges.h Technologie.h Human.h DataSecurity_Privacy.h Technological.h Adoption.h Efficiency.h Sustainability.h part_1.h Cost_Reduction.h SmartBin_Data.h Optimized_Collection_Route.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
 
 
-MonitorBinStatusPkg.obj : MonitorBinStatusPkg.cpp MonitorBinStatusPkg.h    
+EnvPkg.obj : EnvPkg.cpp EnvPkg.h    road_network.h weather.h temperature.h humidity.h route_planning_system.h maintenance_system.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"EnvPkg.obj" "EnvPkg.cpp" 
+
+
+
+UseCaseAnalysisPkg.obj : UseCaseAnalysisPkg.cpp UseCaseAnalysisPkg.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"UseCaseAnalysisPkg.obj" "UseCaseAnalysisPkg.cpp" 
+
+
+
+MonitorBinStatusPkg.obj : MonitorBinStatusPkg.cpp MonitorBinStatusPkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"MonitorBinStatusPkg.obj" "MonitorBinStatusPkg.cpp" 
 
 
 
-EmptyBinPkg.obj : EmptyBinPkg.cpp EmptyBinPkg.h    
+EmptyBinPkg.obj : EmptyBinPkg.cpp EmptyBinPkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"EmptyBinPkg.obj" "EmptyBinPkg.cpp" 
 
 
 
-RouteOptimizationPkg.obj : RouteOptimizationPkg.cpp RouteOptimizationPkg.h    
+RouteOptimizationPkg.obj : RouteOptimizationPkg.cpp RouteOptimizationPkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"RouteOptimizationPkg.obj" "RouteOptimizationPkg.cpp" 
 
 
 
-ReceiveCollectionSchedulePkg.obj : ReceiveCollectionSchedulePkg.cpp ReceiveCollectionSchedulePkg.h    
+ReceiveCollectionSchedulePkg.obj : ReceiveCollectionSchedulePkg.cpp ReceiveCollectionSchedulePkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ReceiveCollectionSchedulePkg.obj" "ReceiveCollectionSchedulePkg.cpp" 
 
 
 
-ReportIssuesPkg.obj : ReportIssuesPkg.cpp ReportIssuesPkg.h    
+ReportIssuesPkg.obj : ReportIssuesPkg.cpp ReportIssuesPkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ReportIssuesPkg.obj" "ReportIssuesPkg.cpp" 
 
 
 
-addTrashPkg.obj : addTrashPkg.cpp addTrashPkg.h    
+addTrashPkg.obj : addTrashPkg.cpp addTrashPkg.h    UseCaseAnalysisPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"addTrashPkg.obj" "addTrashPkg.cpp" 
+
+
+
+ActorPkg.obj : ActorPkg.cpp ActorPkg.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ActorPkg.obj" "ActorPkg.cpp" 
+
+
+
+StakeholderPkg.obj : StakeholderPkg.cpp StakeholderPkg.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"StakeholderPkg.obj" "StakeholderPkg.cpp" 
 
 
 
@@ -517,6 +734,19 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 clean:
 	@echo Cleanup
 	if exist server.obj erase server.obj
+	if exist ResistancetoChange.obj erase ResistancetoChange.obj
+	if exist Technological_Challenges.obj erase Technological_Challenges.obj
+	if exist Technologie.obj erase Technologie.obj
+	if exist Human.obj erase Human.obj
+	if exist DataSecurity_Privacy.obj erase DataSecurity_Privacy.obj
+	if exist Technological.obj erase Technological.obj
+	if exist Adoption.obj erase Adoption.obj
+	if exist Efficiency.obj erase Efficiency.obj
+	if exist Sustainability.obj erase Sustainability.obj
+	if exist part_1.obj erase part_1.obj
+	if exist Cost_Reduction.obj erase Cost_Reduction.obj
+	if exist SmartBin_Data.obj erase SmartBin_Data.obj
+	if exist Optimized_Collection_Route.obj erase Optimized_Collection_Route.obj
 	if exist bin.obj erase bin.obj
 	if exist truck.obj erase truck.obj
 	if exist wastecenter.obj erase wastecenter.obj
@@ -538,30 +768,48 @@ clean:
 	if exist TruckData.obj erase TruckData.obj
 	if exist RouteData.obj erase RouteData.obj
 	if exist UserDevice.obj erase UserDevice.obj
-	if exist interface_48.obj erase interface_48.obj
 	if exist AppData.obj erase AppData.obj
 	if exist SmartPhone.obj erase SmartPhone.obj
 	if exist Laptop.obj erase Laptop.obj
 	if exist App.obj erase App.obj
-	if exist electricity.obj erase electricity.obj
 	if exist tablet.obj erase tablet.obj
-	if exist cms_inst.obj erase cms_inst.obj
+	if exist Stakeholders.obj erase Stakeholders.obj
+	if exist block_73.obj erase block_73.obj
+	if exist Users_Endusers.obj erase Users_Endusers.obj
+	if exist Resources.obj erase Resources.obj
+	if exist block_112.obj erase block_112.obj
+	if exist Risks.obj erase Risks.obj
+	if exist Oppurtunities.obj erase Oppurtunities.obj
+	if exist Threats.obj erase Threats.obj
+	if exist Standards_Regulations_Compliances.obj erase Standards_Regulations_Compliances.obj
+	if exist INPUT.obj erase INPUT.obj
+	if exist OUTPUT.obj erase OUTPUT.obj
+	if exist electricity.obj erase electricity.obj
 	if exist road_network.obj erase road_network.obj
 	if exist weather.obj erase weather.obj
 	if exist temperature.obj erase temperature.obj
 	if exist humidity.obj erase humidity.obj
+	if exist route_planning_system.obj erase route_planning_system.obj
+	if exist maintenance_system.obj erase maintenance_system.obj
 	if exist Garbage_Truck_Driver.obj erase Garbage_Truck_Driver.obj
 	if exist Resident_Citizen_User.obj erase Resident_Citizen_User.obj
 	if exist Waste_Processing_Company.obj erase Waste_Processing_Company.obj
 	if exist Municipality.obj erase Municipality.obj
 	if exist Smart_Bins.obj erase Smart_Bins.obj
+	if exist Maintenance_Staff.obj erase Maintenance_Staff.obj
+	if exist Technology_Providers.obj erase Technology_Providers.obj
+	if exist Environmental_Organisations.obj erase Environmental_Organisations.obj
 	if exist Default.obj erase Default.obj
+	if exist EnvPkg.obj erase EnvPkg.obj
+	if exist UseCaseAnalysisPkg.obj erase UseCaseAnalysisPkg.obj
 	if exist MonitorBinStatusPkg.obj erase MonitorBinStatusPkg.obj
 	if exist EmptyBinPkg.obj erase EmptyBinPkg.obj
 	if exist RouteOptimizationPkg.obj erase RouteOptimizationPkg.obj
 	if exist ReceiveCollectionSchedulePkg.obj erase ReceiveCollectionSchedulePkg.obj
 	if exist ReportIssuesPkg.obj erase ReportIssuesPkg.obj
 	if exist addTrashPkg.obj erase addTrashPkg.obj
+	if exist ActorPkg.obj erase ActorPkg.obj
+	if exist StakeholderPkg.obj erase StakeholderPkg.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

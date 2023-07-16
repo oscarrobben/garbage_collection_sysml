@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: cms_inst
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\cms_inst.h
 *********************************************************************/
 
@@ -16,7 +16,11 @@
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
+#include <aom\aom.h>
+//## auto_generated
 #include "Default.h"
+//## auto_generated
+#include <oxf\omthread.h>
 //## auto_generated
 #include <oxf\omreactive.h>
 //## auto_generated
@@ -41,10 +45,16 @@ class truck;
 
 //## class cms_inst
 class cms_inst : public OMReactive, public cms {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedcms_inst;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     cms_inst(IOxfActive* theActiveContext = 0);
     
@@ -114,6 +124,37 @@ protected :
     int main_behavior_subState;
 //#]
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedcms_inst : public OMAnimatedcms {
+    DECLARE_REACTIVE_META(cms_inst, OMAnimatedcms_inst)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void main_behavior_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void wait_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void dispatchTruck_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void bin_emptied_serializeStates(AOMSState* aomsState) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 inline bool cms_inst::rootState_IN() const {
     return true;

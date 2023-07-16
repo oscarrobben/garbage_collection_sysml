@@ -323,8 +323,8 @@
 			</_properties>
 			<_name type="a">adminpanel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.15.2023::16:54:9</_modifiedTime>
-			<_lastModifiedTime type="a">7.15.2023::16:54:9</_lastModifiedTime>
+			<_modifiedTime type="a">7.16.2023::0:0:45</_modifiedTime>
+			<_lastModifiedTime type="a">7.16.2023::0:0:45</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -369,7 +369,7 @@
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">30</elementList>
+			<elementList type="a">34</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -396,14 +396,10 @@
 				<value>GUID 0f600260-fb9e-4f52-b60e-aecb98c68aa9</value>
 				<value>GUID 6b36bd77-4154-42fa-90e6-f872cbf24fdf</value>
 				<value>GUID 8602f5dd-a3c4-4ded-ace4-2ecd16b07f3d</value>
-				<value>GUID 4ed5020c-d3e6-4f82-a113-23e919c66673</value>
 				<value>GUID 126a2e5c-1e82-4b02-830a-81347a074b51</value>
-				<value>GUID be158d4c-87ef-4ea7-b492-0d7209727678</value>
 				<value>GUID 6bc2b70c-5e53-452e-9557-4774378569d1</value>
-				<value>GUID 22e6ddfa-2945-4a49-9123-81fc1a7a5fb9</value>
 				<value>GUID a6d5b803-2595-4361-b42b-df299aa43599</value>
 				<value>GUID 9556892e-9a2a-4ee4-990b-a8956bdfe8d8</value>
-				<value>GUID 749e1796-bd6b-42b1-a6d2-064110f60f15</value>
 				<value>GUID 40724172-0fc9-4da9-bde1-bfb16058e749</value>
 				<value>GUID 006891a4-6560-4c00-8112-5de1a43cb634</value>
 				<value>GUID 36c53045-595d-4b0a-82a3-291055fd6198</value>
@@ -411,7 +407,15 @@
 				<value>GUID fb3cf7f1-cde9-4f95-8658-76263825c18a</value>
 				<value>GUID fb4c7813-87b7-4722-9310-e6bb440b6867</value>
 				<value>GUID 3e4f1da7-74f0-437e-9a58-405020b45931</value>
-				<value>GUID 7b533986-8303-494b-b676-be8dca99faf8</value>
+				<value>GUID c8b98502-9cfc-454a-94b3-865cc897aee9</value>
+				<value>GUID b6cdabf7-86f1-48db-ac8d-d667562c6374</value>
+				<value>GUID 872d7c71-3371-4725-9234-6affe1ae9779</value>
+				<value>GUID 784f9ce5-297f-486b-bfa1-a0d9ad179146</value>
+				<value>GUID 44deb9d4-c54d-41aa-83ef-48b04d5b0ab8</value>
+				<value>GUID 30352880-b8e7-4ac8-8b30-87ae1ef1201c</value>
+				<value>GUID d6518c46-b7a4-4475-8281-3600b8458edf</value>
+				<value>GUID 0d9d7c06-2242-474d-a825-a9ed7097898b</value>
+				<value>GUID eb37a66a-d844-410b-81d1-13c5770e20d2</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIBox type="e">
@@ -473,7 +477,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">3.94444 0 0 4.95455 7 20 </m_transform>
+			<m_transform type="a">3.98611 0 0 4.95455 7 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -549,7 +553,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1.11992 0 0 1.03066 -35.7358 -1.8092 </m_transform>
+			<m_transform type="a">1.11992 0 0 1.03066 -36.7358 -2.8092 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 298 59  790 59  790 646  298 646  </m_points>
 		</CGIFreeShape>
@@ -665,7 +669,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.871875 0 0 1.04885 1.43439 13.8994 </m_transform>
+			<m_transform type="a">0.871875 0 0 1.04885 0.43439 12.8994 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 19 43  339 43  339 391  19 391  </m_points>
 		</CGIFreeShape>
@@ -745,6 +749,28 @@
 							</Metaclasses>
 						</IPropertySubject>
 						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
 					</IRPYRawContainer>
 				</Subjects>
 			</IPropertyContainer>
@@ -763,7 +789,6 @@
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">levelindicator_0</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -778,8 +803,8 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00116527 0 0 0.00139443 30 490.553 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.00116527 0 0 0.00144672 30 484.611 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -841,6 +866,28 @@
 							</Metaclasses>
 						</IPropertySubject>
 						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
 					</IRPYRawContainer>
 				</Subjects>
 			</IPropertyContainer>
@@ -859,7 +906,6 @@
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">levelindicator_1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -874,8 +920,8 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00116527 0 0 0.00139443 164 490.553 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.00116527 0 0 0.00144672 164 484.611 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -921,7 +967,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 133 220 </m_transform>
+			<m_transform type="a">1 0 0 1 8 236 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  97 230  97 248  59 248  </m_points>
 			<m_text type="a">Average</m_text>
@@ -951,7 +997,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 0 223 </m_transform>
+			<m_transform type="a">1 0 0 1 138 238 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  120 230  120 262  59 262  </m_points>
 			<m_text type="a">Maximum</m_text>
@@ -994,8 +1040,8 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">smartbin</_hclass>
-					<_hname type="a">repair_bin()</_hname>
-					<_hid type="a">GUID c5dc2fa5-860e-46a9-b800-b80359382d69</_hid>
+					<_hname type="a">disp_repair0()</_hname>
+					<_hid type="a">GUID 7a1f1eee-f4f4-4570-913f-4358e64c716b</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
@@ -1017,22 +1063,23 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000563216 0 0 0.00043576 209 268.485 </m_transform>
+			<m_transform type="a">0.000563216 0 0 0.000261456 211 266.291 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">Default.smartbin[0].repair_bin</m_csModelObjPath>
+			<m_csModelObjPath type="a">Default.itsSmartbin.disp_repair0</m_csModelObjPath>
 			<m_csName type="a">dispatch repairman</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					
 						<IHandle type="e">
-							<_hm2Class type="a">IClass</_hm2Class>
+							<_hm2Class type="a">IPart</_hm2Class>
 							<_hfilename type="a">.\Default.sbsx</_hfilename>
 							<_hsubsystem type="a">Default</_hsubsystem>
-							<_hname type="a">smartbin</_hname>
-							<_hid type="a">GUID 1cedd5c8-0a62-4630-acf6-48471124ee6e</_hid>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
@@ -1091,8 +1138,8 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">smartbin</_hclass>
-					<_hname type="a">repairRequested</_hname>
-					<_hid type="a">GUID 9cde09cb-c5a2-4b67-83cf-2b85ffd39d42</_hid>
+					<_hname type="a">repairReqSelect</_hname>
+					<_hid type="a">GUID ee25c15b-cb42-4e13-adc7-df0849cac185</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
@@ -1114,12 +1161,12 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 232 237.126 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 234 235.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">Default.smartbin[0].repairRequested</m_csModelObjPath>
+			<m_csModelObjPath type="a">Default.smartbin[0].repairReqSelect</m_csModelObjPath>
 			<m_csName type="a">repair requested</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
@@ -1189,66 +1236,36 @@
 										</Properties>
 									</IPropertyMetaclass>
 									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">219</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">led_1</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 432 181.126 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">led_1</m_csName>
-			<m_PartsArray type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</m_PartsArray>
-		</CGIActiveX>
-		<CGIActiveX type="e">
-			<_id type="a">GUID 4ed5020c-d3e6-4f82-a113-23e919c66673</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<IPropertySubject type="e">
-							<_Name type="a">Format</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
 									<IPropertyMetaclass type="e">
-										<_Name type="a">Led</_Name>
+										<_Name type="a">ValueProperty</_Name>
 										<Properties type="c">
 											<IRPYRawContainer type="e">
 												<IProperty type="e">
 													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
 													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;-1;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
 													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
 												</IProperty>
 												
 											</IRPYRawContainer>
@@ -1266,12 +1283,17 @@
 			<m_type type="a">219</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">anom</_hname>
+					<_hid type="a">GUID 3fc09fa8-0b1b-4ad1-a1b9-4d37f0cc2b8a</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">led_2</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1286,15 +1308,26 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 446 396.126 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 432 181.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">led_2</m_csName>
+			<m_csModelObjPath type="a">Default.itsSmartbin.anom</m_csModelObjPath>
+			<m_csName type="a">led_1</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
@@ -1321,66 +1354,36 @@
 										</Properties>
 									</IPropertyMetaclass>
 									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;-1;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 								</IRPYRawContainer>
 							</Metaclasses>
 						</IPropertySubject>
 						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">219</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">led_3</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 778 330.126 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">led_3</m_csName>
-			<m_PartsArray type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</m_PartsArray>
-		</CGIActiveX>
-		<CGIButtonArray type="e">
-			<_id type="a">GUID be158d4c-87ef-4ea7-b492-0d7209727678</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
 						<IPropertySubject type="e">
 							<_Name type="a">PanelDiagram</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
 									<IPropertyMetaclass type="e">
-										<_Name type="a">ButtonArray</_Name>
+										<_Name type="a">ValueProperty</_Name>
 										<Properties type="c">
 											<IRPYRawContainer type="e">
 												<IProperty type="e">
-													<_Name type="a">CompartmentsLayout</_Name>
-													<_Value type="a">Columns</_Value>
-													<_Type type="a">String</_Type>
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
 												</IProperty>
 												
 											</IRPYRawContainer>
@@ -1395,96 +1398,20 @@
 				</Subjects>
 			</IPropertyContainer>
 			</_properties>
-			<m_type type="a">226</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">buttonarray_0</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.160305 0 0 0.0448833 71.8397 96.9551 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_polygon type="a">4 1 1  1 1115  1084 1115  1084 1  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset cols=33%25,33%25,33%25&gt;
-&lt;frame name=ButtonArrayItem0&gt;
-&lt;frame name=ButtonArrayItem1&gt;
-&lt;frame name=ButtonArrayItem2&gt;</frameset>
-			<m_csName type="a">buttonarray_0</m_csName>
-			<m_PartsArray type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</m_PartsArray>
-			<m_liButtonNames type="c">
-				<IRPYRawContainer type="e">
-					<value>Btn1</value>
-					<value>Btn2</value>
-					<value>Btn3</value>
-				</IRPYRawContainer>
-			</m_liButtonNames>
-			<m_liButtonValues type="c">
-				<IRPYRawContainer type="e">
-					<value>1</value>
-					<value>2</value>
-					<value>3</value>
-				</IRPYRawContainer>
-			</m_liButtonValues>
-			<AggregatesList type="e">
-				<value>GUID dd8e6e31-1262-48a4-8805-01282d7fe167</value>
-				<value>GUID 52d3445d-ef0f-4a2f-8db6-8717342cfef4</value>
-				<value>GUID b33db619-075b-4e87-91df-14c081f9aed3</value>
-			</AggregatesList>
-		</CGIButtonArray>
-		<CGICompartment type="e">
-			<_id type="a">GUID dd8e6e31-1262-48a4-8805-01282d7fe167</_id>
-			<m_name type="a">ButtonArrayItem0</m_name>
-			<m_displayOption type="a">All</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
-			<m_bOrdered type="a">0</m_bOrdered>
-		</CGICompartment>
-		<CGICompartment type="e">
-			<_id type="a">GUID 52d3445d-ef0f-4a2f-8db6-8717342cfef4</_id>
-			<m_name type="a">ButtonArrayItem1</m_name>
-			<m_displayOption type="a">All</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
-			<m_bOrdered type="a">0</m_bOrdered>
-		</CGICompartment>
-		<CGICompartment type="e">
-			<_id type="a">GUID b33db619-075b-4e87-91df-14c081f9aed3</_id>
-			<m_name type="a">ButtonArrayItem2</m_name>
-			<m_displayOption type="a">All</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
-			<m_bOrdered type="a">0</m_bOrdered>
-		</CGICompartment>
-		<CGIActiveX type="e">
-			<_id type="a">GUID 6bc2b70c-5e53-452e-9557-4774378569d1</_id>
 			<m_type type="a">219</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">anom1</_hname>
+					<_hid type="a">GUID 01e66a58-fe22-4cc0-aa55-db5608733a87</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">led_4</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1499,29 +1426,110 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 92 169.126 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 778 330.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">led_4</m_csName>
+			<m_csModelObjPath type="a">Default.itsSmartbin.anom1</m_csModelObjPath>
+			<m_csName type="a">led_3</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
 		<CGIActiveX type="e">
-			<_id type="a">GUID 22e6ddfa-2945-4a49-9123-81fc1a7a5fb9</_id>
+			<_id type="a">GUID 6bc2b70c-5e53-452e-9557-4774378569d1</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;0;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">219</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">selected</_hname>
+					<_hid type="a">GUID ce68ec1c-684c-41d2-b3f9-c9ce3b0f14a5</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">led_5</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1536,29 +1544,110 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 149 169.126 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 94 149.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">led_5</m_csName>
+			<m_csModelObjPath type="a">Default.itsSmartbin.selected</m_csModelObjPath>
+			<m_csName type="a">led_4</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
 		<CGIActiveX type="e">
 			<_id type="a">GUID a6d5b803-2595-4361-b42b-df299aa43599</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;0;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">219</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">selected1</_hname>
+					<_hid type="a">GUID 5cd6e6e1-fb3b-4d20-bd0a-e0b4c7c526e3</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">led_6</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1573,15 +1662,26 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 206 169.126 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 206 149.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Default.itsSmartbin.selected1</m_csModelObjPath>
 			<m_csName type="a">led_6</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
@@ -1608,6 +1708,42 @@
 										</Properties>
 									</IPropertyMetaclass>
 									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;CurrentValue;0;DrawTextLabels;-1;EnableThreshold1;-1;EnableThreshold2;-1;Font;Arial;;8.25;0;0;0;0;400;0;FormatString;%25.0f;GradientFactor;0.7;HorizontalLayout;0;LiquidColor;16744576;MaximumValue;100;MinimumValue;0;NumberOfDivisions;5;NumberOfSubdivisions;1;RelativeDepth;0.2;RelativeHeight;0.9;RelativeWidth;0.9;ShadedAreaRelativeSize;0;SquareShape;0;Threshold1Color;0;Threshold1Thickness;1;Threshold1Value;75;Threshold2Color;0;Threshold2Thickness;1;Threshold2Value;35;UseColorGradients;-1;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 								</IRPYRawContainer>
 							</Metaclasses>
 						</IPropertySubject>
@@ -1619,12 +1755,17 @@
 			<m_type type="a">223</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">fillSelect</_hname>
+					<_hid type="a">GUID 8939a5c1-3071-471b-aa0b-35b8fbf093b3</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">levelindicator_2</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1639,52 +1780,26 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
 			<m_transform type="a">0.00083511 0 0 0.00139443 20 251.553 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Default.itsSmartbin.fillSelect</m_csModelObjPath>
 			<m_csName type="a">levelindicator_2</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</m_PartsArray>
-		</CGIActiveX>
-		<CGIActiveX type="e">
-			<_id type="a">GUID 749e1796-bd6b-42b1-a6d2-064110f60f15</_id>
-			<m_type type="a">222</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">onoffswitch_0</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000485531 0 0 0.00043576 213 343.485 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">onoffswitch_0</m_csName>
-			<m_PartsArray type="c">
-				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
@@ -2056,15 +2171,85 @@
 		</CGIFreeText>
 		<CGIActiveX type="e">
 			<_id type="a">GUID fb4c7813-87b7-4722-9310-e6bb440b6867</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Gauge</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;CaptionColor;16777215;CaptionFont;Arial;;12;-1;-1;0;0;700;0;DivisionLineThickness;2;EnclosingCircleColor;12632256;EndAngle;-45;ExternalCircleThickness;3;ForeColor;0;GreenColor;65280;GreenStartValue;60;IndexColor;12582912;IndexLineThickness;0;InternalCircleThickness;2;MaximumValue;100;MinimumValue;0;NumberColor;4210752;NumberFont;Arial;;8.25;0;0;0;0;400;0;NumberOfDivisions;10;NumberOfSubdivisions;2;RedColor;255;RedStartValue;90;RelativeCaptionX;0.5;RelativeCaptionY;0.5;RelativeCenterX;0.5;RelativeCenterY;0.55;RelativeEnclosingCircleRadius;0.98;RelativeExternalRadius;1.1;RelativeIndexBackLength;0.3;RelativeIndexLength;1.2;RelativeInternalRadius;0.35;RelativeTextRadius;1.1;ScaleCircleColor;16777215;StartAngle;225;StepValue;1;SubdivisionLineThickness;1;TailAngle;165;Value;0;ValueFormatString;%25.0f;YellowColor;65535;YellowStartValue;75;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;CaptionColor;16777215;CaptionFont;Arial;;12;-1;-1;0;0;700;0;DivisionLineThickness;2;EnclosingCircleColor;12632256;EndAngle;-45;ExternalCircleThickness;3;ForeColor;0;GreenColor;65280;GreenStartValue;60;IndexColor;12582912;IndexLineThickness;0;InternalCircleThickness;2;MaximumValue;100;MinimumValue;0;NumberColor;4210752;NumberFont;Arial;;8.25;0;0;0;0;400;0;NumberOfDivisions;10;NumberOfSubdivisions;2;RedColor;255;RedStartValue;90;RelativeCaptionX;0.5;RelativeCaptionY;0.5;RelativeCenterX;0.5;RelativeCenterY;0.55;RelativeEnclosingCircleRadius;0.98;RelativeExternalRadius;1.1;RelativeIndexBackLength;0.3;RelativeIndexLength;1.2;RelativeInternalRadius;0.35;RelativeTextRadius;1.1;ScaleCircleColor;16777215;StartAngle;225;StepValue;1;SubdivisionLineThickness;1;TailAngle;165;Value;0;ValueFormatString;%25.0f;YellowColor;65535;YellowStartValue;75;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">217</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">tempSelect</_hname>
+					<_hid type="a">GUID becf9f8e-fa1d-4acd-89b8-6bf628e88e4a</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">gauge_0</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2079,29 +2264,110 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000670033 0 0 0.000496767 108 255.553 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000670033 0 0 0.000575204 108 246.64 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Default.itsSmartbin.tempSelect</m_csModelObjPath>
 			<m_csName type="a">gauge_0</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
 		<CGIActiveX type="e">
 			<_id type="a">GUID 3e4f1da7-74f0-437e-9a58-405020b45931</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Gauge</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;CaptionColor;16777215;CaptionFont;Arial;;12;-1;-1;0;0;700;0;DivisionLineThickness;2;EnclosingCircleColor;12632256;EndAngle;-45;ExternalCircleThickness;3;ForeColor;0;GreenColor;65280;GreenStartValue;60;IndexColor;12582912;IndexLineThickness;0;InternalCircleThickness;2;MaximumValue;100;MinimumValue;0;NumberColor;4210752;NumberFont;Arial;;8.25;0;0;0;0;400;0;NumberOfDivisions;10;NumberOfSubdivisions;2;RedColor;255;RedStartValue;90;RelativeCaptionX;0.5;RelativeCaptionY;0.5;RelativeCenterX;0.5;RelativeCenterY;0.55;RelativeEnclosingCircleRadius;0.98;RelativeExternalRadius;1.1;RelativeIndexBackLength;0.3;RelativeIndexLength;1.2;RelativeInternalRadius;0.35;RelativeTextRadius;1.1;ScaleCircleColor;16777215;StartAngle;225;StepValue;1;SubdivisionLineThickness;1;TailAngle;165;Value;0;ValueFormatString;%25.0f;YellowColor;65535;YellowStartValue;75;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;CaptionColor;16777215;CaptionFont;Arial;;12;-1;-1;0;0;700;0;DivisionLineThickness;2;EnclosingCircleColor;12632256;EndAngle;-45;ExternalCircleThickness;3;ForeColor;0;GreenColor;65280;GreenStartValue;60;IndexColor;12582912;IndexLineThickness;0;InternalCircleThickness;2;MaximumValue;100;MinimumValue;0;NumberColor;4210752;NumberFont;Arial;;8.25;0;0;0;0;400;0;NumberOfDivisions;10;NumberOfSubdivisions;2;RedColor;255;RedStartValue;90;RelativeCaptionX;0.5;RelativeCaptionY;0.5;RelativeCenterX;0.5;RelativeCenterY;0.55;RelativeEnclosingCircleRadius;0.98;RelativeExternalRadius;1.1;RelativeIndexBackLength;0.3;RelativeIndexLength;1.2;RelativeInternalRadius;0.35;RelativeTextRadius;1.1;ScaleCircleColor;16777215;StartAngle;225;StepValue;1;SubdivisionLineThickness;1;TailAngle;165;Value;0;ValueFormatString;%25.0f;YellowColor;65535;YellowStartValue;75;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">217</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">RHSelect</_hname>
+					<_hid type="a">GUID 1c108a4d-7506-4f9e-9e7a-a3f61253b634</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">gauge_0</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2116,21 +2382,241 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000650612 0 0 0.000577416 109 343.643 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000650612 0 0 0.00062116 109 338.692 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Default.itsSmartbin.RHSelect</m_csModelObjPath>
 			<m_csName type="a">gauge_0</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
-		<CGIActiveX type="e">
-			<_id type="a">GUID 7b533986-8303-494b-b676-be8dca99faf8</_id>
-			<m_type type="a">219</m_type>
+		<CGIMFCCtrl type="e">
+			<_id type="a">GUID c8b98502-9cfc-454a-94b3-865cc897aee9</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">PushButton</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ButtonFont</_Name>
+													<_Value type="a">Arial 10 NoBold NoItalic</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">BoundElement</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">227</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IReception</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">select1()</_hname>
+					<_hid type="a">GUID d7d14068-6468-4b2d-8724-645a4df79f33</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000563216 0 0 0.00043576 71 94.4855 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Default.itsSmartbin.select1</m_csModelObjPath>
+			<m_csName type="a">pushbutton_1</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+			<m_csButtonCaption type="a">1</m_csButtonCaption>
+		</CGIMFCCtrl>
+		<CGIMFCCtrl type="e">
+			<_id type="a">GUID b6cdabf7-86f1-48db-ac8d-d667562c6374</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">PushButton</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ButtonFont</_Name>
+													<_Value type="a">Arial 10 NoBold NoItalic</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">BoundElement</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">227</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IReception</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">select2()</_hname>
+					<_hid type="a">GUID 404a0436-d3e4-4f4d-983e-4e332fbe76e3</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.000592348 0 0 0.00043576 182 90.4855 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">Default.itsSmartbin.select2</m_csModelObjPath>
+			<m_csName type="a">pushbutton_2</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+			<m_csButtonCaption type="a">2</m_csButtonCaption>
+		</CGIMFCCtrl>
+		<CGIFreeText type="e">
+			<_id type="a">GUID 872d7c71-3371-4725-9234-6affe1ae9779</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">FreeText</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Wordbreak</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">189</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -2138,7 +2624,375 @@
 			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">led_7</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1 0 0 0.888889 57 112.556 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
+			<m_text type="a">Humidity</m_text>
+		</CGIFreeText>
+		<CGIFreeText type="e">
+			<_id type="a">GUID 784f9ce5-297f-486b-bfa1-a0d9ad179146</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">FreeText</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Wordbreak</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">189</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1.28571 0 0 0.888889 29.1429 19.556 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
+			<m_text type="a">Temperature</m_text>
+		</CGIFreeText>
+		<CGIFreeText type="e">
+			<_id type="a">GUID 44deb9d4-c54d-41aa-83ef-48b04d5b0ab8</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">FreeText</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Wordbreak</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">189</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1.28571 0 0 0.888889 -36.8571 29.556 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
+			<m_text type="a">Fill level</m_text>
+		</CGIFreeText>
+		<CGIFreeText type="e">
+			<_id type="a">GUID 30352880-b8e7-4ac8-8b30-87ae1ef1201c</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">FreeText</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Font.Weight</_Name>
+													<_Value type="a">700</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Wordbreak</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">189</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1.28571 0 0 0.888889 354.143 -10.444 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
+			<m_text type="a">1</m_text>
+		</CGIFreeText>
+		<CGIFreeText type="e">
+			<_id type="a">GUID d6518c46-b7a4-4475-8281-3600b8458edf</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">FreeText</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Font.Weight</_Name>
+													<_Value type="a">700</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Wordbreak</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">189</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1.28571 0 0 0.888889 701.143 137.556 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
+			<m_text type="a">2</m_text>
+		</CGIFreeText>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 0d9d7c06-2242-474d-a825-a9ed7097898b</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Knob</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackGroundColor;12632256;DivisionLineThickness;2;DotColor;16711680;EndAngle;-45;Font;Arial;;8.25;0;0;0;0;400;0;GradientFactor;0.7;LineColor;4210752;MaximumValue;10000;MinimumValue;1000;NumberOfDivisions;10;NumberOfSubdivisions;1;RelativeBubbleRadius;0.6;RelativeDotPositionRadius;0.75;RelativeDotRadius;0.11;RelativeExternalRadius;1.1;RelativeInternalRadius;1;RelativeTextRadius;0.98;StartAngle;225;SubdivisionLineThickness;1;TextColor;4210752;Value;1000;ValueFormatString;%25.0f;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackGroundColor;16777215;DivisionLineThickness;2;DotColor;16711680;EndAngle;-45;Font;Arial;;8.25;0;0;0;0;400;0;GradientFactor;0.7;LineColor;4210752;MaximumValue;10000;MinimumValue;1000;NumberOfDivisions;10;NumberOfSubdivisions;1;RelativeBubbleRadius;0.6;RelativeDotPositionRadius;0.75;RelativeDotRadius;0.11;RelativeExternalRadius;1.1;RelativeInternalRadius;1;RelativeTextRadius;0.98;StartAngle;225;SubdivisionLineThickness;1;TextColor;4210752;Value;1000;ValueFormatString;%25.0f;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Knob</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Direction</_Name>
+													<_Value type="a">InOut</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">None</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Direction</_Name>
+													<_Value type="a">InOut</_Value>
+													<_Type type="a">Enum</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">216</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">smartbin</_hclass>
+					<_hname type="a">updateFq</_hname>
+					<_hid type="a">GUID adcdb92e-8bc1-421f-b325-3ff43d84f866</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2153,18 +3007,88 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 232 408.126 </m_transform>
+			<m_drawBehavior type="a">8192</m_drawBehavior>
+			<m_transform type="a">0.00111672 0 0 0.000932527 182 313.039 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csName type="a">led_7</m_csName>
+			<m_csModelObjPath type="a">Default.itsSmartbin.updateFq</m_csModelObjPath>
+			<m_csName type="a">knob_0</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hsubsystem type="a">Default</_hsubsystem>
+							<_hclass type="a">TopLevel</_hclass>
+							<_hname type="a">itsSmartbin</_hname>
+							<_hid type="a">GUID e278c86d-a3d0-4f89-a5b5-0bd921e7d5f4</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</m_PartsArray>
 		</CGIActiveX>
+		<CGIFreeText type="e">
+			<_id type="a">GUID eb37a66a-d844-410b-81d1-13c5770e20d2</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">FreeText</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Wordbreak</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">189</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID 95d4787e-6a80-4793-8ea3-0a43c6d51329</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1.28571 0 0 0.888889 127.143 90.556 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">4 59 230  122 230  122 248  59 248  </m_points>
+			<m_text type="a">Update FQ</m_text>
+		</CGIFreeText>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: server
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\server.h
 *********************************************************************/
 
@@ -17,6 +17,8 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include "Default.h"
+//## auto_generated
+#include <aom\aom.h>
 //## link itsCms
 class cms;
 
@@ -24,10 +26,14 @@ class cms;
 
 //## class TopLevel::server
 class server_C {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedserver_C;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     server_C();
     
@@ -64,6 +70,20 @@ public :
     //## auto_generated
     void _clearItsCms();
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedserver_C : virtual public AOMInstance {
+    DECLARE_META(server_C, OMAnimatedserver_C)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

@@ -4,64 +4,98 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: electricity
-//!	Generated Date	: Mon, 10, Jul 2023  
+//!	Generated Date	: Sat, 15, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\electricity.cpp
 *********************************************************************/
 
+//#[ ignore
+#define NAMESPACE_PREFIX
+//#]
+
 //## auto_generated
 #include "electricity.h"
-//## link itsSmartbin
-#include "smartbin.h"
+//## link itsSmart_garbage_collection_system
+#include "smart_garbage_collection_system.h"
+//#[ ignore
+#define Default_electricity_electricity_SERIALIZE OM_NO_OP
+//#]
+
 //## package Default
 
 //## class electricity
 electricity::electricity() {
-    itsSmartbin = NULL;
+    NOTIFY_CONSTRUCTOR(electricity, electricity(), 0, Default_electricity_electricity_SERIALIZE);
+    itsSmart_garbage_collection_system = NULL;
 }
 
 electricity::~electricity() {
+    NOTIFY_DESTRUCTOR(~electricity, true);
     cleanUpRelations();
 }
 
-smartbin* electricity::getItsSmartbin() const {
-    return itsSmartbin;
+smart_garbage_collection_system* electricity::getItsSmart_garbage_collection_system() const {
+    return itsSmart_garbage_collection_system;
 }
 
-void electricity::setItsSmartbin(smartbin* p_smartbin) {
-    if(p_smartbin != NULL)
+void electricity::setItsSmart_garbage_collection_system(smart_garbage_collection_system* p_smart_garbage_collection_system) {
+    if(p_smart_garbage_collection_system != NULL)
         {
-            p_smartbin->_setItsElectricity(this);
+            p_smart_garbage_collection_system->_setItsElectricity(this);
         }
-    _setItsSmartbin(p_smartbin);
+    _setItsSmart_garbage_collection_system(p_smart_garbage_collection_system);
 }
 
 void electricity::cleanUpRelations() {
-    if(itsSmartbin != NULL)
+    if(itsSmart_garbage_collection_system != NULL)
         {
-            electricity* p_electricity = itsSmartbin->getItsElectricity();
+            NOTIFY_RELATION_CLEARED("itsSmart_garbage_collection_system");
+            electricity* p_electricity = itsSmart_garbage_collection_system->getItsElectricity();
             if(p_electricity != NULL)
                 {
-                    itsSmartbin->__setItsElectricity(NULL);
+                    itsSmart_garbage_collection_system->__setItsElectricity(NULL);
                 }
-            itsSmartbin = NULL;
+            itsSmart_garbage_collection_system = NULL;
         }
 }
 
-void electricity::__setItsSmartbin(smartbin* p_smartbin) {
-    itsSmartbin = p_smartbin;
-}
-
-void electricity::_setItsSmartbin(smartbin* p_smartbin) {
-    if(itsSmartbin != NULL)
+void electricity::__setItsSmart_garbage_collection_system(smart_garbage_collection_system* p_smart_garbage_collection_system) {
+    itsSmart_garbage_collection_system = p_smart_garbage_collection_system;
+    if(p_smart_garbage_collection_system != NULL)
         {
-            itsSmartbin->__setItsElectricity(NULL);
+            NOTIFY_RELATION_ITEM_ADDED("itsSmart_garbage_collection_system", p_smart_garbage_collection_system, false, true);
         }
-    __setItsSmartbin(p_smartbin);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsSmart_garbage_collection_system");
+        }
 }
 
-void electricity::_clearItsSmartbin() {
-    itsSmartbin = NULL;
+void electricity::_setItsSmart_garbage_collection_system(smart_garbage_collection_system* p_smart_garbage_collection_system) {
+    if(itsSmart_garbage_collection_system != NULL)
+        {
+            itsSmart_garbage_collection_system->__setItsElectricity(NULL);
+        }
+    __setItsSmart_garbage_collection_system(p_smart_garbage_collection_system);
 }
+
+void electricity::_clearItsSmart_garbage_collection_system() {
+    NOTIFY_RELATION_CLEARED("itsSmart_garbage_collection_system");
+    itsSmart_garbage_collection_system = NULL;
+}
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+void OMAnimatedelectricity::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsSmart_garbage_collection_system", false, true);
+    if(myReal->itsSmart_garbage_collection_system)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsSmart_garbage_collection_system);
+        }
+}
+//#]
+
+IMPLEMENT_META_P(electricity, Default, Default, false, OMAnimatedelectricity)
+#endif // _OMINSTRUMENT
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\electricity.cpp
