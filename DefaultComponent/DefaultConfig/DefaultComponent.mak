@@ -137,6 +137,7 @@ OBJS= \
   INPUT.obj \
   OUTPUT.obj \
   electricity.obj \
+  alarm.obj \
   road_network.obj \
   weather.obj \
   temperature.obj \
@@ -358,7 +359,7 @@ cms.obj : cms.cpp cms.h    Default.h bin.h truck.h smart_garbage_collection_syst
 
 
 
-smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h truck.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
+smartbin.obj : smartbin.cpp smartbin.h    Default.h sensor.h lid.h Resident_Citizen_User.h truck.h alarm.h addTrashPkg.h bin.h cms.h smart_garbage_collection_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"smartbin.obj" "smartbin.cpp" 
 
@@ -556,6 +557,12 @@ electricity.obj : electricity.cpp electricity.h    Default.h smart_garbage_colle
 
 
 
+alarm.obj : alarm.cpp alarm.h    Default.h smartbin.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"alarm.obj" "alarm.cpp" 
+
+
+
 road_network.obj : road_network.cpp road_network.h    EnvPkg.h smart_garbage_collection_system.h Municipality.h route_planning_system.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"road_network.obj" "road_network.cpp" 
@@ -640,7 +647,7 @@ Environmental_Organisations.obj : Environmental_Organisations.cpp Environmental_
 
 
 
-Default.obj : Default.cpp Default.h    bin.h truck.h wastecenter.h block_7.h cms.h smartbin.h regularbin.h open_sensor.h lid.h block_19.h block_21.h smart_garbage_collection_system.h sensor.h audio_sensor.h temp_sensor.h fill_sensor.h humidity_sensor.h SensorData.h TruckData.h RouteData.h UserDevice.h AppData.h SmartPhone.h Laptop.h App.h tablet.h Stakeholders.h block_73.h Users_Endusers.h Resources.h block_112.h Risks.h Oppurtunities.h Threats.h Standards_Regulations_Compliances.h INPUT.h OUTPUT.h electricity.h server.h ResistancetoChange.h Technological_Challenges.h Technologie.h Human.h DataSecurity_Privacy.h Technological.h Adoption.h Efficiency.h Sustainability.h part_1.h Cost_Reduction.h SmartBin_Data.h Optimized_Collection_Route.h 
+Default.obj : Default.cpp Default.h    bin.h truck.h wastecenter.h block_7.h cms.h smartbin.h regularbin.h open_sensor.h lid.h block_19.h block_21.h smart_garbage_collection_system.h sensor.h audio_sensor.h temp_sensor.h fill_sensor.h humidity_sensor.h SensorData.h TruckData.h RouteData.h UserDevice.h AppData.h SmartPhone.h Laptop.h App.h tablet.h Stakeholders.h block_73.h Users_Endusers.h Resources.h block_112.h Risks.h Oppurtunities.h Threats.h Standards_Regulations_Compliances.h INPUT.h OUTPUT.h electricity.h alarm.h server.h ResistancetoChange.h Technological_Challenges.h Technologie.h Human.h DataSecurity_Privacy.h Technological.h Adoption.h Efficiency.h Sustainability.h part_1.h Cost_Reduction.h SmartBin_Data.h Optimized_Collection_Route.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -785,6 +792,7 @@ clean:
 	if exist INPUT.obj erase INPUT.obj
 	if exist OUTPUT.obj erase OUTPUT.obj
 	if exist electricity.obj erase electricity.obj
+	if exist alarm.obj erase alarm.obj
 	if exist road_network.obj erase road_network.obj
 	if exist weather.obj erase weather.obj
 	if exist temperature.obj erase temperature.obj

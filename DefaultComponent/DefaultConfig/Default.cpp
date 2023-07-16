@@ -47,6 +47,8 @@
 //## classInstance Technologie
 #include "Technologie.h"
 //## auto_generated
+#include "alarm.h"
+//## auto_generated
 #include "App.h"
 //## auto_generated
 #include "AppData.h"

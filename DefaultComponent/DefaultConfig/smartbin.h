@@ -29,6 +29,9 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
+//## link itsAlarm
+class alarm;
+
 //## auto_generated
 class cms;
 
@@ -45,12 +48,6 @@ class smart_garbage_collection_system;
 class truck;
 
 //#[ ignore
-#define OMAnim_Default_smartbin_setRH_int_ARGS_DECLARATION int p_RH;
-
-#define OMAnim_Default_smartbin_setFillLevel_int_ARGS_DECLARATION int p_fillLevel;
-
-#define OMAnim_Default_smartbin_setTemp_int_ARGS_DECLARATION int p_temp;
-
 #define OMAnim_Default_smartbin_setUpdateFq_int_ARGS_DECLARATION int p_updateFq;
 //#]
 
@@ -313,6 +310,12 @@ public :
     void setUpdateFq(int p_updateFq);
     
     //## auto_generated
+    alarm* getItsAlarm() const;
+    
+    //## auto_generated
+    void setItsAlarm(alarm* p_alarm);
+    
+    //## auto_generated
     truck* getItsTruck() const;
     
     //## auto_generated
@@ -390,12 +393,23 @@ protected :
     
     int updateFq;		//## attribute updateFq
     
+    alarm* itsAlarm;		//## link itsAlarm
+    
     Resident_Citizen_User* itsResident_Citizen_User;		//## link itsResident_Citizen_User
     
     truck* itsTruck;		//## link itsTruck
 
 public :
 
+    //## auto_generated
+    void __setItsAlarm(alarm* p_alarm);
+    
+    //## auto_generated
+    void _setItsAlarm(alarm* p_alarm);
+    
+    //## auto_generated
+    void _clearItsAlarm();
+    
     //## auto_generated
     void __setItsTruck(truck* p_truck);
     
@@ -607,18 +621,6 @@ public :
     //## statechart_method
     inline bool wairt_for_repair1_IN() const;
     
-    // state_54:
-    //## statechart_method
-    inline bool state_54_IN() const;
-    
-    // state_51:
-    //## statechart_method
-    inline bool state_51_IN() const;
-    
-    // state_29:
-    //## statechart_method
-    inline bool state_29_IN() const;
-    
     // sched_repair1:
     //## statechart_method
     inline bool sched_repair1_IN() const;
@@ -626,6 +628,18 @@ public :
     // sched_repair:
     //## statechart_method
     inline bool sched_repair_IN() const;
+    
+    // repair_req_both:
+    //## statechart_method
+    inline bool repair_req_both_IN() const;
+    
+    // repair_req_2:
+    //## statechart_method
+    inline bool repair_req_2_IN() const;
+    
+    // repair_req_1:
+    //## statechart_method
+    inline bool repair_req_1_IN() const;
     
     // dispatchTruck2:
     //## statechart_method
@@ -662,12 +676,12 @@ public :
     //## statechart_method
     IOxfReactive::TakeEventStatus not_full_handleEvent();
     
-    // state_5:
+    // trash1:
     //## statechart_method
-    inline bool state_5_IN() const;
+    inline bool trash1_IN() const;
     
     //## statechart_method
-    IOxfReactive::TakeEventStatus state_5_handleEvent();
+    IOxfReactive::TakeEventStatus trash1_handleEvent();
     
     // not_used:
     //## statechart_method
@@ -723,17 +737,17 @@ protected :
         wait_for_empty = 28,
         wait = 29,
         wairt_for_repair1 = 30,
-        state_54 = 31,
-        state_51 = 32,
-        state_29 = 33,
-        sched_repair1 = 34,
-        sched_repair = 35,
+        sched_repair1 = 31,
+        sched_repair = 32,
+        repair_req_both = 33,
+        repair_req_2 = 34,
+        repair_req_1 = 35,
         dispatchTruck2 = 36,
         dispatchTruck1 = 37,
         dispatchTruck = 38,
         state_11 = 39,
         not_full = 40,
-        state_5 = 41,
+        trash1 = 41,
         not_used = 42,
         full_bin = 43,
         empty_bin = 44,
@@ -779,23 +793,11 @@ protected :
 };
 
 #ifdef _OMINSTRUMENT
-DECLARE_OPERATION_CLASS(Default_smartbin_setRH_int)
-
-DECLARE_OPERATION_CLASS(Default_smartbin_setFillLevel_int)
-
-DECLARE_OPERATION_CLASS(Default_smartbin_setTemp_int)
-
 DECLARE_OPERATION_CLASS(Default_smartbin_setUpdateFq_int)
 
 //#[ ignore
 class OMAnimatedsmartbin : public OMAnimatedbin {
     DECLARE_REACTIVE_META(smartbin, OMAnimatedsmartbin)
-    
-    DECLARE_META_OP(Default_smartbin_setRH_int)
-    
-    DECLARE_META_OP(Default_smartbin_setFillLevel_int)
-    
-    DECLARE_META_OP(Default_smartbin_setTemp_int)
     
     DECLARE_META_OP(Default_smartbin_setUpdateFq_int)
     
@@ -901,19 +903,19 @@ public :
     void wairt_for_repair1_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void state_54_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void state_51_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void state_29_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
     void sched_repair1_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void sched_repair_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void repair_req_both_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void repair_req_2_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void repair_req_1_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void dispatchTruck2_serializeStates(AOMSState* aomsState) const;
@@ -931,7 +933,7 @@ public :
     void not_full_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
-    void state_5_serializeStates(AOMSState* aomsState) const;
+    void trash1_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void not_used_serializeStates(AOMSState* aomsState) const;
@@ -1072,24 +1074,24 @@ inline bool smartbin::wairt_for_repair1_IN() const {
     return state_12_subState == wairt_for_repair1;
 }
 
-inline bool smartbin::state_54_IN() const {
-    return state_12_subState == state_54;
-}
-
-inline bool smartbin::state_51_IN() const {
-    return state_12_subState == state_51;
-}
-
-inline bool smartbin::state_29_IN() const {
-    return state_12_subState == state_29;
-}
-
 inline bool smartbin::sched_repair1_IN() const {
     return state_12_subState == sched_repair1;
 }
 
 inline bool smartbin::sched_repair_IN() const {
     return state_12_subState == sched_repair;
+}
+
+inline bool smartbin::repair_req_both_IN() const {
+    return state_12_subState == repair_req_both;
+}
+
+inline bool smartbin::repair_req_2_IN() const {
+    return state_12_subState == repair_req_2;
+}
+
+inline bool smartbin::repair_req_1_IN() const {
+    return state_12_subState == repair_req_1;
 }
 
 inline bool smartbin::dispatchTruck2_IN() const {
@@ -1112,8 +1114,8 @@ inline bool smartbin::not_full_IN() const {
     return state_11_subState == not_full;
 }
 
-inline bool smartbin::state_5_IN() const {
-    return not_full_subState == state_5;
+inline bool smartbin::trash1_IN() const {
+    return not_full_subState == trash1;
 }
 
 inline bool smartbin::not_used_IN() const {

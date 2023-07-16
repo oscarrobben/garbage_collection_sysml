@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: cms
-//!	Generated Date	: Sat, 15, Jul 2023  
+//!	Generated Date	: Sun, 16, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\cms.cpp
 *********************************************************************/
 
@@ -31,6 +31,7 @@
 //## class cms
 cms::cms() {
     NOTIFY_CONSTRUCTOR(cms, cms(), 0, Default_cms_cms_SERIALIZE);
+    itsBin_1 = NULL;
     itsServer = NULL;
     itsSmart_garbage_collection_system = NULL;
 }
@@ -137,6 +138,16 @@ void cms::cleanUpRelations() {
         }
         itsBin.removeAll();
     }
+    if(itsBin_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsBin_1");
+            cms* p_cms = itsBin_1->getItsCms_1();
+            if(p_cms != NULL)
+                {
+                    itsBin_1->__setItsCms_1(NULL);
+                }
+            itsBin_1 = NULL;
+        }
     if(itsServer != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsServer");
@@ -265,6 +276,43 @@ void cms::_clearItsTruck() {
     itsTruck.removeAll();
 }
 
+bin* cms::getItsBin_1() const {
+    return itsBin_1;
+}
+
+void cms::setItsBin_1(bin* p_bin) {
+    if(p_bin != NULL)
+        {
+            p_bin->_setItsCms_1(this);
+        }
+    _setItsBin_1(p_bin);
+}
+
+void cms::__setItsBin_1(bin* p_bin) {
+    itsBin_1 = p_bin;
+    if(p_bin != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsBin_1", p_bin, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsBin_1");
+        }
+}
+
+void cms::_setItsBin_1(bin* p_bin) {
+    if(itsBin_1 != NULL)
+        {
+            itsBin_1->__setItsCms_1(NULL);
+        }
+    __setItsBin_1(p_bin);
+}
+
+void cms::_clearItsBin_1() {
+    NOTIFY_RELATION_CLEARED("itsBin_1");
+    itsBin_1 = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedcms::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -293,6 +341,11 @@ void OMAnimatedcms::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsServer)
         {
             aomsRelations->ADD_ITEM(myReal->itsServer);
+        }
+    aomsRelations->addRelation("itsBin_1", false, true);
+    if(myReal->itsBin_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsBin_1);
         }
 }
 //#]

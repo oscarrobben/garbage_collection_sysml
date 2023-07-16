@@ -323,8 +323,8 @@
 			</_properties>
 			<_name type="a">adminpanel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">7.16.2023::9:22:24</_modifiedTime>
-			<_lastModifiedTime type="a">7.16.2023::9:22:24</_lastModifiedTime>
+			<_modifiedTime type="a">7.16.2023::13:28:59</_modifiedTime>
+			<_lastModifiedTime type="a">7.16.2023::13:28:59</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -967,7 +967,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 -8 237 </m_transform>
+			<m_transform type="a">1 0 0 1 -18 235 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  116 230  116 248  59 248  </m_points>
 			<m_text type="a">Average fill level</m_text>
@@ -997,7 +997,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 124 237 </m_transform>
+			<m_transform type="a">1 0 0 1 113 237 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 59 230  127 230  127 248  59 248  </m_points>
 			<m_text type="a">Maximum fill level</m_text>
@@ -2202,6 +2202,18 @@
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
+												<IProperty type="e">
+													<_Name type="a">Font.Height@Label.Name</_Name>
+													<_Value type="a">11</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.Size@Label.Name</_Name>
+													<_Value type="a">8</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
 											</IRPYRawContainer>
 										</Properties>
 									</IPropertyMetaclass>
@@ -2265,7 +2277,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">8192</m_drawBehavior>
-			<m_transform type="a">0.000670033 0 0 0.000575204 108 246.64 </m_transform>
+			<m_transform type="a">0.000670033 0 0 0.000575204 108 250.64 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2318,6 +2330,18 @@
 													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
 													<_Value type="a">BackColor;16777215;Caption;;CaptionColor;16777215;CaptionFont;Arial;;12;-1;-1;0;0;700;0;DivisionLineThickness;2;EnclosingCircleColor;12632256;EndAngle;-45;ExternalCircleThickness;3;ForeColor;0;GreenColor;65280;GreenStartValue;60;IndexColor;12582912;IndexLineThickness;0;InternalCircleThickness;2;MaximumValue;100;MinimumValue;0;NumberColor;4210752;NumberFont;Arial;;8.25;0;0;0;0;400;0;NumberOfDivisions;10;NumberOfSubdivisions;2;RedColor;255;RedStartValue;90;RelativeCaptionX;0.5;RelativeCaptionY;0.5;RelativeCenterX;0.5;RelativeCenterY;0.55;RelativeEnclosingCircleRadius;0.98;RelativeExternalRadius;1.1;RelativeIndexBackLength;0.3;RelativeIndexLength;1.2;RelativeInternalRadius;0.35;RelativeTextRadius;1.1;ScaleCircleColor;16777215;StartAngle;225;StepValue;1;SubdivisionLineThickness;1;TailAngle;165;Value;0;ValueFormatString;%25.0f;YellowColor;65535;YellowStartValue;75;</_Value>
 													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.Height@Label.Name</_Name>
+													<_Value type="a">11</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.Size@Label.Name</_Name>
+													<_Value type="a">8</_Value>
+													<_Type type="a">Int</_Type>
 												</IProperty>
 												
 											</IRPYRawContainer>

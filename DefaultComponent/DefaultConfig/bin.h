@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: bin
-//!	Generated Date	: Sat, 15, Jul 2023  
+//!	Generated Date	: Sun, 16, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\bin.h
 *********************************************************************/
 
@@ -89,6 +89,27 @@ public :
     
     //## auto_generated
     void _clearItsSmart_garbage_collection_system();
+    
+    //## auto_generated
+    cms* getItsCms_1() const;
+    
+    //## auto_generated
+    void setItsCms_1(cms* p_cms);
+
+protected :
+
+    cms* itsCms_1;		//## link itsCms_1
+
+public :
+
+    //## auto_generated
+    void __setItsCms_1(cms* p_cms);
+    
+    //## auto_generated
+    void _setItsCms_1(cms* p_cms);
+    
+    //## auto_generated
+    void _clearItsCms_1();
 };
 
 #ifdef _OMINSTRUMENT

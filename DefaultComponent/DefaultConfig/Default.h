@@ -107,6 +107,9 @@ class UserDevice;
 class Users_Endusers;
 
 //## auto_generated
+class alarm;
+
+//## auto_generated
 class audio_sensor;
 
 //## auto_generated

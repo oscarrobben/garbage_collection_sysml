@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: bin
-//!	Generated Date	: Sat, 15, Jul 2023  
+//!	Generated Date	: Sun, 16, Jul 2023  
 	File Path	: DefaultComponent\DefaultConfig\bin.cpp
 *********************************************************************/
 
@@ -28,6 +28,7 @@
 bin::bin() {
     NOTIFY_CONSTRUCTOR(bin, bin(), 0, Default_bin_bin_SERIALIZE);
     itsCms = NULL;
+    itsCms_1 = NULL;
     itsSmart_garbage_collection_system = NULL;
 }
 
@@ -70,6 +71,16 @@ void bin::cleanUpRelations() {
                     current->_removeItsBin(this);
                 }
             itsCms = NULL;
+        }
+    if(itsCms_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsCms_1");
+            bin* p_bin = itsCms_1->getItsBin_1();
+            if(p_bin != NULL)
+                {
+                    itsCms_1->__setItsBin_1(NULL);
+                }
+            itsCms_1 = NULL;
         }
     if(itsSmart_garbage_collection_system != NULL)
         {
@@ -133,6 +144,43 @@ void bin::_clearItsSmart_garbage_collection_system() {
     itsSmart_garbage_collection_system = NULL;
 }
 
+cms* bin::getItsCms_1() const {
+    return itsCms_1;
+}
+
+void bin::setItsCms_1(cms* p_cms) {
+    if(p_cms != NULL)
+        {
+            p_cms->_setItsBin_1(this);
+        }
+    _setItsCms_1(p_cms);
+}
+
+void bin::__setItsCms_1(cms* p_cms) {
+    itsCms_1 = p_cms;
+    if(p_cms != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsCms_1", p_cms, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsCms_1");
+        }
+}
+
+void bin::_setItsCms_1(cms* p_cms) {
+    if(itsCms_1 != NULL)
+        {
+            itsCms_1->__setItsBin_1(NULL);
+        }
+    __setItsCms_1(p_cms);
+}
+
+void bin::_clearItsCms_1() {
+    NOTIFY_RELATION_CLEARED("itsCms_1");
+    itsCms_1 = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedbin::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -145,6 +193,11 @@ void OMAnimatedbin::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsSmart_garbage_collection_system)
         {
             aomsRelations->ADD_ITEM(myReal->itsSmart_garbage_collection_system);
+        }
+    aomsRelations->addRelation("itsCms_1", false, true);
+    if(myReal->itsCms_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsCms_1);
         }
 }
 //#]
